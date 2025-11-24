@@ -1,0 +1,15 @@
+{
+  "Name": "NITV Multiplayer Patch",
+  "Author": "Xan",
+  "Version": "1.0.0",
+  "Description": "Patch Nature In The Valley creature despawns for multiplayer/split-screen",
+  "UniqueID": "Xan.NITVMultiplayerPatch",
+  "EntryDll": "NITVMultiplayerPatch.dll",
+  "MinimumApiVersion": "4.0.0",
+  "Dependencies": [
+    {
+        "UniqueID": "Nature.NatureInTheValley",
+        "IsRequired": true
+    }
+  ]
+}

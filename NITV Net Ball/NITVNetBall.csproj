@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <NoWarn>$(NoWarn);MSB3277</NoWarn>
+    <AssemblyName>NITVNetBall</AssemblyName>
+    <RootNamespace>NITVNetBall</RootNamespace>
+    <EnableHarmony>true</EnableHarmony>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Pathoschild.Stardew.ModBuildConfig" Version="4.4.0" />
+    <Reference Include="NatureInTheValley" HintPath="$(GamePath)\Mods\[Gen]NatureInTheValley\NatureInTheValley\NatureInTheValley.dll" Private="false" />
+  </ItemGroup>
+
+</Project>

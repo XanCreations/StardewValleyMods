@@ -1,0 +1,15 @@
+  {
+    "Name": "NITVNetBall",
+    "Author": "Xan",
+    "Version": "1.0.2",
+    "Description": "Adds a new item that makes catching water creatures easier.",
+    "UniqueID": "Xan.NITVNetBall",
+    "EntryDll": "NITVNetBall.dll",
+	  "MinimumApiVersion": "4.0.0",
+    "Dependencies": [
+      {
+        "UniqueID": "Nature.NatureInTheValley",
+        "IsRequired": true
+      }
+    ]
+  }

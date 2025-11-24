@@ -1,0 +1,8 @@
+{
+
+    "spring": "610 NIVOuterInsec 15 16 2 spiritomb_idle_down/2550 bed",
+    "summer": "GOTO spring",
+    "fall":   "GOTO spring",
+    "winter": "GOTO spring"
+
+}

@@ -1,0 +1,937 @@
+{
+  "Changes": [                    
+
+    {
+      "Action": "EditData",
+      "Target": "Nature.NITV/Creatures",
+      "Entries": {
+        "Butterfree_Roam_Safari": {
+          "rarity": 2,
+          "grounded": false,
+          "speed": 0.007,
+          "pauseTime": 1600,
+          "scale": 2.0,
+          "doesRun": true,
+          "isMover": true,
+          "range": 3,
+          "dangerous": false,
+          "seasons": [
+            "spring",
+            "fall",
+            "summer",
+            "winter"
+          ],
+          "weatherCode": "0",
+          "locations": [
+            "NITVPokemon_SafariZone"
+          ],
+          "minTime": 600,
+          "maxTime": 1800,
+          "frames": 4,
+          "spritePath": "Mods/NITVPokemon/Butterfree",
+          "xShadow": 13,
+          "yShadow": 30,
+          "localSpawnCode": "0",
+          "price": 500,
+          "xDef": 57.0,
+          "yDef": 12.0,
+          "itemTexture": "Mods/NITVPokemon/ButterfreeItem",
+          "displayName": "{{i18n:Butterfree.displayName}}",
+          "displayDescription": "{{i18n:Butterfree.displayDescription}}",
+          "xSpriteSize": 32,
+          "ySpriteSize": 32,
+          "GSQ": "",
+          "packSize": 0,
+          "rotaryAnims": false,
+          "complexIdling": true,
+          "friendlyFollower": false,
+          "dangerDamage": 0,
+          "health": 0,
+          "forceSword": false,
+          "cueName": "Xan.PokemonCreaturePack.Butterfree",
+          "soundRange": 1000,
+          "soundFrequency": 2000,
+          "compelxAnims": true,
+          "isTerrariumable": false,
+          "isDonatable": false,
+          "useBetterCreatureBounds": true,
+          "extraDescription": "",
+          "alternativeDrop": "(O)NatInValley.Creature.Butterfree_Roam",
+          "onlyAlternativeDrop": true,
+          "alternativeDropChance": 1.0,
+          "itemDropItemIds": [
+            "(O)NatInValley.Creature.Butterfree_Roam_Shiny",
+            "114", //ancient seed
+            "745", //strawberry seeds
+            "724", //maple
+            "725", //oak
+            "726" //pine
+          ],
+          "itemDropItemChances": [
+            0.01,
+            0.05,
+            0.2,
+            0.2,
+            0.2,
+            0.2
+          ],
+          "itemDropOnlyItemBools": [ false, false, false, false, false, false ],
+          "itemDropExclusiveItem": [ true, true, true, true, true, true ]
+        },
+
+        "Beedrill_Attack_Safari": {
+          "rarity": 2,
+          "grounded": false,
+          "speed": 0.008,
+          "pauseTime": 1600,
+          "scale": 2.0,
+          "doesRun": true,
+          "isMover": true,
+          "range": 2,
+          "dangerous": true,
+          "seasons": [
+            "spring",
+            "fall",
+            "summer",
+            "winter"
+          ],
+          "weatherCode": "0",
+          "locations": [
+            "NITVPokemon_SafariZone"
+          ],
+          "minTime": 600,
+          "maxTime": 1800,
+          "frames": 4,
+          "spritePath": "Mods/NITVPokemon/Beedrill",
+          "xShadow": 13,
+          "yShadow": 30,
+          "localSpawnCode": "0",
+          "price": 600,
+          "xDef": 57.0,
+          "yDef": 12.0,
+          "itemTexture": "Mods/NITVPokemon/BeedrillItem",
+          "displayName": "{{i18n:Beedrill.displayName}}",
+          "displayDescription": "{{i18n:Beedrill.displayDescription}}",
+          "xSpriteSize": 32,
+          "ySpriteSize": 32,
+          "GSQ": "",
+          "packSize": 0,
+          "rotaryAnims": false,
+          "complexIdling": true,
+          "friendlyFollower": false,
+          "dangerDamage": 15,
+          "health": 40,
+          "forceSword": false,
+          "cueName": "Xan.PokemonCreaturePack.Beedrill",
+          "soundRange": 1000,
+          "soundFrequency": 2000,
+          "compelxAnims": true,
+          "isTerrariumable": false,
+          "isDonatable": false,
+          "useBetterCreatureBounds": true,
+          "extraDescription": "",
+          "alternativeDrop": "(O)NatInValley.Creature.Beedrill_Attack",
+          "onlyAlternativeDrop": true,
+          "alternativeDropChance": 1.0,
+          "itemDropItemIds": [
+            "(O)NatInValley.Creature.Beedrill_Attack_Shiny",
+            "114", //ancient seed
+            "745", //strawberry seeds
+            "724", //maple
+            "725", //oak
+            "726" //pine
+          ],
+          "itemDropItemChances": [
+            0.01,
+            0.05,
+            0.2,
+            0.2,
+            0.2,
+            0.2
+          ],
+          "itemDropOnlyItemBools": [ false, false, false, false, false, false ],
+          "itemDropExclusiveItem": [ true, true, true, true, true, true ]
+        },
+
+        "Ekans_Attack_Safari": {
+          "rarity": 2,
+          "grounded": true,
+          "speed": 0.007,
+          "pauseTime": 1600,
+          "scale": 1.5,
+          "doesRun": true,
+          "isMover": true,
+          "range": 2,
+          "dangerous": true,
+          "seasons": [
+            "spring",
+            "fall",
+            "summer",
+            "winter"
+          ],
+          "weatherCode": "0",
+          "locations": [
+            "NITVPokemon_SafariZone"
+          ],
+          "minTime": 600,
+          "maxTime": 2500,
+          "frames": 4,
+          "spritePath": "Mods/NITVPokemon/Ekans",
+          "xShadow": 0,
+          "yShadow": 23,
+          "localSpawnCode": "0",
+          "price": 500,
+          "xDef": 34.0,
+          "yDef": 9.0,
+          "itemTexture": "Mods/NITVPokemon/EkansItem",
+          "displayName": "{{i18n:Ekans.displayName}}",
+          "displayDescription": "{{i18n:Ekans.displayDescription}}",
+          "xSpriteSize": 32,
+          "ySpriteSize": 32,
+          "GSQ": "",
+          "packSize": 0,
+          "rotaryAnims": false,
+          "complexIdling": false,
+          "friendlyFollower": false,
+          "dangerDamage": 15,
+          "health": 30,
+          "forceSword": false,
+          "cueName": "Xan.PokemonCreaturePack.Ekans",
+          "soundRange": 1000,
+          "soundFrequency": 2000,
+          "compelxAnims": true,
+          "isTerrariumable": false,
+          "isDonatable": false,
+          "useBetterCreatureBounds": true,
+          "extraDescription": "",
+          "alternativeDrop": "(O)NatInValley.Creature.Ekans_Attack",
+          "onlyAlternativeDrop": true,
+          "alternativeDropChance": 1.0,
+          "itemDropItemIds": [
+            "(O)NatInValley.Creature.Ekans_Attack_Shiny",
+            "PrizeTicket",
+            "825", //snake skull
+            "826", //snake vert
+            "879", //monster musk
+            "287" //bomb
+          ],
+          "itemDropItemChances": [
+            0.01,
+            0.01,
+            0.3,
+            0.3,
+            0.3,
+            0.3
+          ],
+          "itemDropOnlyItemBools": [ false, false, false, false, false, false ],
+          "itemDropExclusiveItem": [ true, true, true, true, true, true ]
+        },
+
+       "Poliwag_Swim_Safari": {
+          "rarity": 2,
+          "grounded": true,
+          "speed": 0.006,
+          "pauseTime": 960,
+          "scale": 1.7,
+          "doesRun": true,
+          "isMover": true,
+          "range": 4,
+          "dangerous": false,
+          "seasons": [
+            "spring",
+            "fall",
+            "summer",
+            "winter"
+          ],
+          "weatherCode": "0",
+          "locations": [
+            "NITVPokemon_SafariZone"
+          ],
+          "minTime": 600,
+          "maxTime": 1700,
+          "frames": 6,
+          "spritePath": "Mods/NITVPokemon/Poliwag",
+          "xShadow": 6,
+          "yShadow": 28,
+          "localSpawnCode": "3",
+          "price": 500,
+          "xDef": 7.0,
+          "yDef": 44.0,
+          "itemTexture": "Mods/NITVPokemon/PoliwagItem",
+          "displayName": "{{i18n:Poliwag.displayName}}",
+          "displayDescription": "{{i18n:Poliwag.displayDescription}}",
+          "xSpriteSize": 32,
+          "ySpriteSize": 32,
+          "GSQ": "",
+          "packSize": 0,
+          "rotaryAnims": false,
+          "complexIdling": true,
+          "friendlyFollower": false,
+          "dangerDamage": 0,
+          "health": 0,
+          "forceSword": false,
+          "cueName": "Xan.PokemonCreaturePack.Poliwag",
+          "soundRange": 1000,
+          "soundFrequency": 2000,
+          "compelxAnims": true,
+          "isTerrariumable": false,
+          "isDonatable": false,
+          "useBetterCreatureBounds": false,
+          "extraDescription": "",
+          "alternativeDrop": "(O)NatInValley.Creature.Poliwag_Swim",
+          "onlyAlternativeDrop": true,
+          "alternativeDropChance": 1.0,
+          "itemDropItemIds": [
+            "(O)NatInValley.Creature.Poliwag_Swim_Shiny",
+            "681", //rain totem
+            "166", //treasure chest
+            "SkillBook_1", //bait and bobber
+            "DeluxeBait"
+          ],
+          "itemDropItemChances": [
+            0.01,
+            0.05,
+            0.05,
+            0.05,
+            0.2
+          ],
+          "itemDropOnlyItemBools": [ false, false, false, false, false ],
+          "itemDropExclusiveItem": [ true, true, true, true, true ]
+        },
+
+        "Tentacool_Swim_Safari": {
+          "rarity": 2,
+          "grounded": true,
+          "speed": 0.007,
+          "pauseTime": 1280,
+          "scale": 1.6,
+          "doesRun": true,
+          "isMover": true,
+          "range": 4,
+          "dangerous": false,
+          "seasons": [
+            "spring",
+            "fall",
+            "summer",
+            "winter"
+          ],
+          "weatherCode": "0",
+          "locations": [
+            "NITVPokemon_SafariZone"
+          ],
+          "minTime": 600,
+          "maxTime": 2500,
+          "frames": 8,
+          "spritePath": "Mods/NITVPokemon/Tentacool",
+          "xShadow": 3,
+          "yShadow": 24,
+          "localSpawnCode": "3",
+          "price": 500,
+          "xDef": 7.0,
+          "yDef": 46.0,
+          "itemTexture": "Mods/NITVPokemon/TentacoolItem",
+          "displayName": "{{i18n:Tentacool.displayName}}",
+          "displayDescription": "{{i18n:Tentacool.displayDescription}}",
+          "xSpriteSize": 32,
+          "ySpriteSize": 32,
+          "GSQ": "",
+          "packSize": 0,
+          "rotaryAnims": false,
+          "complexIdling": true,
+          "friendlyFollower": false,
+          "dangerDamage": 0,
+          "health": 0,
+          "forceSword": false,
+          "cueName": "Xan.PokemonCreaturePack.Tentacool",
+          "soundRange": 1000,
+          "soundFrequency": 2000,
+          "compelxAnims": true,
+          "isTerrariumable": false,
+          "isDonatable": false,
+          "useBetterCreatureBounds": false,
+          "extraDescription": "",
+          "alternativeDrop": "(O)NatInValley.Creature.Tentacool_Swim",
+          "onlyAlternativeDrop": true,
+          "alternativeDropChance": 1.0,
+          "itemDropItemIds": [
+            "(O)NatInValley.Creature.Tentacool_Swim_Shiny",
+            "797", //pearl
+            "CaveJelly",
+            "690", //totem beach
+            "814", //squid ink
+            "SeaJelly"
+          ],
+          "itemDropItemChances": [
+            0.01,
+            0.01,
+            0.05,
+            0.1,
+            0.1,
+            0.1
+          ],
+          "itemDropOnlyItemBools": [ false, false, false, false, false, false],
+          "itemDropExclusiveItem": [ true, true, true, true, true, true ]
+        },
+
+        "Growlithe_Roam_Safari": {
+          "rarity": 2,
+          "grounded": true,
+          "speed": 0.008,
+          "pauseTime": 2000,
+          "scale": 1.8,
+          "doesRun": true,
+          "isMover": true,
+          "range": 3,
+          "dangerous": false,
+          "seasons": [
+            "spring",
+            "fall",
+            "summer",
+            "winter"
+          ],
+          "weatherCode": "0",
+          "locations": [
+            "NITVPokemon_SafariZone"
+          ],
+          "minTime": 600,
+          "maxTime": 1700,
+          "frames": 4,
+          "spritePath": "Mods/NITVPokemon/Growlithe",
+          "xShadow": 4,
+          "yShadow": 30,
+          "localSpawnCode": "0",
+          "price": 500,
+          "xDef": 68.0,
+          "yDef": 23.0,
+          "itemTexture": "Mods/NITVPokemon/GrowlitheItem",
+          "displayName": "{{i18n:Growlithe.displayName}}",
+          "displayDescription": "{{i18n:Growlithe.displayDescription}}",
+          "xSpriteSize": 32,
+          "ySpriteSize": 32,
+          "GSQ": "",
+          "packSize": 0,
+          "rotaryAnims": false,
+          "complexIdling": false,
+          "friendlyFollower": true,
+          "dangerDamage": 0,
+          "health": 0,
+          "forceSword": false,
+          "cueName": "Xan.PokemonCreaturePack.Growlithe",
+          "soundRange": 1000,
+          "soundFrequency": 2000,
+          "compelxAnims": true,
+          "isTerrariumable": false,
+          "isDonatable": false,
+          "useBetterCreatureBounds": true,
+          "extraDescription": "",
+          "alternativeDrop": "(O)NatInValley.Creature.Growlithe_Roam",
+          "onlyAlternativeDrop": true,
+          "alternativeDropChance": 1.0,
+          "itemDropItemIds": [
+            "GoldenAnimalCracker",
+            "(O)NatInValley.Creature.Growlithe_Roam_Shiny",
+            "446", //rabbit's foot
+            "Book_Void", //monster compendium
+            "82", //fire quartz
+            "226", //spicy eel
+            "888" //glowstone ring
+          ],
+          "itemDropItemChances": [
+            0.005,
+            0.01,
+            0.05,
+            0.05,
+            0.1,
+            0.1,
+            0.1
+          ],
+          "itemDropOnlyItemBools": [ false, false, false, false, false, false, false ],
+          "itemDropExclusiveItem": [ true, true, true, true, true, true, true ]
+        },
+
+        "Venonat_Stump_Safari": {
+          "rarity": 1,
+          "grounded": false,
+          "speed": 0.001,
+          "pauseTime": 100,
+          "scale": 1.4,
+          "doesRun": true,
+          "isMover": false,
+          "range": 3,
+          "dangerous": false,
+          "seasons": [
+            "spring",
+            "fall",
+            "summer",
+            "winter"
+          ],
+          "weatherCode": "0",
+          "locations": [
+            "NITVPokemon_SafariZone"
+          ],
+          "minTime": 800,
+          "maxTime": 1700,
+          "frames": 9,
+          "spritePath": "Mods/NITVPokemon/Venonat",
+          "xShadow": -3,
+          "yShadow": -73,
+          "localSpawnCode": "4",
+          "price": 500,
+          "xDef": 46.9,
+          "yDef": 21.5,
+          "itemTexture": "Mods/NITVPokemon/VenonatItem",
+          "displayName": "{{i18n:Venonat.displayName}}",
+          "displayDescription": "{{i18n:Venonat.displayDescription}}",
+          "xSpriteSize": 32,
+          "ySpriteSize": 32,
+          "GSQ": "",
+          "packSize": 0,
+          "rotaryAnims": false,
+          "complexIdling": false,
+          "friendlyFollower": false,
+          "dangerDamage": 0,
+          "health": 0,
+          "forceSword": false,
+          "cueName": "Xan.PokemonCreaturePack.Venonat",
+          "soundRange": 1000,
+          "soundFrequency": 2000,
+          "compelxAnims": false,
+          "isTerrariumable": false,
+          "isDonatable": false,
+          "useBetterCreatureBounds": true,
+          "extraDescription": "",
+          "alternativeDrop": "(O)NatInValley.Creature.Venonat_Stump",
+          "onlyAlternativeDrop": true,
+          "alternativeDropChance": 1.0,
+          "itemDropItemIds": [
+            "(O)NatInValley.Creature.Venonat_Stump_Shiny",
+            "417", //sweet gem berry
+            "745", //strawberry seeds
+            "709", //hardwood
+            "Moss",
+            "414", //crystal fruit
+            "416" //snow yam
+          ],
+          "itemDropItemChances": [
+            0.01,
+            0.05,
+            0.3,
+            0.3,
+            0.3,
+            0.3,
+            0.3
+          ],
+          "itemDropOnlyItemBools": [ false, false, false, false, false, false, false ],
+          "itemDropExclusiveItem": [ true, true, true, true, true, true, true ]
+        },
+
+        "Paras_Roam_Safari": {
+          "rarity": 2,
+          "grounded": true,
+          "speed": 0.006,
+          "pauseTime": 1200,
+          "scale": 1.7,
+          "doesRun": true,
+          "isMover": true,
+          "range": 2,
+          "dangerous": false,
+          "seasons": [
+            "spring",
+            "fall",
+            "summer",
+            "winter"
+          ],
+          "weatherCode": "0",
+          "locations": [
+            "NITVPokemon_SafariZone"
+          ],
+          "minTime": 600,
+          "maxTime": 1200,
+          "frames": 4,
+          "spritePath": "Mods/NITVPokemon/Paras",
+          "xShadow": 3,
+          "yShadow": 27,
+          "localSpawnCode": "0",
+          "price": 500,
+          "xDef": 8.0,
+          "yDef": 20.0,
+          "itemTexture": "Mods/NITVPokemon/ParasItem",
+          "displayName": "{{i18n:Paras.displayName}}",
+          "displayDescription": "{{i18n:Paras.displayDescription}}",
+          "xSpriteSize": 32,
+          "ySpriteSize": 32,
+          "GSQ": "",
+          "packSize": 0,
+          "rotaryAnims": false,
+          "complexIdling": false,
+          "friendlyFollower": false,
+          "dangerDamage": 0,
+          "health": 0,
+          "forceSword": false,
+          "cueName": "Xan.PokemonCreaturePack.Paras",
+          "soundRange": 1000,
+          "soundFrequency": 2000,
+          "compelxAnims": true,
+          "isTerrariumable": false,
+          "isDonatable": false,
+          "useBetterCreatureBounds": true,
+          "alternativeDrop": "(O)NatInValley.Creature.Paras_Roam",
+          "onlyAlternativeDrop": true,
+          "alternativeDropChance": 1.0,
+          "itemDropItemIds": [
+            "(O)NatInValley.Creature.Paras_Roam_Shiny",
+            "891", //mushroom tree seed
+            "422", //purple mushroom
+            "Moss",
+            "CarrotSeeds",
+            "SummerSquashSeeds",
+            "BroccoliSeeds",
+            "PowdermelonSeeds"
+          ],
+          "itemDropItemChances": [
+            0.01,
+            0.01,
+            0.1,
+            0.3,
+            0.3,
+            0.3,
+            0.3,
+            0.3
+          ],
+          "itemDropOnlyItemBools": [ false, false, false, false, false, false, false, false ],
+          "itemDropExclusiveItem": [ true, true, true, true, true, true, true, true ]
+        },
+
+        "Diglett_Roam_Safari": {
+          "rarity": 2,
+          "grounded": true,
+          "speed": 0.008,
+          "pauseTime": 2560,
+          "scale": 1.8,
+          "doesRun": false,
+          "isMover": true,
+          "range": 2,
+          "dangerous": false,
+          "seasons": [
+            "spring",
+            "fall",
+            "summer",
+            "winter"
+          ],
+          "weatherCode": "0",
+          "locations": [
+            "NITVPokemon_SafariZone"
+          ],
+          "minTime": 600,
+          "maxTime": 2500,
+          "frames": 16,
+          "spritePath": "Mods/NITVPokemon/Diglett",
+          "xShadow": 4,
+          "yShadow": 27,
+          "localSpawnCode": "0",
+          "price": 500,
+          "xDef": 8.0,
+          "yDef": 20.0,
+          "itemTexture": "Mods/NITVPokemon/DiglettItem",
+          "displayName": "{{i18n:Diglett.displayName}}",
+          "displayDescription": "{{i18n:Diglett.displayDescription}}",
+          "xSpriteSize": 32,
+          "ySpriteSize": 32,
+          "GSQ": "",
+          "packSize": 0,
+          "rotaryAnims": false,
+          "complexIdling": true,
+          "friendlyFollower": false,
+          "dangerDamage": 10,
+          "health": 0,
+          "forceSword": false,
+          "cueName": "Xan.PokemonCreaturePack.Diglett",
+          "soundRange": 1000,
+          "soundFrequency": 2000,
+          "compelxAnims": true,
+          "isTerrariumable": false,
+          "isDonatable": false,
+          "useBetterCreatureBounds": true,
+          "extraDescription": "",
+          "alternativeDrop": "(O)NatInValley.Creature.Diglett_Roam",
+          "onlyAlternativeDrop": true,
+          "alternativeDropChance": 1.0,
+          "itemDropItemIds": [
+            "74", //prismatic shard
+            "(O)NatInValley.Creature.Diglett_Roam_Shiny",
+            "336", //gold bar
+            "72", //diamond
+            "335", //iron bar
+            "537", //magma geode
+            "334", //copper bar
+            "330", //clay
+            "86" //earth crystal
+          ],
+          "itemDropItemChances": [
+            0.001,
+            0.01,
+            0.01,
+            0.01,
+            0.05,
+            0.1,
+            0.1,
+            0.2,
+            0.2
+          ],
+          "itemDropOnlyItemBools": [ false, false, false, false, false, false, false, false, false ],
+          "itemDropExclusiveItem": [ true, true, true, true, true, true, true, true, true ]
+        },
+
+        "Gastly_Attack_Safari": {
+          "rarity": 2,
+          "grounded": false,
+          "speed": 0.005,
+          "pauseTime": 1200,
+          "scale": 1.7,
+          "doesRun": true,
+          "isMover": true,
+          "range": 2,
+          "dangerous": true,
+          "seasons": [
+            "fall",
+            "winter"
+          ],
+          "weatherCode": "0",
+          "locations": [
+            "NITVPokemon_SafariHouse1Night", "ForceDark"
+          ],
+          "minTime": 1800,
+          "maxTime": 2600,
+          "frames": 4,
+          "spritePath": "Mods/NITVPokemon/Gastly",
+          "xShadow": 8,
+          "yShadow": 27,
+          "localSpawnCode": "0",
+          "price": 1000,
+          "xDef": 40.0,
+          "yDef": 37.0,
+          "itemTexture": "Mods/NITVPokemon/GastlyItem",
+          "displayName": "{{i18n:Gastly.displayName}}",
+          "displayDescription": "{{i18n:Gastly.displayDescription}}",
+          "xSpriteSize": 32,
+          "ySpriteSize": 32,
+          "GSQ": "",
+          "packSize": 0,
+          "rotaryAnims": false,
+          "complexIdling": true,
+          "friendlyFollower": false,
+          "dangerDamage": 20,
+          "health": 200,
+          "forceSword": true,
+          "cueName": "Xan.PokemonCreaturePack.Gastly",
+          "soundRange": 1000,
+          "soundFrequency": 2000,
+          "compelxAnims": true,
+          "isTerrariumable": true,
+          "isDonatable": true,
+          "useBetterCreatureBounds": true,
+          "extraDescription": "",
+          "alternativeDrop": "(O)NatInValley.Creature.Gastly_Attack_Safari",
+          "onlyAlternativeDrop": true,
+          "alternativeDropChance": 1.0,
+          "itemDropItemIds": [
+            "PrizeTicket",
+            "103", //ancient doll
+            "(TR)NITVPokemon_GastlyTrinket",
+            "(O)NatInValley.Creature.Gastly_Attack_Shiny",
+            "Book_Void", //monster compendium
+            "561", //ghost crystal
+            "879" //monster musk
+          ],
+          "itemDropItemChances": [
+            0.01, //prize ticket
+            0.01,
+            0.01, //trinket
+            0.01, //shiny
+            0.1,
+            0.2,
+            0.1
+          ],
+          "itemDropOnlyItemBools": [ false, false, false, false, false, false, false ],
+          "itemDropExclusiveItem": [ true, true, true, true, true, true, true ]
+        },
+
+        "Sandshrew_Roam_Safari": {
+          "rarity": 2,
+          "grounded": true,
+          "speed": 0.004,
+          "pauseTime": 1200,
+          "scale": 1.8,
+          "doesRun": true,
+          "isMover": true,
+          "range": 3,
+          "dangerous": false,
+          "seasons": [
+            "spring",
+            "fall",
+            "summer",
+            "winter"
+          ],
+          "weatherCode": "0",
+          "locations": [
+            "NITVPokemon_SafariZone"
+          ],
+          "minTime": 600,
+          "maxTime": 1600,
+          "frames": 4,
+          "spritePath": "Mods/NITVPokemon/Sandshrew",
+          "xShadow": 4,
+          "yShadow": 30,
+          "localSpawnCode": "0",
+          "price": 500,
+          "xDef": 71.0,
+          "yDef": 41.0,
+          "itemTexture": "Mods/NITVPokemon/SandshrewItem",
+          "displayName": "{{i18n:Sandshrew.displayName}}",
+          "displayDescription": "{{i18n:Sandshrew.displayDescription}}",
+          "xSpriteSize": 32,
+          "ySpriteSize": 32,
+          "GSQ": "",
+          "packSize": 0,
+          "rotaryAnims": false,
+          "complexIdling": false,
+          "friendlyFollower": false,
+          "dangerDamage": 0,
+          "health": 0,
+          "forceSword": false,
+          "cueName": "Xan.PokemonCreaturePack.Sandshrew",
+          "soundRange": 1000,
+          "soundFrequency": 2000,
+          "compelxAnims": true,
+          "isTerrariumable": false,
+          "isDonatable": false,
+          "useBetterCreatureBounds": true,
+          "extraDescription": "",
+          "alternativeDrop": "(O)NatInValley.Creature.Sandshrew_Roam",
+          "onlyAlternativeDrop": true,
+          "alternativeDropChance": 1.0,
+          "itemDropItemIds": [
+            "107", //dino egg
+            "126", //strange doll g
+            "127", //strange doll y
+            "(O)NatInValley.Creature.Sandshrew_Roam_Shiny",
+            "114", //ancient seed
+            "124", //golden mask
+            "125", //golden relic
+            "261", //totem desert
+            "749", //omni geode
+            "108", //rare disc
+            "123", //ancient drum
+            "70", //jade
+            "330" //clay
+          ],
+          "itemDropItemChances": [
+            0.001,
+            0.001,
+            0.001,
+            0.01,
+            0.01,
+            0.01,
+            0.01,
+            0.05,
+            0.05,
+            0.1,
+            0.1,
+            0.3,
+            0.3
+          ],
+          "itemDropOnlyItemBools": [ false, false, false, false, false, false, false, false, false, false, false, false, false ],
+          "itemDropExclusiveItem": [ true, true, true, true, true, true, true, true, true, true, true, true, true ]
+        },
+
+        "Sandshrew_Attack_Safari": {
+          "rarity": 2,
+          "grounded": true,
+          "speed": 0.005,
+          "pauseTime": 1400,
+          "scale": 1.8,
+          "doesRun": true,
+          "isMover": true,
+          "range": 2,
+          "dangerous": true,
+          "seasons": [
+            "spring",
+            "fall",
+            "summer",
+            "winter"
+          ],
+          "weatherCode": "0",
+          "locations": [
+            "NITVPokemon_SafariZone"
+          ],
+          "minTime": 600,
+          "maxTime": 1700,
+          "frames": 8,
+          "spritePath": "Mods/NITVPokemon/Sandshrew2",
+          "xShadow": 4,
+          "yShadow": 30,
+          "localSpawnCode": "0",
+          "price": 500,
+          "xDef": 71.0,
+          "yDef": 41.0,
+          "itemTexture": "Mods/NITVPokemon/SandshrewItem",
+          "displayName": "{{i18n:Sandshrew.displayName}}",
+          "displayDescription": "{{i18n:Sandshrew.displayDescription}}",
+          "xSpriteSize": 32,
+          "ySpriteSize": 32,
+          "GSQ": "",
+          "packSize": 0,
+          "rotaryAnims": false,
+          "complexIdling": true,
+          "friendlyFollower": false,
+          "dangerDamage": 10,
+          "health": 150,
+          "forceSword": true,
+          "cueName": "Xan.PokemonCreaturePack.Sandshrew",
+          "soundRange": 1000,
+          "soundFrequency": 2000,
+          "compelxAnims": true,
+          "isTerrariumable": false,
+          "isDonatable": false,
+          "useBetterCreatureBounds": true,
+          "extraDescription": "",
+          "alternativeDrop": "(O)NatInValley.Creature.Sandshrew_Roam",
+          "onlyAlternativeDrop": true,
+          "alternativeDropChance": 1.0,
+          "itemDropItemIds": [
+            "107", //dino egg
+            "126", //strange doll g
+            "127", //strange doll y
+            "(O)NatInValley.Creature.Sandshrew_Roam_Shiny",
+            "114", //ancient seed
+            "124", //golden mask
+            "125", //golden relic
+            "261", //totem desert
+            "749", //omni geode
+            "108", //rare disc
+            "123", //ancient drum
+            "70", //jade
+            "330" //clay
+          ],
+          "itemDropItemChances": [
+            0.001,
+            0.001,
+            0.001,
+            0.01,
+            0.01,
+            0.01,
+            0.01,
+            0.05,
+            0.05,
+            0.1,
+            0.1,
+            0.3,
+            0.3
+          ],
+          "itemDropOnlyItemBools": [ false, false, false, false, false, false, false, false, false, false, false, false, false ],
+          "itemDropExclusiveItem": [ true, true, true, true, true, true, true, true, true, true, true, true, true ]
+        }
+      }
+    }
+  ]
+}

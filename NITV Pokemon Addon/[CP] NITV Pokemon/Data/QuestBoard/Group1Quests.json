@@ -1,0 +1,264 @@
+{
+    "Changes": [
+
+      {
+      "Action": "EditData",
+      "Target": "Data/SpecialOrders",
+      "Entries": {
+        "NITVQuest.Pokemon1ThreeDays": {
+          "Name": "[PkmnDifficulty1]",
+          "Requester": "Spiritomb",
+          "OrderType": "NITVPokemonSO",
+          "Duration": "ThreeDays",
+          "Repeatable": true,
+          "ItemToRemoveOnEnd": null,
+          "MailToRemoveOnEnd": null,
+          "Text": "[PkmnCreatureCollectText]",
+          "RandomizedElements": [
+            {
+              "Name": "PkmnSpecies",
+              "Values": [
+                { "Value": "Text|Pidgey|Tags|id_(o)natinvalley.creature.pidgey_roam" },
+                { "Value": "Text|Geodude|Tags|id_(o)natinvalley.creature.geodude_attack" },
+                { "Value": "Text|Caterpie|Tags|id_(o)natinvalley.creature.caterpie_bush" },
+                { "Value": "Text|Weedle|Tags|id_(o)natinvalley.creature.weedle_bush" },
+                { "Value": "Text|Rattata|Tags|id_(o)natinvalley.creature.rattata_roam" },
+                { "Value": "Text|Magikarp|Tags|id_(o)natinvalley.creature.magikarp_swim" },
+                { "Value": "Text|Metapod|Tags|id_(o)natinvalley.creature.metapod_tree" },
+                { "Value": "Text|Kakuna|Tags|id_(o)natinvalley.creature.kakuna_tree" },
+                { "Value": "Text|Zubat|Tags|id_(o)natinvalley.creature.zubat_attack" }
+              ]
+            },
+            {
+              "Name": "Count",
+              "Values": [
+                { "Value": "4" }, { "Value": "5" }, { "Value": "6" }, { "Value": "7" }
+              ]
+            }
+          ],
+          "Objectives": [
+            {
+              "Type": "Collect",
+              "Text": "[PkmnCreatureCollectObj0Text]",
+              "RequiredCount": "{Count}",
+              "Data": {
+                "AcceptedContextTags": "{PkmnSpecies:Tags}"
+              }
+            },
+            {
+              "Type": "Donate",
+              "Text": "[PkmnCreatureCollectObj1Text]",
+              "RequiredCount": "{Count}",
+              "Data": {
+                "DropBox": "PokePC",
+                "DropBoxGameLocation": "NatValleyOutsideInsec",
+                "DropBoxIndicatorLocation": "10 16",
+                "AcceptedContextTags": "{PkmnSpecies:Tags}"
+              }
+            }
+          ],
+          "Rewards": [
+            {
+              "Type": "Money",
+              "Data": { "Amount": "3000" }
+            },
+            {
+              "Type": "Friendship",
+              "Data": {
+                  "Amount": "40",
+                  "TargetName": "Spiritomb"
+              }
+            }
+          ]
+        },
+        "NITVQuest.Pokemon1Weekly": {
+          "Name": "[PkmnDifficulty2]",
+          "Requester": "Spiritomb",
+          "OrderType": "NITVPokemonSO",
+          "Duration": "Week",
+          "Repeatable": true,
+          "ItemToRemoveOnEnd": null,
+          "MailToRemoveOnEnd": null,
+          "Text": "[PkmnCreatureCollectText]",
+          "RandomizedElements": [
+            {
+              "Name": "PkmnSpecies",
+              "Values": [
+                { "Value": "Text|Pidgey|Tags|id_(o)natinvalley.creature.pidgey_roam" },
+                { "Value": "Text|Geodude|Tags|id_(o)natinvalley.creature.geodude_attack" },
+                { "Value": "Text|Caterpie|Tags|id_(o)natinvalley.creature.caterpie_bush" },
+                { "Value": "Text|Weedle|Tags|id_(o)natinvalley.creature.weedle_bush" },
+                { "Value": "Text|Rattata|Tags|id_(o)natinvalley.creature.rattata_roam" },
+                { "Value": "Text|Magikarp|Tags|id_(o)natinvalley.creature.magikarp_swim" },
+                { "Value": "Text|Metapod|Tags|id_(o)natinvalley.creature.metapod_tree" },
+                { "Value": "Text|Kakuna|Tags|id_(o)natinvalley.creature.kakuna_tree" },
+                { "Value": "Text|Zubat|Tags|id_(o)natinvalley.creature.zubat_attack" }
+              ]
+            },
+            {
+              "Name": "Count",
+              "Values": [
+                { "Value": "10" }, { "Value": "11" }, { "Value": "12" }
+              ]
+            }
+          ],
+          "Objectives": [
+            {
+              "Type": "Collect",
+              "Text": "[PkmnCreatureCollectObj0Text]",
+              "RequiredCount": "{Count}",
+              "Data": {
+                "AcceptedContextTags": "{PkmnSpecies:Tags}"
+              }
+            },
+            {
+              "Type": "Donate",
+              "Text": "[PkmnCreatureCollectObj1Text]",
+              "RequiredCount": "{Count}",
+              "Data": {
+                "DropBox": "PokePC",
+                "DropBoxGameLocation": "NatValleyOutsideInsec",
+                "DropBoxIndicatorLocation": "10 16",
+                "AcceptedContextTags": "{PkmnSpecies:Tags}"
+              }
+            }
+          ],
+          "Rewards": [
+            {
+              "Type": "Money",
+              "Data": { "Amount": "6000" }
+            },
+            {
+              "Type": "Friendship",
+              "Data": {
+                  "Amount": "60",
+                  "TargetName": "Spiritomb"
+              }
+            }
+          ]
+        },
+        "NITVQuest.Berry1ThreeDays": {
+          "Name": "[PkmnDifficulty1]",
+          "Requester": "Spiritomb",
+          "OrderType": "NITVPokemonSO",
+          "Duration": "ThreeDays",
+          "Repeatable": true,
+          "ItemToRemoveOnEnd": null,
+          "MailToRemoveOnEnd": null,
+          "Text": "[PkmnBerryCollectText]",
+          "RandomizedElements": [
+            {
+              "Name": "PkmnBerry",
+              "Values": [
+                { "Value": "Text|Oran Berry|Tags|id_(o)OranFruitItem" },
+                { "Value": "Text|Pecha Berry|Tags|id_(o)PechaFruitItem" },
+                { "Value": "Text|Cheri Berry|Tags|id_(o)CheriFruitItem" }
+              ]
+            },
+            {
+              "Name": "Count",
+              "Values": [
+                { "Value": "3" }, { "Value": "4" }, { "Value": "5" }
+              ]
+            }
+          ],
+          "Objectives": [
+            {
+              "Type": "Collect",
+              "Text": "[PkmnBerryCollectObj0Text]",
+              "RequiredCount": "{Count}",
+              "Data": {
+                "AcceptedContextTags": "{PkmnBerry:Tags}"
+              }
+            },
+            {
+              "Type": "Donate",
+              "Text": "[PkmnBerryCollectObj1Text]",
+              "RequiredCount": "{Count}",
+              "Data": {
+                "DropBox": "PokePC",
+                "DropBoxGameLocation": "NatValleyOutsideInsec",
+                "DropBoxIndicatorLocation": "10 16",
+                "AcceptedContextTags": "{PkmnBerry:Tags}"
+              }
+            }
+          ],
+          "Rewards": [
+            {
+              "Type": "Money",
+              "Data": { "Amount": "6000" }
+            },
+            {
+              "Type": "Friendship",
+              "Data": {
+                  "Amount": "60",
+                  "TargetName": "Spiritomb"
+              }
+            }
+          ]
+        },
+        "NITVQuest.Berry1Weekly": {
+          "Name": "[PkmnDifficulty2]",
+          "Requester": "Spiritomb",
+          "OrderType": "NITVPokemonSO",
+          "Duration": "Week",
+          "Repeatable": true,
+          "ItemToRemoveOnEnd": null,
+          "MailToRemoveOnEnd": null,
+          "Text": "[PkmnBerryCollectText]",
+          "RandomizedElements": [
+            {
+              "Name": "PkmnBerry",
+              "Values": [
+                { "Value": "Text|Oran Berry|Tags|id_(o)OranFruitItem" },
+                { "Value": "Text|Pecha Berry|Tags|id_(o)PechaFruitItem" },
+                { "Value": "Text|Cheri Berry|Tags|id_(o)CheriFruitItem" }
+              ]
+            },
+            {
+              "Name": "Count",
+              "Values": [
+                { "Value": "10" }, { "Value": "12" }, { "Value": "14" }
+              ]
+            }
+          ],
+          "Objectives": [
+            {
+              "Type": "Collect",
+              "Text": "[PkmnBerryCollectObj0Text]",
+              "RequiredCount": "{Count}",
+              "Data": {
+                "AcceptedContextTags": "{PkmnBerry:Tags}"
+              }
+            },
+            {
+              "Type": "Donate",
+              "Text": "[PkmnBerryCollectObj1Text]",
+              "RequiredCount": "{Count}",
+              "Data": {
+                "DropBox": "PokePC",
+                "DropBoxGameLocation": "NatValleyOutsideInsec",
+                "DropBoxIndicatorLocation": "10 16",
+                "AcceptedContextTags": "{PkmnBerry:Tags}"
+              }
+            }
+          ],
+          "Rewards": [
+            {
+              "Type": "Money",
+              "Data": { "Amount": "10000" }
+            },
+            {
+              "Type": "Friendship",
+              "Data": {
+                  "Amount": "80",
+                  "TargetName": "Spiritomb"
+              }
+            }
+          ]
+        }
+      }
+    }
+
+    ]
+}

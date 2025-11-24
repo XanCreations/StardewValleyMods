@@ -1,0 +1,1348 @@
+{
+  "Changes": [
+    
+    {
+      "Action": "Load",
+      "Target": "Mods/Xan.PokemonCreaturePack/BeedrillTrinketItem, Mods/Xan.PokemonCreaturePack/BeedrillTrinket, Mods/Xan.PokemonCreaturePack/BeedrillTrinketShiny",
+      "FromFile": "TrinketPNGs/Group1and2/Beedrill/{{TargetWithoutPath}}.png"
+    },
+
+    {
+      "Action": "Load",
+      "Target": "Mods/Xan.PokemonCreaturePack/ButterfreeTrinketItem, Mods/Xan.PokemonCreaturePack/ButterfreeTrinket, Mods/Xan.PokemonCreaturePack/ButterfreeTrinketShiny",
+      "FromFile": "TrinketPNGs/Group1and2/Butterfree/{{TargetWithoutPath}}.png"
+    },
+
+    {
+      "Action": "Load",
+      "Target": "Mods/Xan.PokemonCreaturePack/EkansTrinketItem, Mods/Xan.PokemonCreaturePack/EkansTrinket, Mods/Xan.PokemonCreaturePack/EkansTrinketShiny",
+      "FromFile": "TrinketPNGs/Group1and2/Ekans/{{TargetWithoutPath}}.png"
+    },
+
+    {
+      "Action": "Load",
+      "Target": "Mods/Xan.PokemonCreaturePack/GeodudeTrinketItem, Mods/Xan.PokemonCreaturePack/GeodudeTrinket, Mods/Xan.PokemonCreaturePack/GeodudeTrinketShiny",
+      "FromFile": "TrinketPNGs/Group1and2/Geodude/{{TargetWithoutPath}}.png"
+    },
+
+    {
+      "Action": "Load",
+      "Target": "Mods/Xan.PokemonCreaturePack/GrowlitheTrinketItem, Mods/Xan.PokemonCreaturePack/GrowlitheTrinket, Mods/Xan.PokemonCreaturePack/GrowlitheTrinketShiny",
+      "FromFile": "TrinketPNGs/Group1and2/Growlithe/{{TargetWithoutPath}}.png"
+    },
+
+    {
+      "Action": "Load",
+      "Target": "Mods/Xan.PokemonCreaturePack/MagikarpTrinketItem, Mods/Xan.PokemonCreaturePack/MagikarpTrinket, Mods/Xan.PokemonCreaturePack/MagikarpTrinketShiny",
+      "FromFile": "TrinketPNGs/Group1and2/Magikarp/{{TargetWithoutPath}}.png"
+    },
+
+    {
+      "Action": "Load",
+      "Target": "Mods/Xan.PokemonCreaturePack/PidgeyTrinketItem, Mods/Xan.PokemonCreaturePack/PidgeyTrinket, Mods/Xan.PokemonCreaturePack/PidgeyTrinketShiny",
+      "FromFile": "TrinketPNGs/Group1and2/Pidgey/{{TargetWithoutPath}}.png"
+    },
+
+    {
+      "Action": "Load",
+      "Target": "Mods/Xan.PokemonCreaturePack/RattataTrinketItem, Mods/Xan.PokemonCreaturePack/RattataTrinket, Mods/Xan.PokemonCreaturePack/RattataTrinketShiny",
+      "FromFile": "TrinketPNGs/Group1and2/Rattata/{{TargetWithoutPath}}.png"
+    },
+
+    {
+      "Action": "Load",
+      "Target": "Mods/Xan.PokemonCreaturePack/SandshrewTrinketItem, Mods/Xan.PokemonCreaturePack/SandshrewTrinket, Mods/Xan.PokemonCreaturePack/SandshrewTrinketShiny",
+      "FromFile": "TrinketPNGs/Group1and2/Sandshrew/{{TargetWithoutPath}}.png"
+    },
+
+    {
+      "Action": "Load",
+      "Target": "Mods/Xan.PokemonCreaturePack/ZubatTrinketItem, Mods/Xan.PokemonCreaturePack/ZubatTrinket, Mods/Xan.PokemonCreaturePack/ZubatTrinketShiny",
+      "FromFile": "TrinketPNGs/Group1and2/Zubat/{{TargetWithoutPath}}.png"
+    },
+
+    {
+      "Action": "Load",
+      "Target": "Mods/Xan.PokemonCreaturePack/BellsproutTrinketItem, Mods/Xan.PokemonCreaturePack/BellsproutTrinket, Mods/Xan.PokemonCreaturePack/BellsproutTrinketShiny",
+      "FromFile": "TrinketPNGs/Group3/Bellsprout/{{TargetWithoutPath}}.png"
+    },
+
+    {
+      "Action": "Load",
+      "Target": "Mods/Xan.PokemonCreaturePack/GrimerTrinketItem, Mods/Xan.PokemonCreaturePack/GrimerTrinket, Mods/Xan.PokemonCreaturePack/GrimerTrinketShiny",
+      "FromFile": "TrinketPNGs/Group3/Grimer/{{TargetWithoutPath}}.png"
+    },
+
+    {
+      "Action": "Load",
+      "Target": "Mods/Xan.PokemonCreaturePack/PsyduckTrinketItem, Mods/Xan.PokemonCreaturePack/PsyduckTrinket, Mods/Xan.PokemonCreaturePack/PsyduckTrinketShiny",
+      "FromFile": "TrinketPNGs/Group3/Psyduck/{{TargetWithoutPath}}.png"
+    },
+
+    {
+      "Action": "Load",
+      "Target": "Mods/Xan.PokemonCreaturePack/RhyhornTrinketItem, Mods/Xan.PokemonCreaturePack/RhyhornTrinket, Mods/Xan.PokemonCreaturePack/RhyhornTrinketShiny",
+      "FromFile": "TrinketPNGs/Group3/Rhyhorn/{{TargetWithoutPath}}.png"
+    },
+
+    {
+      "Action": "EditData",
+      "Target": "Data/Trinkets",
+      "Entries": {
+        "NITVPokemon_BeedrillTrinket": {
+          "Id": "NITVPokemon_BeedrillTrinket",
+          "DisplayName": "{{i18n:BeedrillTrinket.DisplayName}}",
+          "Description": "{{i18n:BeedrillTrinket.Description}}",
+          "Texture": "Mods/Xan.PokemonCreaturePack/BeedrillTrinketItem",
+          "SheetIndex": 0,
+          "DropsNaturally": false,
+          "CanBeReforged": true
+        },
+        "NITVPokemon_ButterfreeTrinket": {
+          "Id": "NITVPokemon_ButterfreeTrinket",
+          "DisplayName": "{{i18n:ButterfreeTrinket.DisplayName}}",
+          "Description": "{{i18n:ButterfreeTrinket.Description}}",
+          "Texture": "Mods/Xan.PokemonCreaturePack/ButterfreeTrinketItem",
+          "SheetIndex": 0,
+          "DropsNaturally": false,
+          "CanBeReforged": true
+        },
+        "NITVPokemon_EkansTrinket": {
+          "Id": "NITVPokemon_EkansTrinket",
+          "DisplayName": "{{i18n:EkansTrinket.DisplayName}}",
+          "Description": "{{i18n:EkansTrinket.Description}}",
+          "Texture": "Mods/Xan.PokemonCreaturePack/EkansTrinketItem",
+          "SheetIndex": 0,
+          "DropsNaturally": false,
+          "CanBeReforged": true
+        },
+        "NITVPokemon_GeodudeTrinket": {
+          "Id": "NITVPokemon_GeodudeTrinket",
+          "DisplayName": "{{i18n:GeodudeTrinket.DisplayName}}",
+          "Description": "{{i18n:GeodudeTrinket.Description}}",
+          "Texture": "Mods/Xan.PokemonCreaturePack/GeodudeTrinketItem",
+          "SheetIndex": 0,
+          "DropsNaturally": false,
+          "CanBeReforged": true
+        },
+        "NITVPokemon_GrowlitheTrinket": {
+          "Id": "NITVPokemon_GrowlitheTrinket",
+          "DisplayName": "{{i18n:GrowlitheTrinket.DisplayName}}",
+          "Description": "{{i18n:GrowlitheTrinket.Description}}",
+          "Texture": "Mods/Xan.PokemonCreaturePack/GrowlitheTrinketItem",
+          "SheetIndex": 0,
+          "DropsNaturally": false,
+          "CanBeReforged": true
+        },
+        "NITVPokemon_MagikarpTrinket": {
+          "Id": "NITVPokemon_MagikarpTrinket",
+          "DisplayName": "{{i18n:MagikarpTrinket.DisplayName}}",
+          "Description": "{{i18n:MagikarpTrinket.Description}}",
+          "Texture": "Mods/Xan.PokemonCreaturePack/MagikarpTrinketItem",
+          "SheetIndex": 0,
+          "DropsNaturally": false,
+          "CanBeReforged": true
+        },
+        "NITVPokemon_PidgeyTrinket": {
+          "Id": "NITVPokemon_PidgeyTrinket",
+          "DisplayName": "{{i18n:PidgeyTrinket.DisplayName}}",
+          "Description": "{{i18n:PidgeyTrinket.Description}}",
+          "Texture": "Mods/Xan.PokemonCreaturePack/PidgeyTrinketItem",
+          "SheetIndex": 0,
+          "DropsNaturally": false,
+          "CanBeReforged": true
+        },
+        "NITVPokemon_RattataTrinket": {
+          "Id": "NITVPokemon_RattataTrinket",
+          "DisplayName": "{{i18n:RattataTrinket.DisplayName}}",
+          "Description": "{{i18n:RattataTrinket.Description}}",
+          "Texture": "Mods/Xan.PokemonCreaturePack/RattataTrinketItem",
+          "SheetIndex": 0,
+          "DropsNaturally": false,
+          "CanBeReforged": true
+        },
+        "NITVPokemon_SandshrewTrinket": {
+          "Id": "NITVPokemon_SandshrewTrinket",
+          "DisplayName": "{{i18n:SandshrewTrinket.DisplayName}}",
+          "Description": "{{i18n:SandshrewTrinket.Description}}",
+          "Texture": "Mods/Xan.PokemonCreaturePack/SandshrewTrinketItem",
+          "SheetIndex": 0,
+          "DropsNaturally": false,
+          "CanBeReforged": true
+        },
+        "NITVPokemon_ZubatTrinket": {
+          "Id": "NITVPokemon_ZubatTrinket",
+          "DisplayName": "{{i18n:ZubatTrinket.DisplayName}}",
+          "Description": "{{i18n:ZubatTrinket.Description}}",
+          "Texture": "Mods/Xan.PokemonCreaturePack/ZubatTrinketItem",
+          "SheetIndex": 0,
+          "DropsNaturally": false,
+          "CanBeReforged": true
+        },
+        "NITVPokemon_BellsproutTrinket": {
+          "Id": "NITVPokemon_BellsproutTrinket",
+          "DisplayName": "{{i18n:BellsproutTrinket.DisplayName}}",
+          "Description": "{{i18n:BellsproutTrinket.Description}}",
+          "Texture": "Mods/Xan.PokemonCreaturePack/BellsproutTrinketItem",
+          "SheetIndex": 0,
+          "DropsNaturally": false,
+          "CanBeReforged": true
+        },
+        "NITVPokemon_GrimerTrinket": {
+          "Id": "NITVPokemon_GrimerTrinket",
+          "DisplayName": "{{i18n:GrimerTrinket.DisplayName}}",
+          "Description": "{{i18n:GrimerTrinket.Description}}",
+          "Texture": "Mods/Xan.PokemonCreaturePack/GrimerTrinketItem",
+          "SheetIndex": 0,
+          "DropsNaturally": false,
+          "CanBeReforged": true
+        },
+        "NITVPokemon_PsyduckTrinket": {
+          "Id": "NITVPokemon_PsyduckTrinket",
+          "DisplayName": "{{i18n:PsyduckTrinket.DisplayName}}",
+          "Description": "{{i18n:PsyduckTrinket.Description}}",
+          "Texture": "Mods/Xan.PokemonCreaturePack/PsyduckTrinketItem",
+          "SheetIndex": 0,
+          "DropsNaturally": false,
+          "CanBeReforged": true
+        },
+        "NITVPokemon_RhyhornTrinket": {
+          "Id": "NITVPokemon_RhyhornTrinket",
+          "DisplayName": "{{i18n:RhyhornTrinket.DisplayName}}",
+          "Description": "{{i18n:RhyhornTrinket.Description}}",
+          "Texture": "Mods/Xan.PokemonCreaturePack/RhyhornTrinketItem",
+          "SheetIndex": 0,
+          "DropsNaturally": false,
+          "CanBeReforged": true
+        }
+      }
+    },
+
+    {
+      "Action": "EditData",
+      "Target": "mushymato.TrinketTinker/Tinker",
+      "Entries": {
+        "NITVPokemon_BeedrillTrinket": {
+          "MinLevel": 1,
+
+          "Variants": [
+            {
+              "Texture": "Mods/Xan.PokemonCreaturePack/BeedrillTrinket",
+              "TrinketSpriteIndex": 0,
+              "Width": 32,
+              "Height": 32,
+              "TextureScale": 2.5,
+              "ShadowScale": 2.0,
+              "TrinketNameArguments": [
+                "{{i18n:BeedrillTrinket.DisplayName.Arg.0}}"
+              ]
+            },
+            {
+              "Texture": "Mods/Xan.PokemonCreaturePack/BeedrillTrinketShiny",
+              "TrinketSpriteIndex": 1,
+              "Width": 32,
+              "Height": 32,
+              "TextureScale": 2.5,
+              "ShadowScale": 2.0,
+              "TrinketNameArguments": [
+                "{{i18n:BeedrillTrinket.DisplayName.Arg.1}}"
+              ]
+            }
+          ],
+
+          "Motion": {
+            "MotionClass": "Hover",
+            "AlwaysMoving": false,
+            "DirectionMode": "DRUL",
+            "FrameLength": 8,
+            "HideDuringEvents": false,
+            "AnimClips": {
+              "Idle.1": { "FrameStart": 32,  "FrameLength": 8, "LoopMode": "Standard", "Interval": 200, "PauseMovement": true, "UseExtra": false },
+              "Idle.2": { "FrameStart": 40,  "FrameLength": 8, "LoopMode": "Standard", "Interval": 200, "PauseMovement": true, "UseExtra": false },
+              "Idle.3": { "FrameStart": 48, "FrameLength": 8, "LoopMode": "Standard", "Interval": 200, "PauseMovement": true, "UseExtra": false },
+              "Idle.4": { "FrameStart": 56, "FrameLength": 8, "LoopMode": "Standard", "Interval": 200, "PauseMovement": true, "UseExtra": false }
+            },
+            "Args": { "Magnitude": 16, "Period": 800, "Min": 1, "MoveSync": true }
+          },
+
+          "Abilities": [
+            [
+              {
+                "Id": "Beedrill_Buff",
+                "AbilityClass": "Buff",
+                "Description": "{{i18n:BeedrillTrinket.Level1}}",
+                "Proc": "Always",
+                "Args": { "BuffId": "Xan.Buffs/CritChance1" }
+              }
+            ],
+
+            [
+              {
+                "Id": "Beedrill_Buff2",
+                "AbilityClass": "Buff",
+                "Description": "{{i18n:BeedrillTrinket.Level2}}",
+                "Proc": "Always",
+                "Args": { "BuffId": "Xan.Buffs/CritChance2" }
+              }
+            ]
+          ]
+        }
+      }
+    },
+
+    {
+      "Action": "EditData",
+      "Target": "mushymato.TrinketTinker/Tinker",
+      "Entries": {
+        "NITVPokemon_ButterfreeTrinket": {
+          "MinLevel": 1,
+
+          "Variants": [
+            {
+              "Texture": "Mods/Xan.PokemonCreaturePack/ButterfreeTrinket",
+              "TrinketSpriteIndex": 0,
+              "Width": 32,
+              "Height": 32,
+              "TextureScale": 2.5,
+              "ShadowScale": 2.0,
+              "TrinketNameArguments": [
+                "{{i18n:ButterfreeTrinket.DisplayName.Arg.0}}"
+              ]
+            },
+            {
+              "Texture": "Mods/Xan.PokemonCreaturePack/ButterfreeTrinketShiny",
+              "TrinketSpriteIndex": 1,
+              "Width": 32,
+              "Height": 32,
+              "TextureScale": 2.5,
+              "ShadowScale": 2.0,
+              "TrinketNameArguments": [
+                "{{i18n:ButterfreeTrinket.DisplayName.Arg.1}}"
+              ]
+            }
+          ],
+
+          "Motion": {
+            "MotionClass": "Hover",
+            "AlwaysMoving": false,
+            "DirectionMode": "DRUL",
+            "FrameLength": 8,
+            "HideDuringEvents": false,
+            "AnimClips": {
+              "Idle.1": { "FrameStart": 32,  "FrameLength": 8, "LoopMode": "Standard", "Interval": 200, "PauseMovement": true, "UseExtra": false },
+              "Idle.2": { "FrameStart": 40,  "FrameLength": 8, "LoopMode": "Standard", "Interval": 200, "PauseMovement": true, "UseExtra": false },
+              "Idle.3": { "FrameStart": 48, "FrameLength": 8, "LoopMode": "Standard", "Interval": 200, "PauseMovement": true, "UseExtra": false },
+              "Idle.4": { "FrameStart": 56, "FrameLength": 8, "LoopMode": "Standard", "Interval": 200, "PauseMovement": true, "UseExtra": false }
+            },
+            "Args": { "Magnitude": 16, "Period": 800, "Min": 1, "MoveSync": true }
+          },
+
+          "Abilities": [
+            [
+              {
+                "Id": "Butterfree_Buff",
+                "AbilityClass": "Buff",
+                "Description": "{{i18n:ButterfreeTrinket.Level1}}",
+                "Proc": "Always",
+                "Args": { "BuffId": "Xan.Buffs/MaxEnergy1" }
+              }
+            ],
+
+            [
+              {
+                "Id": "Butterfree_Buff",
+                "AbilityClass": "Buff",
+                "Description": "{{i18n:ButterfreeTrinket.Level2}}",
+                "Proc": "Always",
+                "Args": { "BuffId": "Xan.Buffs/MaxEnergy1" }
+              },
+              {
+                "Id": "Butterfree_Buff2",
+                "AbilityClass": "Buff",
+                "Proc": "Always",
+                "Args": { "BuffId": "Xan.Buffs/Foraging1" }
+              }
+            ]
+          ]
+        }
+      }
+    },
+
+    {
+      "Action": "EditData",
+      "Target": "mushymato.TrinketTinker/Tinker",
+      "Entries": {
+        "NITVPokemon_PidgeyTrinket": {
+          "MinLevel": 1,
+          "Variants": [
+            {
+              "Texture": "Mods/Xan.PokemonCreaturePack/PidgeyTrinket",
+              "TrinketSpriteIndex": 0,
+              "Width": 32,
+              "Height": 32,
+              "TextureScale": 2.0,
+              "ShadowScale": 1.5,
+              "TrinketNameArguments": [
+                "{{i18n:PidgeyTrinket.DisplayName.Arg.0}}"
+              ]
+            },
+            {
+              "Texture": "Mods/Xan.PokemonCreaturePack/PidgeyTrinketShiny",
+              "TrinketSpriteIndex": 1,
+              "Width": 32,
+              "Height": 32,
+              "TextureScale": 2.0,
+              "ShadowScale": 1.5,
+              "TrinketNameArguments": [
+                "{{i18n:PidgeyTrinket.DisplayName.Arg.1}}"
+              ]
+            }
+          ],
+
+          "Motion": {
+            "MotionClass": "Hover",
+            "AlwaysMoving": false,
+            "DirectionMode": "DRUL",
+            "FrameLength": 8,
+            "HideDuringEvents": false,
+            "AnimClips": {
+              "Idle.1": { "FrameStart": 32,  "FrameLength": 8, "LoopMode": "Standard", "Interval": 200, "PauseMovement": true, "UseExtra": false },
+              "Idle.2": { "FrameStart": 40,  "FrameLength": 8, "LoopMode": "Standard", "Interval": 200, "PauseMovement": true, "UseExtra": false },
+              "Idle.3": { "FrameStart": 48, "FrameLength": 8, "LoopMode": "Standard", "Interval": 200, "PauseMovement": true, "UseExtra": false },
+              "Idle.4": { "FrameStart": 56, "FrameLength": 8, "LoopMode": "Standard", "Interval": 200, "PauseMovement": true, "UseExtra": false }
+            },
+            "Args": { "Magnitude": 16, "Period": 800, "Min": 1, "MoveSync": true }
+          },
+
+          "Abilities": [
+            [
+              {
+                "Id": "Pidgey_Buff",
+                "AbilityClass": "Buff",
+                "Description": "{{i18n:PidgeyTrinket.Level1}}",
+                "Proc": "Always",
+                "Args": { "BuffId": "Xan.Buffs/Attack1" }
+              }
+            ],
+
+            [
+              {
+                "Id": "Pidgey_Buff",
+                "AbilityClass": "Buff",
+                "Description": "{{i18n:PidgeyTrinket.Level2}}",
+                "Proc": "Always",
+                "Args": { "BuffId": "Xan.Buffs/Attack1" }
+              },
+              {
+                "Id": "Pidgey_Buff2",
+                "AbilityClass": "Buff",
+                "Proc": "Always",
+                "Args": { "BuffId": "Xan.Buffs/Speed1" }
+              }
+            ]
+          ]
+        }
+      }
+    },
+
+    {
+      "Action": "EditData",
+      "Target": "mushymato.TrinketTinker/Tinker",
+      "Entries": {
+        "NITVPokemon_ZubatTrinket": {
+          "MinLevel": 1,
+          "Variants": [
+            {
+              "Texture": "Mods/Xan.PokemonCreaturePack/ZubatTrinket",
+              "TrinketSpriteIndex": 0,
+              "Width": 32,
+              "Height": 32,
+              "TextureScale": 2.0,
+              "ShadowScale": 1.5,
+              "TrinketNameArguments": [
+                "{{i18n:ZubatTrinket.DisplayName.Arg.0}}"
+              ]
+            },
+            {
+              "Texture": "Mods/Xan.PokemonCreaturePack/ZubatTrinketShiny",
+              "TrinketSpriteIndex": 1,
+              "Width": 32,
+              "Height": 32,
+              "TextureScale": 2.0,
+              "ShadowScale": 1.5,
+              "TrinketNameArguments": [
+                "{{i18n:ZubatTrinket.DisplayName.Arg.1}}"
+              ]
+            }
+          ],
+
+          "Motion": {
+            "MotionClass": "Hover",
+            "AlwaysMoving": false,
+            "DirectionMode": "DRUL",
+            "FrameLength": 8,
+            "HideDuringEvents": false,
+            "AnimClips": {
+              "Idle.1": { "FrameStart": 0,  "FrameLength": 8, "LoopMode": "Standard", "Interval": 200, "PauseMovement": true, "UseExtra": false },
+              "Idle.2": { "FrameStart": 8,  "FrameLength": 8, "LoopMode": "Standard", "Interval": 200, "PauseMovement": true, "UseExtra": false },
+              "Idle.3": { "FrameStart": 16, "FrameLength": 8, "LoopMode": "Standard", "Interval": 200, "PauseMovement": true, "UseExtra": false },
+              "Idle.4": { "FrameStart": 24, "FrameLength": 8, "LoopMode": "Standard", "Interval": 200, "PauseMovement": true, "UseExtra": false }
+            },
+            "Args": { "Magnitude": 16, "Period": 800, "Min": 1, "MoveSync": true }
+          },
+
+          "Abilities": [
+            [
+              {
+                "Id": "Zubat_Buff",
+                "AbilityClass": "Buff",
+                "Description": "{{i18n:ZubatTrinket.Level1}}",
+                "Proc": "Always",
+                "Args": { "BuffId": "Xan.Buffs/Attack1" }
+              }
+            ],
+
+            [
+              {
+                "Id": "Zubat_Buff",
+                "AbilityClass": "Buff",
+                "Description": "{{i18n:ZubatTrinket.Level2}}",
+                "Proc": "Always",
+                "Args": { "BuffId": "Xan.Buffs/Attack1" }
+              },
+              {
+                "Id": "Zubat_Buff2",
+                "AbilityClass": "Buff",
+                "Proc": "Always",
+                "Args": { "BuffId": "Xan.Buffs/Mining1" }
+              }
+            ]
+          ]
+        }
+      }
+    },
+
+    {
+      "Action": "EditData",
+      "Target": "mushymato.TrinketTinker/Tinker",
+      "Entries": {
+        "NITVPokemon_EkansTrinket": {
+          "MinLevel": 1,
+          "Variants": [
+            {
+              "Texture": "Mods/Xan.PokemonCreaturePack/EkansTrinket",
+              "TrinketSpriteIndex": 0,
+              "Width": 32,
+              "Height": 32,
+              "TextureScale": 2.0,
+              "ShadowScale": 1.5,
+              "TrinketNameArguments": [
+                "{{i18n:EkansTrinket.DisplayName.Arg.0}}"
+              ]
+            },
+            {
+              "Texture": "Mods/Xan.PokemonCreaturePack/EkansTrinketShiny",
+              "TrinketSpriteIndex": 1,
+              "Width": 32,
+              "Height": 32,
+              "TextureScale": 2.0,
+              "ShadowScale": 1.5,
+              "TrinketNameArguments": [
+                "{{i18n:EkansTrinket.DisplayName.Arg.1}}"
+              ]
+            }
+          ],
+
+          "Motion": {
+            "MotionClass": "Lerp",
+            "DirectionMode": "DRUL",
+            "FrameLength": 8,
+            "HideDuringEvents": false,
+            "Offset": "0,10",
+            "AnimClips": {
+              "Idle": {
+                "FrameStart": 32,
+                "FrameLength": 8,
+                "Interval": 200
+              }
+            },
+            "Args": {
+              "Min": 1,
+              "MoveSync": true
+            }
+          },
+
+          "Abilities": [
+            [
+              {
+                "Id": "Ekans_Buff",
+                "AbilityClass": "Buff",
+                "Description": "{{i18n:EkansTrinket.Level1}}",
+                "Proc": "Always",
+                "Args": { "BuffId": "Xan.Buffs/Attack2" }
+              }
+            ],
+
+            [
+              {
+                "Id": "Ekans_Buff",
+                "AbilityClass": "Buff",
+                "Description": "{{i18n:EkansTrinket.Level2}}",
+                "Proc": "Always",
+                "Args": { "BuffId": "Xan.Buffs/Attack2" }
+              },
+              {
+                "Id": "Ekans_Buff2",
+                "AbilityClass": "Buff",
+                "Proc": "Always",
+                "Args": { "BuffId": "Xan.Buffs/CritDamage1" }
+              }
+            ]
+          ]
+        }
+      }
+    },
+
+    {
+      "Action": "EditData",
+      "Target": "mushymato.TrinketTinker/Tinker",
+      "Entries": {
+        "NITVPokemon_GeodudeTrinket": {
+          "MinLevel": 1,
+          "Variants": [
+            {
+              "Texture": "Mods/Xan.PokemonCreaturePack/GeodudeTrinket",
+              "TrinketSpriteIndex": 0,
+              "Width": 32,
+              "Height": 32,
+              "TextureScale": 2.5,
+              "ShadowScale": 2.0,
+              "TrinketNameArguments": [
+                "{{i18n:GeodudeTrinket.DisplayName.Arg.0}}"
+              ]
+            },
+            {
+              "Texture": "Mods/Xan.PokemonCreaturePack/GeodudeTrinketShiny",
+              "TrinketSpriteIndex": 1,
+              "Width": 32,
+              "Height": 32,
+              "TextureScale": 2.5,
+              "ShadowScale": 2.0,
+              "TrinketNameArguments": [
+                "{{i18n:GeodudeTrinket.DisplayName.Arg.1}}"
+              ]
+            }
+          ],
+
+          "Motion": {
+            "MotionClass": "Lerp",
+            "DirectionMode": "DRUL",
+            "FrameLength": 8,
+            "HideDuringEvents": false,
+            "Offset": "0,10",
+            "AnimClips": {
+              "Idle": {
+                "FrameStart": 32,
+                "FrameLength": 8,
+                "Interval": 200
+              }
+            },
+            "Args": {
+              "Min": 1,
+              "MoveSync": true
+            }
+          },
+
+          "Abilities": [
+            [
+              {
+                "Id": "Geodude_Buff",
+                "AbilityClass": "Buff",
+                "Description": "{{i18n:GeodudeTrinket.Level1}}",
+                "Proc": "Always",
+                "Args": { "BuffId": "Xan.Buffs/Magnet1" }
+              }
+            ],
+
+            [
+              {
+                "Id": "Geodude_Buff",
+                "AbilityClass": "Buff",
+                "Description": "{{i18n:GeodudeTrinket.Level2}}",
+                "Proc": "Always",
+                "Args": { "BuffId": "Xan.Buffs/Magnet1" }
+              },
+              {
+                "Id": "Geodude_Buff2",
+                "AbilityClass": "Buff",
+                "Proc": "Always",
+                "Args": { "BuffId": "Xan.Buffs/Defense1" }
+              }
+            ]
+          ]
+        }
+      }
+    },
+
+    {
+      "Action": "EditData",
+      "Target": "mushymato.TrinketTinker/Tinker",
+      "Entries": {
+        "NITVPokemon_GrowlitheTrinket": {
+          "MinLevel": 1,
+          "Variants": [
+            {
+              "Texture": "Mods/Xan.PokemonCreaturePack/GrowlitheTrinket",
+              "TrinketSpriteIndex": 0,
+              "Width": 32,
+              "Height": 32,
+              "TextureScale": 2.3,
+              "ShadowScale": 1.8,
+              "TrinketNameArguments": [
+                "{{i18n:GrowlitheTrinket.DisplayName.Arg.0}}"
+              ]
+            },
+            {
+              "Texture": "Mods/Xan.PokemonCreaturePack/GrowlitheTrinketShiny",
+              "TrinketSpriteIndex": 1,
+              "Width": 32,
+              "Height": 32,
+              "TextureScale": 2.3,
+              "ShadowScale": 1.8,
+              "TrinketNameArguments": [
+                "{{i18n:GrowlitheTrinket.DisplayName.Arg.1}}"
+              ]
+            }
+          ],
+
+          "Motion": {
+            "MotionClass": "Lerp",
+            "DirectionMode": "DRUL",
+            "FrameLength": 8,
+            "HideDuringEvents": false,
+            "Offset": "0,10",
+            "AnimClips": {
+              "Idle": {
+                "FrameStart": 32,
+                "FrameLength": 8,
+                "Interval": 200
+              }
+            },
+            "Args": {
+              "Min": 1,
+              "MoveSync": true
+            }
+          },
+
+          "Abilities": [
+            [
+              {
+                "Id": "Growlithe_Buff",
+                "AbilityClass": "Buff",
+                "Description": "{{i18n:GrowlitheTrinket.Level1}}",
+                "Proc": "Always",
+                "Args": { "BuffId": "Xan.Buffs/Knockback1" }
+              }
+            ],
+
+            [
+              {
+                "Id": "Growlithe_Buff",
+                "AbilityClass": "Buff",
+                "Description": "{{i18n:GrowlitheTrinket.Level2}}",
+                "Proc": "Always",
+                "Args": { "BuffId": "Xan.Buffs/Knockback1" }
+              },
+              {
+                "Id": "Growlithe_Buff2",
+                "AbilityClass": "Buff",
+                "Proc": "Always",
+                "Args": { "BuffId": "Xan.Buffs/Speed1" }
+              }
+            ]
+          ]
+        }
+      }
+    },
+
+    {
+      "Action": "EditData",
+      "Target": "mushymato.TrinketTinker/Tinker",
+      "Entries": {
+        "NITVPokemon_RattataTrinket": {
+          "MinLevel": 1,
+          "Variants": [
+            {
+              "Texture": "Mods/Xan.PokemonCreaturePack/RattataTrinket",
+              "TrinketSpriteIndex": 0,
+              "Width": 32,
+              "Height": 32,
+              "TextureScale": 2.3,
+              "ShadowScale": 1.8,
+              "TrinketNameArguments": [
+                "{{i18n:RattataTrinket.DisplayName.Arg.0}}"
+              ]
+            },
+            {
+              "Texture": "Mods/Xan.PokemonCreaturePack/RattataTrinketShiny",
+              "TrinketSpriteIndex": 1,
+              "Width": 32,
+              "Height": 32,
+              "TextureScale": 2.3,
+              "ShadowScale": 1.8,
+              "TrinketNameArguments": [
+                "{{i18n:RattataTrinket.DisplayName.Arg.1}}"
+              ]
+            }
+          ],
+
+          "Motion": {
+            "MotionClass": "Lerp",
+            "DirectionMode": "DRUL",
+            "FrameLength": 8,
+            "HideDuringEvents": false,
+            "Offset": "0,10",
+            "AnimClips": {
+              "Idle": {
+                "FrameStart": 32,
+                "FrameLength": 8,
+                "Interval": 200
+              }
+            },
+            "Args": {
+              "Min": 1,
+              "MoveSync": true
+            }
+          },
+
+          "Abilities": [
+            [
+              {
+                "Id": "Rattata_Buff",
+                "AbilityClass": "Buff",
+                "Description": "{{i18n:RattataTrinket.Level1}}",
+                "Proc": "Always",
+                "Args": { "BuffId": "Xan.Buffs/AttackSpeed1" }
+              }
+            ],
+
+            [
+              {
+                "Id": "Rattata_Buff",
+                "AbilityClass": "Buff",
+                "Description": "{{i18n:RattataTrinket.Level2}}",
+                "Proc": "Always",
+                "Args": { "BuffId": "Xan.Buffs/AttackSpeed1" }
+              },
+              {
+                "Id": "Rattata_Buff2",
+                "AbilityClass": "Buff",
+                "Proc": "Always",
+                "Args": { "BuffId": "Xan.Buffs/Speed1" }
+              }
+            ]
+          ]
+        }
+      }
+    },
+
+    {
+      "Action": "EditData",
+      "Target": "mushymato.TrinketTinker/Tinker",
+      "Entries": {
+        "NITVPokemon_SandshrewTrinket": {
+          "MinLevel": 1,
+          "Variants": [
+            {
+              "Texture": "Mods/Xan.PokemonCreaturePack/SandshrewTrinket",
+              "TrinketSpriteIndex": 0,
+              "Width": 32,
+              "Height": 32,
+              "TextureScale": 2.3,
+              "ShadowScale": 1.8,
+              "TrinketNameArguments": [
+                "{{i18n:SandshrewTrinket.DisplayName.Arg.0}}"
+              ]
+            },
+            {
+              "Texture": "Mods/Xan.PokemonCreaturePack/SandshrewTrinketShiny",
+              "TrinketSpriteIndex": 1,
+              "Width": 32,
+              "Height": 32,
+              "TextureScale": 2.3,
+              "ShadowScale": 1.8,
+              "TrinketNameArguments": [
+                "{{i18n:SandshrewTrinket.DisplayName.Arg.1}}"
+              ]
+            }
+          ],
+
+          "Motion": {
+            "MotionClass": "Lerp",
+            "DirectionMode": "DRUL",
+            "FrameLength": 8,
+            "HideDuringEvents": false,
+            "Offset": "0,10",
+            "AnimClips": {
+              "Idle": {
+                "FrameStart": 32,
+                "FrameLength": 8,
+                "Interval": 200
+              }
+            },
+            "Args": {
+              "Min": 1,
+              "MoveSync": true
+            }
+          },
+
+          "Abilities": [
+            [
+              {
+                "Id": "Sandshrew_Buff",
+                "AbilityClass": "Buff",
+                "Description": "{{i18n:SandshrewTrinket.Level1}}",
+                "Proc": "Always",
+                "Args": { "BuffId": "Xan.Buffs/Mining1" }
+              }
+            ],
+
+            [
+              {
+                "Id": "Sandshrew_Buff",
+                "AbilityClass": "Buff",
+                "Description": "{{i18n:SandshrewTrinket.Level2}}",
+                "Proc": "Always",
+                "Args": { "BuffId": "Xan.Buffs/Mining1" }
+              },
+              {
+                "Id": "Sandshrew_Buff2",
+                "AbilityClass": "Buff",
+                "Proc": "Always",
+                "Args": { "BuffId": "Xan.Buffs/Farming1" }
+              }
+            ]
+          ]
+        }
+      }
+    },
+
+    {
+      "Action": "EditData",
+      "Target": "mushymato.TrinketTinker/Tinker",
+      "Entries": {
+        "NITVPokemon_MagikarpTrinket": {
+          "MinLevel": 1,
+          "Variants": [
+            {
+              "Texture": "Mods/Xan.PokemonCreaturePack/MagikarpTrinket",
+              "TrinketSpriteIndex": 0,
+              "Width": 32,
+              "Height": 32,
+              "TextureScale": 2.0,
+              "ShadowScale": 0,
+              "TrinketNameArguments": [
+                "{{i18n:MagikarpTrinket.DisplayName.Arg.0}}"
+              ]
+            },
+            {
+              "Texture": "Mods/Xan.PokemonCreaturePack/MagikarpTrinketShiny",
+              "TrinketSpriteIndex": 1,
+              "Width": 32,
+              "Height": 32,
+              "TextureScale": 2.0,
+              "ShadowScale": 0,
+              "TrinketNameArguments": [
+                "{{i18n:MagikarpTrinket.DisplayName.Arg.1}}"
+              ]
+            }
+          ],
+
+          "Motion": {
+            "MotionClass": "Relative",
+            "DirectionMode": "DRUL",
+            "AlwaysMoving": true,
+            "FrameLength": 4,
+            "Interval": 250,
+            "HideDuringEvents": false,
+            "Args": {
+              "OffsetD": "0,-100",
+              "OffsetR": "0,-100",
+              "OffsetU": "0,-100",
+              "OffsetL": "0,-100",
+              "LayerD": 1,
+              "LayerR": 1,
+              "LayerU": 1,
+              "LayerL": 1
+            }
+          },
+
+          "Abilities": [
+            [
+              {
+                "Id": "Magikarp_Buff",
+                "AbilityClass": "Buff",
+                "Description": "{{i18n:MagikarpTrinket.Level1}}",
+                "Proc": "Always",
+                "Args": { "BuffId": "Xan.Buffs/Fishing1" }
+              }
+            ],
+
+            [
+              {
+                "Id": "Magikarp_Buff",
+                "AbilityClass": "Buff",
+                "Description": "{{i18n:MagikarpTrinket.Level2}}",
+                "Proc": "Always",
+                "Args": { "BuffId": "Xan.Buffs/Fishing1" }
+              },
+              {
+                "Id": "Magikarp_Buff2",
+                "AbilityClass": "Buff",
+                "Proc": "Always",
+                "Args": { "BuffId": "Xan.Buffs/Luck1" }
+              }
+            ]
+          ]
+        }
+      }
+    },
+
+    {
+      "Action": "EditData",
+      "Target": "mushymato.TrinketTinker/Tinker",
+      "Entries": {
+        "NITVPokemon_BellsproutTrinket": {
+          "MinLevel": 1,
+          "Variants": [
+            {
+              "Texture": "Mods/Xan.PokemonCreaturePack/BellsproutTrinket",
+              "TrinketSpriteIndex": 0,
+              "Width": 32,
+              "Height": 32,
+              "TextureScale": 2.3,
+              "ShadowScale": 1.8,
+              "TrinketNameArguments": [
+                "{{i18n:BellsproutTrinket.DisplayName.Arg.0}}"
+              ]
+            },
+            {
+              "Texture": "Mods/Xan.PokemonCreaturePack/BellsproutTrinketShiny",
+              "TrinketSpriteIndex": 1,
+              "Width": 32,
+              "Height": 32,
+              "TextureScale": 2.3,
+              "ShadowScale": 1.8,
+              "TrinketNameArguments": [
+                "{{i18n:BellsproutTrinket.DisplayName.Arg.1}}"
+              ]
+            }
+          ],
+
+          "Motion": {
+            "MotionClass": "Lerp",
+            "DirectionMode": "DRUL",
+            "FrameLength": 8,
+            "HideDuringEvents": false,
+            "Offset": "0,10",
+            "AnimClips": {
+              "Idle": {
+                "FrameStart": 32,
+                "FrameLength": 8,
+                "Interval": 300
+              }
+            },
+            "Args": {
+              "Min": 1,
+              "MoveSync": true
+            }
+          },
+
+          "Abilities": [
+            [
+              {
+                "Id": "Bellsprout_Buff",
+                "AbilityClass": "Buff",
+                "Description": "{{i18n:BellsproutTrinket.Level1}}",
+                "Proc": "Always",
+                "Args": { "BuffId": "Xan.Buffs/Foraging1" }
+              }
+            ],
+
+            [
+              {
+                "Id": "Bellsprout_Buff2",
+                "AbilityClass": "Buff",
+                "Description": "{{i18n:BellsproutTrinket.Level2}}",
+                "Proc": "Always",
+                "Args": { "BuffId": "Xan.Buffs/Foraging2" }
+              },
+              {
+                "Id": "Bellsprout_Buff3",
+                "AbilityClass": "Buff",
+                "Proc": "Always",
+                "Args": { "BuffId": "Xan.Buffs/Farming1" }
+              }
+            ]
+          ]
+        }
+      }
+    },
+
+    {
+      "Action": "EditData",
+      "Target": "mushymato.TrinketTinker/Tinker",
+      "Entries": {
+        "NITVPokemon_GrimerTrinket": {
+          "MinLevel": 1,
+          "Variants": [
+            {
+              "Texture": "Mods/Xan.PokemonCreaturePack/GrimerTrinket",
+              "TrinketSpriteIndex": 0,
+              "Width": 32,
+              "Height": 32,
+              "TextureScale": 2.3,
+              "ShadowScale": 1.8,
+              "TrinketNameArguments": [
+                "{{i18n:GrimerTrinket.DisplayName.Arg.0}}"
+              ]
+            },
+            {
+              "Texture": "Mods/Xan.PokemonCreaturePack/GrimerTrinketShiny",
+              "TrinketSpriteIndex": 1,
+              "Width": 32,
+              "Height": 32,
+              "TextureScale": 2.3,
+              "ShadowScale": 1.8,
+              "TrinketNameArguments": [
+                "{{i18n:GrimerTrinket.DisplayName.Arg.1}}"
+              ]
+            }
+          ],
+
+          "Motion": {
+            "MotionClass": "Lerp",
+            "DirectionMode": "DRUL",
+            "FrameLength": 12,
+            "HideDuringEvents": false,
+            "Offset": "0,10",
+            "AnimClips": {
+              "Idle": {
+                "FrameStart": 48,
+                "FrameLength": 12,
+                "Interval": 250
+              }
+            },
+            "Args": {
+              "Min": 1,
+              "MoveSync": true
+            }
+          },
+
+          "Abilities": [
+            [
+              {
+                "Id": "Grimer_Buff",
+                "AbilityClass": "Buff",
+                "Description": "{{i18n:GrimerTrinket.Level1}}",
+                "Proc": "Always",
+                "Args": { "BuffId": "Xan.Buffs/Immunity1" }
+              }
+            ],
+
+            [
+              {
+                "Id": "Grimer_Buff2",
+                "AbilityClass": "Buff",
+                "Description": "{{i18n:GrimerTrinket.Level2}}",
+                "Proc": "Always",
+                "Args": { "BuffId": "Xan.Buffs/Immunity2" }
+              },
+              {
+                "Id": "Grimer_Buff3",
+                "AbilityClass": "Buff",
+                "Proc": "Always",
+                "Args": { "BuffId": "Xan.Buffs/Defense1" }
+              }
+            ]
+          ]
+        }
+      }
+    },
+
+    {
+      "Action": "EditData",
+      "Target": "mushymato.TrinketTinker/Tinker",
+      "Entries": {
+        "NITVPokemon_PsyduckTrinket": {
+          "MinLevel": 1,
+          "Variants": [
+            {
+              "Texture": "Mods/Xan.PokemonCreaturePack/PsyduckTrinket",
+              "TrinketSpriteIndex": 0,
+              "Width": 32,
+              "Height": 32,
+              "TextureScale": 2.3,
+              "ShadowScale": 1.8,
+              "TrinketNameArguments": [
+                "{{i18n:PsyduckTrinket.DisplayName.Arg.0}}"
+              ]
+            },
+            {
+              "Texture": "Mods/Xan.PokemonCreaturePack/PsyduckTrinketShiny",
+              "TrinketSpriteIndex": 1,
+              "Width": 32,
+              "Height": 32,
+              "TextureScale": 2.3,
+              "ShadowScale": 1.8,
+              "TrinketNameArguments": [
+                "{{i18n:PsyduckTrinket.DisplayName.Arg.1}}"
+              ]
+            }
+          ],
+
+          "Motion": {
+            "MotionClass": "Lerp",
+            "DirectionMode": "DRUL",
+            "FrameLength": 8,
+            "HideDuringEvents": false,
+            "Offset": "0,10",
+            "AnimClips": {
+              "Idle": {
+                "FrameStart": 32,
+                "FrameLength": 8,
+                "Interval": 250
+              }
+            },
+            "Args": {
+              "Min": 1,
+              "MoveSync": true
+            }
+          },
+
+          "Abilities": [
+            [
+              {
+                "Id": "Psyduck_Buff",
+                "AbilityClass": "Buff",
+                "Description": "{{i18n:PsyduckTrinket.Level1}}",
+                "Proc": "Always",
+                "Args": { "BuffId": "Xan.Buffs/Attack1" }
+              },
+              {
+                "Id": "Psyduck_Buff2",
+                "AbilityClass": "Buff",
+                "Proc": "Always",
+                "Args": { "BuffId": "Xan.Buffs/Fishing1" }
+              }
+            ],
+
+            [
+              {
+                "Id": "Psyduck_Buff3",
+                "AbilityClass": "Buff",
+                "Description": "{{i18n:PsyduckTrinket.Level2}}",
+                "Proc": "Always",
+                "Args": { "BuffId": "Xan.Buffs/Attack2" }
+              },
+              {
+                "Id": "Psyduck_Buff4",
+                "AbilityClass": "Buff",
+                "Proc": "Always",
+                "Args": { "BuffId": "Xan.Buffs/Fishing2" }
+              }
+            ]
+          ]
+        }
+      }
+    },
+
+    {
+      "Action": "EditData",
+      "Target": "mushymato.TrinketTinker/Tinker",
+      "Entries": {
+        "NITVPokemon_RhyhornTrinket": {
+          "MinLevel": 1,
+          "Variants": [
+            {
+              "Texture": "Mods/Xan.PokemonCreaturePack/RhyhornTrinket",
+              "TrinketSpriteIndex": 0,
+              "Width": 32,
+              "Height": 32,
+              "TextureScale": 2.3,
+              "ShadowScale": 1.8,
+              "TrinketNameArguments": [
+                "{{i18n:RhyhornTrinket.DisplayName.Arg.0}}"
+              ]
+            },
+            {
+              "Texture": "Mods/Xan.PokemonCreaturePack/RhyhornTrinketShiny",
+              "TrinketSpriteIndex": 1,
+              "Width": 32,
+              "Height": 32,
+              "TextureScale": 2.3,
+              "ShadowScale": 1.8,
+              "TrinketNameArguments": [
+                "{{i18n:RhyhornTrinket.DisplayName.Arg.1}}"
+              ]
+            }
+          ],
+
+          "Motion": {
+            "MotionClass": "Lerp",
+            "DirectionMode": "DRUL",
+            "FrameLength": 8,
+            "HideDuringEvents": false,
+            "Offset": "0,10",
+            "AnimClips": {
+              "Idle": {
+                "FrameStart": 32,
+                "FrameLength": 8,
+                "Interval": 250
+              }
+            },
+            "Args": {
+              "Min": 1,
+              "MoveSync": true
+            }
+          },
+
+          "Abilities": [
+            [
+              {
+                "Id": "Rhyhorn_Buff",
+                "AbilityClass": "Buff",
+                "Description": "{{i18n:RhyhornTrinket.Level1}}",
+                "Proc": "Always",
+                "Args": { "BuffId": "Xan.Buffs/Defense1" }
+              },
+              {
+                "Id": "Rhyhorn_Buff2",
+                "AbilityClass": "Buff",
+                "Proc": "Always",
+                "Args": { "BuffId": "Xan.Buffs/Mining1" }
+              }
+            ],
+
+            [
+              {
+                "Id": "Rhyhorn_Buff3",
+                "AbilityClass": "Buff",
+                "Description": "{{i18n:RhyhornTrinket.Level2}}",
+                "Proc": "Always",
+                "Args": { "BuffId": "Xan.Buffs/Defense2" }
+              },
+              {
+                "Id": "Rhyhorn_Buff4",
+                "AbilityClass": "Buff",
+                "Proc": "Always",
+                "Args": { "BuffId": "Xan.Buffs/Mining2" }
+              }
+            ]
+          ]
+        }
+      }
+    }
+    
+  ]
+}

@@ -1,0 +1,253 @@
+{
+  "Changes": [                    
+
+    {
+      "Action": "EditData",
+      "Target": "Data/Shops",
+      "TargetField": [ "NIVInsectariumShop", "Items" ],
+      "Entries": {
+        "PokeGroup1Contract": {
+          "ItemId": "PokeGroup1Contract",
+          "Price": 1000,
+          "Condition": "NAT_NIV_DonatedSpecific Pidgey_Roam, NAT_NIV_DonatedSpecific Geodude_Attack, NAT_NIV_DonatedSpecific Zubat_Attack, NAT_NIV_DonatedSpecific Caterpie_Bush, NAT_NIV_DonatedSpecific Weedle_Bush, NAT_NIV_DonatedSpecific Rattata_Roam, NAT_NIV_DonatedSpecific Magikarp_Swim, NAT_NIV_DonatedSpecific Metapod_Tree, NAT_NIV_DonatedSpecific Kakuna_Tree",
+          "AvailableStock": 1,
+          "AvailableStockLimit": "Global",
+          "ActionsOnPurchase": [
+            "AddMail All SafariGroup1_Unlock received"
+          ]
+        },
+        "PokeGroup2Contract": {
+          "ItemId": "PokeGroup2Contract",
+          "Price": 5000,
+          "Condition": "NAT_NIV_DonatedSpecific Butterfree_Roam, NAT_NIV_DonatedSpecific Beedrill_Attack, NAT_NIV_DonatedSpecific Diglett_Roam, NAT_NIV_DonatedSpecific Ekans_Attack, NAT_NIV_DonatedSpecific Growlithe_Roam, NAT_NIV_DonatedSpecific Paras_Roam, NAT_NIV_DonatedSpecific Poliwag_Swim, NAT_NIV_DonatedSpecific Sandshrew_Roam, NAT_NIV_DonatedSpecific Tentacool_Swim, NAT_NIV_DonatedSpecific Venonat_Stump",
+          "AvailableStock": 1,
+          "AvailableStockLimit": "Global",
+          "ActionsOnPurchase": [
+            "AddMail All SafariGroup2_Unlock received"
+          ]
+        },
+        "PokeGroup3Contract": {
+          "ItemId": "PokeGroup3Contract",
+          "Price": 10000,
+          "Condition": "NAT_NIV_DonatedSpecific Spearow_Attack, NAT_NIV_DonatedSpecific Koffing_Attack, NAT_NIV_DonatedSpecific Oddish_Stump, NAT_NIV_DonatedSpecific Bellsprout_Roam, NAT_NIV_DonatedSpecific Grimer_Roam, NAT_NIV_DonatedSpecific Cubone_Roam, NAT_NIV_DonatedSpecific Rhyhorn_Attack, NAT_NIV_DonatedSpecific Shellder_Swim, NAT_NIV_DonatedSpecific Goldeen_Swim, NAT_NIV_DonatedSpecific Psyduck_Swim",
+          "AvailableStock": 1,
+          "AvailableStockLimit": "Global",
+          "ActionsOnPurchase": [
+            "AddMail All SafariGroup3_Unlock received"
+          ]
+        },
+        "SafariGrass": {
+          "ItemId": "SafariGrass",
+          "Price": 4,
+          "Condition": "NAT_NIV_DonatedSpecific Butterfree_Roam, NAT_NIV_DonatedSpecific Beedrill_Attack, NAT_NIV_DonatedSpecific Diglett_Roam, NAT_NIV_DonatedSpecific Ekans_Attack, NAT_NIV_DonatedSpecific Growlithe_Roam, NAT_NIV_DonatedSpecific Paras_Roam, NAT_NIV_DonatedSpecific Poliwag_Swim, NAT_NIV_DonatedSpecific Sandshrew_Roam, NAT_NIV_DonatedSpecific Tentacool_Swim, NAT_NIV_DonatedSpecific Venonat_Stump"
+        },
+        "OranFruit": {
+          "ItemId": "OranFruit",
+          "Price": 20,
+          "Condition": "NAT_NIV_DonatedSpecific Butterfree_Roam, NAT_NIV_DonatedSpecific Beedrill_Attack, NAT_NIV_DonatedSpecific Diglett_Roam, NAT_NIV_DonatedSpecific Ekans_Attack, NAT_NIV_DonatedSpecific Growlithe_Roam, NAT_NIV_DonatedSpecific Paras_Roam, NAT_NIV_DonatedSpecific Poliwag_Swim, NAT_NIV_DonatedSpecific Sandshrew_Roam, NAT_NIV_DonatedSpecific Tentacool_Swim, NAT_NIV_DonatedSpecific Venonat_Stump"
+        },
+        "CheriFruit": {
+          "ItemId": "CheriFruit",
+          "Price": 30,
+          "Condition": "NAT_NIV_DonatedSpecific Butterfree_Roam, NAT_NIV_DonatedSpecific Beedrill_Attack, NAT_NIV_DonatedSpecific Diglett_Roam, NAT_NIV_DonatedSpecific Ekans_Attack, NAT_NIV_DonatedSpecific Growlithe_Roam, NAT_NIV_DonatedSpecific Paras_Roam, NAT_NIV_DonatedSpecific Poliwag_Swim, NAT_NIV_DonatedSpecific Sandshrew_Roam, NAT_NIV_DonatedSpecific Tentacool_Swim, NAT_NIV_DonatedSpecific Venonat_Stump"
+        },
+        "PechaFruit": {
+          "ItemId": "PechaFruit",
+          "Price": 40,
+          "Condition": "NAT_NIV_DonatedSpecific Spearow_Attack, NAT_NIV_DonatedSpecific Koffing_Attack, NAT_NIV_DonatedSpecific Oddish_Stump, NAT_NIV_DonatedSpecific Bellsprout_Roam, NAT_NIV_DonatedSpecific Grimer_Roam, NAT_NIV_DonatedSpecific Cubone_Roam, NAT_NIV_DonatedSpecific Rhyhorn_Attack, NAT_NIV_DonatedSpecific Shellder_Swim, NAT_NIV_DonatedSpecific Goldeen_Swim, NAT_NIV_DonatedSpecific Psyduck_Swim"
+        },
+        "Diglett_Terrarium": {
+          "ItemId": "(O)NatInValley.Creature.Diglett_Terrarium",
+          "TradeItemId": "(O)NatInValley.Creature.Diglett_Roam",
+          "TradeItemAmount": 1,
+          "Condition": "NAT_NIV_DonatedSpecific Diglett_Roam"
+        },
+        "Diglett_Shiny_Terrarium": {
+          "ItemId": "(O)NatInValley.Creature.Diglett_Terrarium_Shiny",
+          "TradeItemId": "(O)NatInValley.Creature.Diglett_Roam_Shiny",
+          "TradeItemAmount": 1,
+          "Condition": "NAT_NIV_DonatedSpecific Diglett_Roam_Shiny"
+        },
+        "Diglett_Shiny_Buy": {
+          "ItemId": "(O)NatInValley.Creature.Diglett_Roam_Shiny",
+          "Condition": "NAT_NIV_DonatedSpecific Diglett_Roam_Shiny",
+          "Price": 125000
+        },
+        "Magikarp_Terrarium": {
+          "ItemId": "(O)NatInValley.Creature.Magikarp_Terrarium",
+          "TradeItemId": "(O)NatInValley.Creature.Magikarp_Swim",
+          "TradeItemAmount": 1,
+          "Condition": "NAT_NIV_DonatedSpecific Magikarp_Swim"
+        },
+        "Magikarp_Shiny_Terrarium": {
+          "ItemId": "(O)NatInValley.Creature.Magikarp_Terrarium_Shiny",
+          "TradeItemId": "(O)NatInValley.Creature.Magikarp_Swim_Shiny",
+          "TradeItemAmount": 1,
+          "Condition": "NAT_NIV_DonatedSpecific Magikarp_Swim_Shiny"
+        },
+        "Magikarp_Shiny_Buy": {
+          "ItemId": "(O)NatInValley.Creature.Magikarp_Swim_Shiny",
+          "Condition": "NAT_NIV_DonatedSpecific Magikarp_Swim_Shiny",
+          "Price": 75000
+        },
+        "Pidgey_Shiny_Buy": {
+          "ItemId": "(O)NatInValley.Creature.Pidgey_Roam_Shiny",
+          "Condition": "NAT_NIV_DonatedSpecific Pidgey_Roam_Shiny",
+          "Price": 50000
+        },
+        "Geodude_Shiny_Buy": {
+          "ItemId": "(O)NatInValley.Creature.Geodude_Attack_Shiny",
+          "Condition": "NAT_NIV_DonatedSpecific Geodude_Attack_Shiny",
+          "Price": 75000
+        },
+        "Zubat_Shiny_Buy": {
+          "ItemId": "(O)NatInValley.Creature.Zubat_Attack_Shiny",
+          "Condition": "NAT_NIV_DonatedSpecific Zubat_Attack_Shiny",
+          "Price": 62500
+        },
+        "Caterpie_Shiny_Buy": {
+          "ItemId": "(O)NatInValley.Creature.Caterpie_Bush_Shiny",
+          "Condition": "NAT_NIV_DonatedSpecific Caterpie_Bush_Shiny",
+          "Price": 25000
+        },
+        "Weedle_Shiny_Buy": {
+          "ItemId": "(O)NatInValley.Creature.Weedle_Bush_Shiny",
+          "Condition": "NAT_NIV_DonatedSpecific Weedle_Bush_Shiny",
+          "Price": 37500
+        },
+        "Rattata_Shiny_Buy": {
+          "ItemId": "(O)NatInValley.Creature.Rattata_Roam_Shiny",
+          "Condition": "NAT_NIV_DonatedSpecific Rattata_Roam_Shiny",
+          "Price": 75000
+        },
+        "Metapod_Shiny_Buy": {
+          "ItemId": "(O)NatInValley.Creature.Metapod_Tree_Shiny",
+          "Condition": "NAT_NIV_DonatedSpecific Metapod_Tree_Shiny",
+          "Price": 62500
+        },
+        "Kakuna_Shiny_Buy": {
+          "ItemId": "(O)NatInValley.Creature.Kakuna_Tree_Shiny",
+          "Condition": "NAT_NIV_DonatedSpecific Kakuna_Tree_Shiny",
+          "Price": 75000
+        },
+        "Butterfree_Shiny_Buy": {
+          "ItemId": "(O)NatInValley.Creature.Butterfree_Roam_Shiny",
+          "Condition": "NAT_NIV_DonatedSpecific Butterfree_Roam_Shiny",
+          "Price": 125000
+        },
+        "Beedrill_Shiny_Buy": {
+          "ItemId": "(O)NatInValley.Creature.Beedrill_Attack_Shiny",
+          "Condition": "NAT_NIV_DonatedSpecific Beedrill_Attack_Shiny",
+          "Price": 150000
+        },
+        "Ekans_Shiny_Buy": {
+          "ItemId": "(O)NatInValley.Creature.Ekans_Attack_Shiny",
+          "Condition": "NAT_NIV_DonatedSpecific Ekans_Attack_Shiny",
+          "Price": 125000
+        },
+        "Poliwag_Shiny_Buy": {
+          "ItemId": "(O)NatInValley.Creature.Poliwag_Swim_Shiny",
+          "Condition": "NAT_NIV_DonatedSpecific Poliwag_Swim_Shiny",
+          "Price": 125000
+        },
+        "Tentacool_Shiny_Buy": {
+          "ItemId": "(O)NatInValley.Creature.Tentacool_Swim_Shiny",
+          "Condition": "NAT_NIV_DonatedSpecific Tentacool_Swim_Shiny",
+          "Price": 125000
+        },
+        "Growlithe_Shiny_Buy": {
+          "ItemId": "(O)NatInValley.Creature.Growlithe_Roam_Shiny",
+          "Condition": "NAT_NIV_DonatedSpecific Growlithe_Roam_Shiny",
+          "Price": 125000
+        },
+        "Venonat_Shiny_Buy": {
+          "ItemId": "(O)NatInValley.Creature.Venonat_Stump_Shiny",
+          "Condition": "NAT_NIV_DonatedSpecific Venonat_Stump_Shiny",
+          "Price": 125000
+        },
+        "Paras_Shiny_Buy": {
+          "ItemId": "(O)NatInValley.Creature.Paras_Roam_Shiny",
+          "Condition": "NAT_NIV_DonatedSpecific Paras_Roam_Shiny",
+          "Price": 125000
+        },
+        "Gastly_Shiny_Buy": {
+          "ItemId": "(O)NatInValley.Creature.Gastly_Attack_Shiny",
+          "Condition": "NAT_NIV_DonatedSpecific Gastly_Attack_Shiny",
+          "Price": 250000
+        },
+        "Sandshrew_Shiny_Buy": {
+          "ItemId": "(O)NatInValley.Creature.Sandshrew_Roam_Shiny",
+          "Condition": "NAT_NIV_DonatedSpecific Sandshrew_Roam_Shiny",
+          "Price": 125000
+        },
+        "Spearow_Shiny_Buy": {
+          "ItemId": "(O)NatInValley.Creature.Spearow_Attack_Shiny",
+          "Condition": "NAT_NIV_DonatedSpecific Spearow_Attack_Shiny",
+          "Price": 175000
+        },
+        "Koffing_Shiny_Buy": {
+          "ItemId": "(O)NatInValley.Creature.Koffing_Attack_Shiny",
+          "Condition": "NAT_NIV_DonatedSpecific Koffing_Attack_Shiny",
+          "Price": 175000
+        },
+        "Oddish_Shiny_Buy": {
+          "ItemId": "(O)NatInValley.Creature.Oddish_Stump_Shiny",
+          "Condition": "NAT_NIV_DonatedSpecific Oddish_Stump_Shiny",
+          "Price": 175000
+        },
+        "Bellsprout_Shiny_Buy": {
+          "ItemId": "(O)NatInValley.Creature.Bellsprout_Roam_Shiny",
+          "Condition": "NAT_NIV_DonatedSpecific Bellsprout_Roam_Shiny",
+          "Price": 175000
+        },
+        "Grimer_Shiny_Buy": {
+          "ItemId": "(O)NatInValley.Creature.Grimer_Roam_Shiny",
+          "Condition": "NAT_NIV_DonatedSpecific Grimer_Roam_Shiny",
+          "Price": 175000
+        },
+        "Cubone_Shiny_Buy": {
+          "ItemId": "(O)NatInValley.Creature.Cubone_Roam_Shiny",
+          "Condition": "NAT_NIV_DonatedSpecific Cubone_Roam_Shiny",
+          "Price": 175000
+        },
+        "Rhyhorn_Shiny_Buy": {
+          "ItemId": "(O)NatInValley.Creature.Rhyhorn_Attack_Shiny",
+          "Condition": "NAT_NIV_DonatedSpecific Rhyhorn_Attack_Shiny",
+          "Price": 200000
+        },
+        "Pikachu_Shiny_Buy": {
+          "ItemId": "(O)NatInValley.Creature.Pikachu_Shiny",
+          "Condition": "NAT_NIV_DonatedSpecific Pikachu_Roam_Shiny",
+          "Price": 200000
+        },
+        "Shellder_Shiny_Buy": {
+          "ItemId": "(O)NatInValley.Creature.Shellder_Swim_Shiny",
+          "Condition": "NAT_NIV_DonatedSpecific Shellder_Swim_Shiny",
+          "Price": 175000
+        },
+        "Shellder_Terrarium": {
+          "ItemId": "(O)NatInValley.Creature.Shellder_Terrarium",
+          "TradeItemId": "(O)NatInValley.Creature.Shellder_Swim",
+          "TradeItemAmount": 1,
+          "Condition": "NAT_NIV_DonatedSpecific Shellder_Swim"
+        },
+        "Shellder_Shiny_Terrarium": {
+          "ItemId": "(O)NatInValley.Creature.Shellder_Terrarium_Shiny",
+          "TradeItemId": "(O)NatInValley.Creature.Shellder_Swim_Shiny",
+          "TradeItemAmount": 1,
+          "Condition": "NAT_NIV_DonatedSpecific Shellder_Swim_Shiny"
+        },
+        "Goldeen_Shiny_Buy": {
+          "ItemId": "(O)NatInValley.Creature.Goldeen_Swim_Shiny",
+          "Condition": "NAT_NIV_DonatedSpecific Goldeen_Swim_Shiny",
+          "Price": 175000
+        },
+        "Psyduck_Shiny_Buy": {
+          "ItemId": "(O)NatInValley.Creature.Psyduck_Swim_Shiny",
+          "Condition": "NAT_NIV_DonatedSpecific Psyduck_Swim_Shiny",
+          "Price": 175000
+        }
+      }
+    }
+  ]
+}

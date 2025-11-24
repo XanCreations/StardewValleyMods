@@ -1,0 +1,253 @@
+{
+  "Changes": [
+
+    {
+      "Action": "Load",
+      "Target": "Characters/Dialogue/TrinketTrader",
+      "FromFile": "Assets/dialogue.json"
+    },
+
+    {
+      "Action": "Load",
+      "Target": "Portraits/TrinketTrader",
+      "FromFile": "Assets/TrinketTraderPortrait.png"
+    },
+
+    {
+      "Action": "Load",
+      "Target": "Maps/NITVPokemon_TrinketTrader",
+      "FromFile": "Maps/TrinketTrader.tmx"
+    },
+
+    {
+      "Action": "EditData",
+      "Target": "Data/Characters",
+      "Entries": {
+        "TrinketTrader": {
+          "DisplayName": "{{i18n:TrinketTrader.Name}}",
+          "Gender": "Female",
+          "SocialAnxiety": "Neutral",
+          "Optimism": "Neutral",
+          "CanVisitIsland": false,
+          "CanSocialize": false,
+          "CanReceiveGifts": false,
+          "CanGreetNearbyCharacters": false,
+          "SocialTab": "HiddenAlways",
+          "PerfectionScore": false,
+          "SpawnIfMissing": true,
+          "Shadow": {
+            "Offset": { "X": 0, "Y": 10 }
+          },
+          "Home": [
+            {
+              "Id": "Default",
+              "Location": "NITVPokemon_TrinketTrader",
+              "Tile": { "X": 3, "Y": 3 },
+              "Direction": "down"
+            }
+          ],
+          "Appearance": [
+            {
+              "Id": "Default",
+              "Portrait": "Portraits/TrinketTrader",
+              "Sprite": "Characters/TrinketTrader"
+            }
+          ]
+        }
+      }
+    },
+
+    {
+      "Action": "EditData",
+      "Target": "Data/Locations",
+      "Entries": {
+        "NITVPokemon_TrinketTrader": {
+          "DisplayName": "{{i18n:TrinketHouse.DisplayName}}",
+          "CreateOnLoad": { "MapPath": "Maps/NITVPokemon_TrinketTrader", "AlwaysActive": false },
+          "DefaultArrivalTile": {"X": 3,"Y": 5},
+          "MusicDefault": "Xan.PokemonCreaturePack.TrinketHouseMusic",
+          "MusicContext": "SubLocation",
+          "MusicIgnoredInRain": false,
+          "MusicIgnoredInFallDebris": false,
+          "CustomFields": {
+            "Nature.NIV.OnlyExplicit": true
+          }
+        }
+      }
+    },
+
+    {
+      "Action": "EditMap",
+      "Target": "Maps/NITVPokemon_SafariZone",
+      "Update": "OnTimeChange, OnLocationChange",
+      "When": {
+        "DayOfWeek": "Monday, Wednesday"
+      },
+      "MapTiles": [
+        {
+          "Position": { "X": 5, "Y": 8 },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "Warp 3 5 NITVPokemon_TrinketTrader"
+          }
+        }
+      ]
+    },
+
+    {
+      "Action": "EditMap",
+      "Target": "Maps/NITVPokemon_TrinketTrader",
+      "MapTiles": [
+        {
+          "Position": { "X": 3, "Y": 6 },
+          "Layer": "Back",
+          "SetProperties": {
+            "TouchAction": "Warp NITVPokemon_SafariZone 5 9"
+          }
+        },
+        {
+          "Position": { "X": 3, "Y": 3 },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "OpenShop NITVPokemon_TrinketTraderShop"
+          }
+        },
+        {
+          "Position": { "X": 1, "Y": 5 },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "Jukebox"
+          }
+        }
+      ]
+    },
+
+    {
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/TrinketTrader",
+      "Entries":
+        {
+          "Mon": "{{i18n:TrinketTrader.Mon}}",
+          "Wed": "{{i18n:TrinketTrader.Wed}}"
+        }
+    },
+
+    {
+      "Action": "EditData",
+      "Target": "Data/Shops",
+        "Entries": {
+          "NITVPokemon_TrinketTraderShop": {
+                "Items": [
+                    {
+                        "ItemId": "(TR)NITVPokemon_BeedrillTrinket",
+                        "Price": 8199,
+                        "Condition": "NAT_NIV_DonatedSpecific Beedrill_Attack"
+                    },
+                    {
+                        "ItemId": "(TR)NITVPokemon_ButterfreeTrinket",
+                        "Price": 7199,
+                        "Condition": "NAT_NIV_DonatedSpecific Butterfree_Roam"
+                    },
+                    {
+                        "ItemId": "(TR)NITVPokemon_PidgeyTrinket",
+                        "Price": 5299,
+                        "Condition": "NAT_NIV_DonatedSpecific Pidgey_Roam"
+                    },
+                    {
+                        "ItemId": "(TR)NITVPokemon_ZubatTrinket",
+                        "Price": 5199,
+                        "Condition": "NAT_NIV_DonatedSpecific Zubat_Attack"
+                    },
+                    {
+                        "ItemId": "(TR)NITVPokemon_EkansTrinket",
+                        "Price": 6899,
+                        "Condition": "NAT_NIV_DonatedSpecific Ekans_Attack"
+                    },
+                    {
+                        "ItemId": "(TR)NITVPokemon_GeodudeTrinket",
+                        "Price": 5599,
+                        "Condition": "NAT_NIV_DonatedSpecific Geodude_Attack"
+                    },
+                    {
+                        "ItemId": "(TR)NITVPokemon_GrowlitheTrinket",
+                        "Price": 6299,
+                        "Condition": "NAT_NIV_DonatedSpecific Growlithe_Roam"
+                    },
+                    {
+                        "ItemId": "(TR)NITVPokemon_RattataTrinket",
+                        "Price": 5399,
+                        "Condition": "NAT_NIV_DonatedSpecific Rattata_Roam"
+                    },
+                    {
+                        "ItemId": "(TR)NITVPokemon_SandshrewTrinket",
+                        "Price": 8499,
+                        "Condition": "NAT_NIV_DonatedSpecific Sandshrew_Roam"
+                    },
+                    {
+                        "ItemId": "(TR)NITVPokemon_MagikarpTrinket",
+                        "Price": 9999,
+                        "Condition": "NAT_NIV_DonatedSpecific Magikarp_Swim"
+                    },
+                    {
+                        "ItemId": "(TR)NITVPokemon_GastlyTrinket",
+                        "Price": 19666,
+                        "Condition": "NAT_NIV_DonatedSpecific Gastly_Attack"
+                    },
+                    {
+                        "ItemId": "(TR)NITVPokemon_BellsproutTrinket",
+                        "Price": 13599,
+                        "Condition": "NAT_NIV_DonatedSpecific Bellsprout_Roam"
+                    },
+                    {
+                        "ItemId": "(TR)NITVPokemon_GrimerTrinket",
+                        "Price": 14199,
+                        "Condition": "NAT_NIV_DonatedSpecific Grimer_Roam"
+                    },
+                    {
+                        "ItemId": "(TR)NITVPokemon_PsyduckTrinket",
+                        "Price": 16399,
+                        "Condition": "NAT_NIV_DonatedSpecific Psyduck_Swim"
+                    },
+                    {
+                        "ItemId": "(TR)NITVPokemon_RhyhornTrinket",
+                        "Price": 17499,
+                        "Condition": "NAT_NIV_DonatedSpecific Rhyhorn_Attack"
+                    },
+                    {
+                        "ItemId": "(TR)NITVPokemon_CuboneTrinket",
+                        "Price": 20199,
+                        "Condition": "NAT_NIV_DonatedSpecific Cubone_Roam"
+                    },
+                    {
+                        "ItemId": "(TR)NITVPokemon_KoffingTrinket",
+                        "Price": 21599,
+                        "Condition": "NAT_NIV_DonatedSpecific Koffing_Attack"
+                    },
+                    {
+                        "ItemId": "(TR)NITVPokemon_PikachuTrinket",
+                        "Price": 23799,
+                        "Condition": "NAT_NIV_DonatedSpecific Pikachu_Roam"
+                    },
+                    {
+                        "ItemId": "(BC)BuffAnvil",
+                        "Price": 10000,
+                        "TradeItemId": "SafariGrassItem",
+                        "TradeItemAmount": 100
+                    },
+                    {
+                      "ItemId": "(TR)NITVPokemon_CharLOLTrinket",
+                      "Price": 20000,
+                      "Condition": "PLAYER_HAS_MAIL Current NITV_ShadyTrader_Bought"
+                    }
+                    
+                ],
+                "Owners": [
+                    {
+                        "Name": "TrinketTrader"
+                    }
+                ]
+        }
+      }
+    }
+  ]
+}

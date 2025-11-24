@@ -1,0 +1,115 @@
+{
+  "Changes": [
+    
+    {
+      "Action": "Load",
+      "Target": "Mods/Xan.PokemonCreaturePack/BuffAnvil",
+      "FromFile": "Assets/{{TargetWithoutPath}}.png"
+    },
+
+    {
+      "Action": "EditData",
+      "Target": "Data/Machines",
+      "TargetField": [
+        "(BC)mushymato.TrinketTinker_TrinketColorizer",
+        "AdditionalConsumedItems",
+        "#0"
+      ],
+      "Entries": {
+        "RequiredCount": 40,
+        "InvalidCountMessage": "{{i18n:Colorizer.OmniGeodeReq}}"
+      }
+    },
+
+    {
+      "Action": "EditData",
+      "Target": "Data/BigCraftables",
+      "Entries": {
+        "BuffAnvil": {
+          "DisplayName": "{{i18n:BuffAnvil.DisplayName}}",
+          "Description": "{{i18n:BuffAnvil.Description}}",
+          "Texture": "Mods/Xan.PokemonCreaturePack/BuffAnvil",
+          "SpriteIndex": 0,
+          "IsPlaceable": true
+        }
+      }
+    },
+
+    {
+      "Action": "EditData",
+      "Target": "Data/Machines",
+      "Entries": {
+        "(BC)BuffAnvil": {
+          "HasInput": false,
+          "HasOutput": false,
+
+          "OutputRules": [
+            {
+              "Id": "Xan_BuffAnvil_Increment",
+              "Triggers": [
+                { "Id": "Add_Beedrill", "Trigger": "ItemPlacedInMachine", "RequiredItemId": "(TR)NITVPokemon_BeedrillTrinket", "RequiredCount": 1, "Condition": "mushymato.TrinketTinker_IS_TINKER Input =<1 ?" },
+                { "Id": "Add_Butterfree", "Trigger": "ItemPlacedInMachine", "RequiredItemId": "(TR)NITVPokemon_ButterfreeTrinket", "RequiredCount": 1, "Condition": "mushymato.TrinketTinker_IS_TINKER Input =<1 ?" },
+                { "Id": "Add_Ekans", "Trigger": "ItemPlacedInMachine", "RequiredItemId": "(TR)NITVPokemon_EkansTrinket", "RequiredCount": 1, "Condition": "mushymato.TrinketTinker_IS_TINKER Input =<1 ?" },
+                { "Id": "Add_Geodude", "Trigger": "ItemPlacedInMachine", "RequiredItemId": "(TR)NITVPokemon_GeodudeTrinket", "RequiredCount": 1, "Condition": "mushymato.TrinketTinker_IS_TINKER Input =<1 ?" },
+                { "Id": "Add_Growlithe", "Trigger": "ItemPlacedInMachine", "RequiredItemId": "(TR)NITVPokemon_GrowlitheTrinket", "RequiredCount": 1, "Condition": "mushymato.TrinketTinker_IS_TINKER Input =<1 ?" },
+                { "Id": "Add_Magikarp", "Trigger": "ItemPlacedInMachine", "RequiredItemId": "(TR)NITVPokemon_MagikarpTrinket", "RequiredCount": 1, "Condition": "mushymato.TrinketTinker_IS_TINKER Input =<1 ?" },
+                { "Id": "Add_Pidgey", "Trigger": "ItemPlacedInMachine", "RequiredItemId": "(TR)NITVPokemon_PidgeyTrinket", "RequiredCount": 1, "Condition": "mushymato.TrinketTinker_IS_TINKER Input =<1 ?" },
+                { "Id": "Add_Rattata", "Trigger": "ItemPlacedInMachine", "RequiredItemId": "(TR)NITVPokemon_RattataTrinket", "RequiredCount": 1, "Condition": "mushymato.TrinketTinker_IS_TINKER Input =<1 ?" },
+                { "Id": "Add_Sandshrew", "Trigger": "ItemPlacedInMachine", "RequiredItemId": "(TR)NITVPokemon_SandshrewTrinket", "RequiredCount": 1, "Condition": "mushymato.TrinketTinker_IS_TINKER Input =<1 ?" },
+                { "Id": "Add_Zubat", "Trigger": "ItemPlacedInMachine", "RequiredItemId": "(TR)NITVPokemon_ZubatTrinket", "RequiredCount": 1, "Condition": "mushymato.TrinketTinker_IS_TINKER Input =<1 ?" },
+                { "Id": "Add_Bellsprout", "Trigger": "ItemPlacedInMachine", "RequiredItemId": "(TR)NITVPokemon_BellsproutTrinket", "RequiredCount": 1, "Condition": "mushymato.TrinketTinker_IS_TINKER Input =<1 ?" },
+                { "Id": "Add_Grimer", "Trigger": "ItemPlacedInMachine", "RequiredItemId": "(TR)NITVPokemon_GrimerTrinket", "RequiredCount": 1, "Condition": "mushymato.TrinketTinker_IS_TINKER Input =<1 ?" },
+                { "Id": "Add_Psyduck", "Trigger": "ItemPlacedInMachine", "RequiredItemId": "(TR)NITVPokemon_PsyduckTrinket", "RequiredCount": 1, "Condition": "mushymato.TrinketTinker_IS_TINKER Input =<1 ?" },
+                { "Id": "Add_Rhyhorn", "Trigger": "ItemPlacedInMachine", "RequiredItemId": "(TR)NITVPokemon_RhyhornTrinket", "RequiredCount": 1, "Condition": "mushymato.TrinketTinker_IS_TINKER Input =<1 ?" },
+                { "Id": "Add_Gastly", "Trigger": "ItemPlacedInMachine", "RequiredItemId": "(TR)NITVPokemon_GastlyTrinket", "RequiredCount": 1, "Condition": "mushymato.TrinketTinker_IS_TINKER Input =<2 ?" },
+                { "Id": "Add_Koffing", "Trigger": "ItemPlacedInMachine", "RequiredItemId": "(TR)NITVPokemon_KoffingTrinket", "RequiredCount": 1, "Condition": "mushymato.TrinketTinker_IS_TINKER Input =<2 ?" },
+                { "Id": "Add_Cubone", "Trigger": "ItemPlacedInMachine", "RequiredItemId": "(TR)NITVPokemon_CuboneTrinket", "RequiredCount": 1, "Condition": "mushymato.TrinketTinker_IS_TINKER Input =<2 ?" },
+                { "Id": "Add_Pikachu", "Trigger": "ItemPlacedInMachine", "RequiredItemId": "(TR)NITVPokemon_PikachuTrinket", "RequiredCount": 1, "Condition": "mushymato.TrinketTinker_IS_TINKER Input =<2 ?" }
+              ],
+              "UseFirstValidOutput": true,
+              "OutputItem": [
+                {
+                  "Id": "Xan_BuffAnvil_Increment_Out",
+                  "OutputMethod": "TrinketTinker.Extras.TrinketColorizer, TrinketTinker:OutputTinkerAnvil",
+                  "CustomData": { "mushymato.TrinketTinker/Level+": 1 }
+                }
+              ]
+            }
+          ],
+
+          "AdditionalConsumedItems": [
+            {
+              "ItemId": "(O)336",
+              "RequiredCount": 10,
+              "InvalidCountMessage": "{{i18n:BuffAnvil.InvalidCount}}",
+              "Condition": "mushymato.TrinketTinker_IS_TINKER Input ? <=2"
+            }
+          ],
+
+          "WorkingEffects": [
+              {
+                "Id": "Xan.BuffAnvil",
+                "Texture": "Mods/Xan.PokemonCreaturePack/BuffAnvil",
+                "Frames": [ 1, 2, 3, 4 ],
+                "Interval": 200
+              }  
+          ],
+
+          "WorkingEffectChance": 1.0,
+          "ShowNextIndexWhenReady": true,
+          "WobbleWhileWorking": true,
+          "LightWhileWorking": {
+            "Radius": 0.3,
+            "Color": "Purple"
+          },
+          "AllowLoadWhenFull": false,
+          "AllowFairyDust": false,
+          "OnlyCompleteOvernight": false,
+          "InvalidItemMessage": "{{i18n:BuffAnvil.InvalidItem}}",
+          "InvalidItemMessageCondition": "ANY \"ITEM_ID Input (TR)NITVPokemon_BeedrillTrinket\" \"ITEM_ID Input (TR)NITVPokemon_ButterfreeTrinket\" \"ITEM_ID Input (TR)NITVPokemon_EkansTrinket\" \"ITEM_ID Input (TR)NITVPokemon_GeodudeTrinket\" \"ITEM_ID Input (TR)NITVPokemon_GrowlitheTrinket\" \"ITEM_ID Input (TR)NITVPokemon_MagikarpTrinket\" \"ITEM_ID Input (TR)NITVPokemon_PidgeyTrinket\" \"ITEM_ID Input (TR)NITVPokemon_RattataTrinket\" \"ITEM_ID Input (TR)NITVPokemon_SandshrewTrinket\" \"ITEM_ID Input (TR)NITVPokemon_ZubatTrinket\" \"ITEM_ID Input (TR)NITVPokemon_GastlyTrinket\" \"ITEM_ID Input (TR)NITVPokemon_KoffingTrinket\" \"ITEM_ID Input (TR)NITVPokemon_CuboneTrinket\" \"ITEM_ID Input (TR)NITVPokemon_PikachuTrinket\" \"ITEM_ID Input (TR)NITVPokemon_BellsproutTrinket\" \"ITEM_ID Input (TR)NITVPokemon_GrimerTrinket\" \"ITEM_ID Input (TR)NITVPokemon_PsyduckTrinket\" \"ITEM_ID Input (TR)NITVPokemon_RhyhornTrinket\""
+        }
+      }
+    }
+
+  ]
+}

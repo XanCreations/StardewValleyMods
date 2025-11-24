@@ -1,0 +1,24 @@
+{
+
+  "Changes": [
+
+    {
+    "Action": "EditData",
+    "Target": "Strings/SpecialOrderStrings",
+      "Entries": {
+        "PkmnDifficulty1": "Request Rank =",
+        "PkmnDifficulty2": "Request Rank ==",
+        "PkmnDifficulty3": "Request Rank ===",
+        "PkmnDifficulty4": "Request Rank ====",
+        "PkmnDifficulty5": "Request Rank =====",
+        "PkmnCreatureCollectText": "Some {PkmnSpecies:Text} have found their way into the Valley. Can you find {Count} of them and send them home?                                                                                                                                       — Spiritomb",
+        "PkmnCreatureCollectObj0Text": "Collect {Count} x {PkmnSpecies:Text}.",
+        "PkmnCreatureCollectObj1Text": "Input {Count} x {PkmnSpecies:Text} to the PC at the Quest Board.",
+        "PkmnBerryCollectText": "There's a {PkmnBerry:Text} shortage where I'm from and your farming abilities are legendary. I need {Count} freshly picked!                                                                                                 — Spiritomb",
+        "PkmnBerryCollectObj0Text": "Collect {Count} x {PkmnBerry:Text}.",
+        "PkmnBerryCollectObj1Text": "Input {Count} x {PkmnBerry:Text} to the PC at the Quest Board."
+      }
+    }
+
+  ]
+}

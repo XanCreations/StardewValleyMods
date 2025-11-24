@@ -1,0 +1,321 @@
+{
+  "Changes": [
+    {
+      "Action": "Load",
+      "Target": "Mods/Xan.PokemonCreaturePack/CuboneTrinketItem, Mods/Xan.PokemonCreaturePack/CuboneTrinket, Mods/Xan.PokemonCreaturePack/CuboneTrinketShiny, Mods/Xan.PokemonCreaturePack/CuboneBone, Mods/Xan.PokemonCreaturePack/CuboneBoneTransparent, Mods/Xan.PokemonCreaturePack/CuboneBoneAnim, Mods/Xan.PokemonCreaturePack/CuboneAttackAnim, Mods/Xan.PokemonCreaturePack/CuboneAttackAnimShiny",
+      "FromFile": "TrinketPNGs/Group3/Cubone/{{TargetWithoutPath}}.png"
+    },
+
+    {
+      "Action": "EditData",
+      "Target": "Data/AudioChanges",
+      "Entries": {
+          "CuboneThrowSound": {
+              "ID": "CuboneThrowSound",
+              "Category": "Sound",
+              "FilePaths": [ "{{AbsoluteFilePath: TrinketPNGs/Group3/Cubone/CuboneThrowSound.ogg}}" ],
+              "StreamedVorbis": false,
+              "Looped": false
+        }
+      }
+    },
+
+    {
+      "Action": "EditData",
+      "Target": "Data/Trinkets",
+      "Entries": {
+        "NITVPokemon_CuboneTrinket": {
+          "Id": "NITVPokemon_CuboneTrinket",
+          "DisplayName": "{{i18n:CuboneTrinket.DisplayName}}",
+          "Description": "{{i18n:CuboneTrinket.Description}}",
+          "Texture": "Mods/Xan.PokemonCreaturePack/CuboneTrinketItem",
+          "SheetIndex": 0,
+          "DropsNaturally": false,
+          "CanBeReforged": true
+        }
+      }
+    },
+
+    {
+      "Action": "EditData",
+      "Target": "mushymato.TrinketTinker/Tinker",
+      "Entries": {
+        "NITVPokemon_CuboneTrinket": {
+          "MinLevel": 1,
+
+          "Variants": [
+            {
+              "Texture": "Mods/Xan.PokemonCreaturePack/CuboneTrinket",
+              "TextureExtra": "Mods/Xan.PokemonCreaturePack/CuboneAttackAnim",
+              "TrinketSpriteIndex": 0,
+              "Width": 32,
+              "Height": 32,
+              "TextureScale": 2.3,
+              "ShadowScale": 1.9,
+              "TrinketNameArguments": [ "{{i18n:CuboneTrinket.DisplayName.Arg.0}}" ]
+            },
+            {
+              "Texture": "Mods/Xan.PokemonCreaturePack/CuboneTrinketShiny",
+              "TextureExtra": "Mods/Xan.PokemonCreaturePack/CuboneAttackAnimShiny",
+              "TrinketSpriteIndex": 1,
+              "Width": 32,
+              "Height": 32,
+              "TextureScale": 2.3,
+              "ShadowScale": 1.9,
+              "TrinketNameArguments": [ "{{i18n:CuboneTrinket.DisplayName.Arg.1}}" ]
+            }
+          ],
+
+          "Motion": {
+            "MotionClass": "Lerp",
+            "DirectionMode": "DRUL",
+            "FrameLength": 16,
+            "HideDuringEvents": true,
+            "Offset": "0,10",
+            "Args": { "Min": 1, "MoveSync": true },
+            "AnimClips": {
+              "Idle": { "FrameStart": 64, "FrameLength": 16, "Interval": 250 },
+              "CUBAttack.1": { "FrameStart": 0,  "FrameLength": 5, "LoopMode": "Standard", "Interval": 200, "PauseMovement": true, "UseExtra": true },
+              "CUBAttack.2": { "FrameStart": 5,  "FrameLength": 5, "LoopMode": "Standard", "Interval": 200, "PauseMovement": true, "UseExtra": true },
+              "CUBAttack.3": { "FrameStart": 10, "FrameLength": 5, "LoopMode": "Standard", "Interval": 200, "PauseMovement": true, "UseExtra": true },
+              "CUBAttack.4": { "FrameStart": 15, "FrameLength": 5, "LoopMode": "Standard", "Interval": 200, "PauseMovement": true, "UseExtra": true }
+            },
+            "Anchors": [
+              {
+                "Mode": "DigSpot",
+                "Range": 576
+              }
+            ]
+          },
+
+          "Abilities": [
+
+            // LEVEL 1 — short-range bonemerang + dig-spot harvest (bonemerang can hit more than one target when more than one monster nearby)
+            [
+              {
+                "Id": "CUB_L1_BONE",
+                "AbilityClass": "Hitscan",
+                "Description": "{{i18n:CuboneTrinket.Level1}}",
+                "Proc": "Timer",
+                "ProcTimer": 4000,
+                "ProcSyncDelay": 400,
+                "ProcOneshotAnim": "CUBAttack",
+                "ProcSound": { "CueName": "CuboneThrowSound" },
+                "Args": {
+                  "Min": 0, "Max": 0,
+                  "Range": 224
+                }
+              },
+              {
+                "Id": "CUB_L1_DMG_1",
+                "AbilityClass": "Projectile",
+                "Proc": "Sync",
+                "ProcSyncDelay": 500,
+                "ProcSyncId": "CUB_L1_BONE",
+                "Args": {
+                  "Min": 18, "Max": 22,
+                  "Range": 224,
+                  "Knockback": 0.9,
+                  "HitTAS": "NITV_CuboneBone_Hit_1",
+                  "Texture": "Mods/Xan.PokemonCreaturePack/CuboneBone",
+                  "MinVelocity": 8, "MaxVelocity": 12, "Acceleration": 1,
+                  "Homing": true,
+                  "IgnoreObjectCollisions": true,
+                  "IgnoreLocationCollisions": true
+                }
+              },
+              {
+                "Id": "CUB_L1_DMG_2",
+                "AbilityClass": "Projectile",
+                "Proc": "Sync",
+                "ProcSyncId": "CUB_L1_DMG_1",
+                "Args": {
+                  "Min": 18, "Max": 22,
+                  "Range": 448,
+                  "Knockback": 1.2,
+                  "HitTAS": "NITV_CuboneBone_Hit_2",
+                  "Texture": "Mods/Xan.PokemonCreaturePack/CuboneBoneTransparent",
+                  "MinVelocity": 8, "MaxVelocity": 12, "Acceleration": 1,
+                  "Homing": true,
+                  "IgnoreObjectCollisions": true,
+                  "IgnoreLocationCollisions": true
+                }
+              },
+              {
+                "Id": "CUB_L1_HARVEST_DIGSPOT",
+                "AbilityClass": "HarvestDigSpot",
+                "Proc": "Timer",
+                "ProcTimer": 1000,
+                "ProcSound": "harvest",
+                "Args": {
+                  "Range": 0,
+                  "HarvestTo": "Debris"
+                }
+              }
+            ],
+
+            // LEVEL 2 — Bonemerang has more range, pierce, stronger dmg + knockback. Digspot has larger radius.
+            [
+              {
+                "Id": "CUB_L2_BONE",
+                "AbilityClass": "Hitscan",
+                "Description": "{{i18n:CuboneTrinket.Level2}}",
+                "Proc": "Timer",
+                "ProcTimer": 4000,
+                "ProcSyncDelay": 400,
+                "ProcOneshotAnim": "CUBAttack",
+                "ProcSound": { "CueName": "CuboneThrowSound" },
+                "Args": {
+                  "Min": 0, "Max": 0,
+                  "Range": 320
+                }
+              },
+              {
+                "Id": "CUB_L2_DMG_1",
+                "AbilityClass": "Projectile",
+                "Proc": "Sync",
+                "ProcSyncDelay": 500,
+                "ProcSyncId": "CUB_L2_BONE",
+                "Args": {
+                  "Min": 22, "Max": 26,
+                  "Range": 320,
+                  "Knockback": 1.1,
+                  "HitTAS": "NITV_CuboneBone_Hit_1",
+                  "Texture": "Mods/Xan.PokemonCreaturePack/CuboneBone",
+                  "MinVelocity": 8, "MaxVelocity": 12, "Acceleration": 1,
+                  "Homing": true,
+                  "IgnoreObjectCollisions": true,
+                  "IgnoreLocationCollisions": true
+                }
+              },
+              {
+                "Id": "CUB_L2_DMG_2",
+                "AbilityClass": "Projectile",
+                "Proc": "Sync",
+                "ProcSyncId": "CUB_L2_DMG_1",
+                "Args": {
+                  "Min": 22, "Max": 26,
+                  "Range": 544,
+                  "Knockback": 1.4,
+                  "HitTAS": "NITV_CuboneBone_Hit_2",
+                  "Texture": "Mods/Xan.PokemonCreaturePack/CuboneBoneTransparent",
+                  "MinVelocity": 8, "MaxVelocity": 12, "Acceleration": 1,
+                  "Homing": true,
+                  "IgnoreObjectCollisions": true,
+                  "IgnoreLocationCollisions": true
+                }
+              },
+              {
+                "Id": "CUB_L2_HARVEST_DIGSPOT",
+                "AbilityClass": "HarvestDigSpot",
+                "Proc": "Timer",
+                "ProcTimer": 1000,
+                "ProcSound": "harvest",
+                "Args": {
+                  "Range": 1,
+                  "Count": 9,
+                  "HarvestTo": "Debris"
+                }
+              }
+            ],
+
+            // LEVEL 3 — Ultimate bonemerang -> decreased cooldown with chance to crit + all the rest increased
+            [
+              {
+                "Id": "CUB_L3_BONE",
+                "AbilityClass": "Hitscan",
+                "Description": "{{i18n:CuboneTrinket.Level3}}",
+                "Proc": "Timer",
+                "ProcTimer": 3000,
+                "ProcSyncDelay": 400,
+                "ProcOneshotAnim": "CUBAttack",
+                "ProcSound": { "CueName": "CuboneThrowSound" },
+                "Args": {
+                  "Min": 0, "Max": 0,
+                  "Range": 416
+                }
+              },
+              {
+                "Id": "CUB_L3_DMG_1",
+                "AbilityClass": "Projectile",
+                "Proc": "Sync",
+                "ProcSyncDelay": 500,
+                "ProcSyncId": "CUB_L3_BONE",
+                "Args": {
+                  "Min": 26, "Max": 34,
+                  "Range": 416,
+                  "Knockback": 1.3,
+                  "CritChance": 0.2,
+                  "CritDamage": 1.6,
+                  "HitTAS": "NITV_CuboneBone_Hit_1",
+                  "Texture": "Mods/Xan.PokemonCreaturePack/CuboneBone",
+                  "MinVelocity": 8, "MaxVelocity": 12, "Acceleration": 1,
+                  "Homing": true,
+                  "IgnoreObjectCollisions": true,
+                  "IgnoreLocationCollisions": true
+                }
+              },
+              {
+                "Id": "CUB_L3_DMG_2",
+                "AbilityClass": "Projectile",
+                "Proc": "Sync",
+                "ProcSyncId": "CUB_L3_DMG_1",
+                "Args": {
+                  "Min": 26, "Max": 34,
+                  "Range": 640,
+                  "Knockback": 1.7,
+                  "CritChance": 0.2,
+                  "CritDamage": 1.6,
+                  "HitTAS": "NITV_CuboneBone_Hit_2",
+                  "Texture": "Mods/Xan.PokemonCreaturePack/CuboneBoneTransparent",
+                  "MinVelocity": 8, "MaxVelocity": 12, "Acceleration": 1,
+                  "Homing": true,
+                  "IgnoreObjectCollisions": true,
+                  "IgnoreLocationCollisions": true
+                }
+              },
+              {
+                "Id": "CUB_L3_HARVEST_DIGSPOT",
+                "AbilityClass": "HarvestDigSpot",
+                "Proc": "Timer",
+                "ProcTimer": 1000,
+                "ProcSound": "harvest",
+                "Args": {
+                  "Range": 2,
+                  "Count": 25,
+                  "HarvestTo": "Debris"
+                }
+              }
+            ]
+          ]
+        }
+      }
+    },
+
+    {
+      "Action": "EditData",
+      "Target": "mushymato.TrinketTinker/TAS",
+      "Entries": {
+        "NITV_CuboneBone_Hit_1": {
+          "Id": "NITV_CuboneBone_Hit_1",
+          "Texture": "Mods/Xan.PokemonCreaturePack/CuboneBoneAnim",
+          "SourceRect": { "X": 0, "Y": 0, "Width": 32, "Height": 32 },
+          "Scale": 0.5,
+          "Frames": 7,
+          "Interval": 70,
+          "PositionOffset": "-10,-24"
+        },
+        "NITV_CuboneBone_Hit_2": {
+          "Id": "NITV_CuboneBone_Hit_2",
+          "Texture": "Mods/Xan.PokemonCreaturePack/CuboneBoneAnim",
+          "SourceRect": { "X": 0, "Y": 0, "Width": 32, "Height": 32 },
+          "Scale": 0.5,
+          "Frames": 7,
+          "Interval": 70,
+          "PositionOffset": "-10,-24",
+          "Flip": true
+        }
+      }
+    }
+  ]
+}

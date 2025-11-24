@@ -1,0 +1,491 @@
+{
+  "Format": "2.7.0",
+
+  "ConfigSchema": {
+      "PokemonXanEarlyTrinketSlot": {
+          "AllowValues": "true, false",
+          "Default": "true",
+          "Section": "Recommended for Pokemon Trinkets"
+      },
+      "PokemonXanEnablePacifist": {
+        "AllowValues": "true, false",
+        "Default": "false"
+      }
+    },
+
+  "Changes": [                    
+
+    {
+      "Action": "EditData",
+      "LogName": "Created Mail Data",
+      "Target": "Data/Mail",
+      "Entries": {
+        "PokeGroup1_Include": "{{i18n:Group1.mail}}",
+        "SafariGroup1_Unlock": "{{i18n:Group1Safari.mail}}",
+        "PokeGroup2_Include":  "{{i18n:Group2.mail}}",
+        "SafariGroup2_Unlock": "{{i18n:Group2Safari.mail}}",
+        "PokeGroup3_Include":  "{{i18n:Group3.mail}}",
+        "SafariGroup3_Unlock": "{{i18n:Group3Safari.mail}}",
+        "UnlockedSafariMap2": "{{i18n:SafariMap2.mail}}"
+      }
+    },
+
+    {
+      "Action": "EditData",
+      "Target": "Nature.NITV/Rewards",
+      "Entries": {
+        "BugPkmnReward1": {
+          "ItemId": "(BC)154",
+          "ItemCount": 1,
+          "TotalDonated": 0,
+          "creatureRequirements": [
+            "Caterpie_Bush", "Weedle_Bush", "Metapod_Tree", "Kakuna_Tree"
+          ]
+        },
+        "PlainsPkmnReward1": {
+          "ItemId": "PrizeTicket",
+          "ItemCount": 1,
+          "TotalDonated": 0,
+          "creatureRequirements": [
+            "Pidgey_Roam", "Rattata_Roam"
+          ]
+        },
+        "WaterPkmnReward1": {
+          "ItemId": "(O)393",
+          "ItemCount": 5,
+          "TotalDonated": 0,
+          "creatureRequirements": [
+            "Magikarp_Swim"
+          ]
+        },
+        "CavePkmnReward1": {
+          "ItemId": "(O)378",
+          "ItemCount": 20,
+          "TotalDonated": 0,
+          "creatureRequirements": [
+            "Geodude_Attack", "Zubat_Attack"
+          ]
+        },
+        "BugPkmnReward2": {
+          "ItemId": "(BC)105",
+          "ItemCount": 3,
+          "TotalDonated": 0,
+          "creatureRequirements": [
+            "Butterfree_Roam", "Beedrill_Attack", "Venonat_Stump", "Paras_Roam"
+          ]
+        },
+        "WaterPkmnReward2": {
+          "ItemId": "(O)710",
+          "ItemCount": 5,
+          "TotalDonated": 0,
+          "creatureRequirements": [
+            "Poliwag_Swim", "Tentacool_Swim"
+          ]
+        },
+        "PlainsPkmnReward2": {
+          "ItemId": "SkillBook_4",
+          "ItemCount": 1,
+          "TotalDonated": 0,
+          "creatureRequirements": [
+            "Ekans_Attack", "Growlithe_Roam"
+          ]
+        },
+        "CavePkmnReward2": {
+          "ItemId": "(O)330",
+          "ItemCount": 20,
+          "TotalDonated": 0,
+          "creatureRequirements": [
+            "Diglett_Roam", "Sandshrew_Roam"
+          ]
+        },
+        "GhostPkmnReward1": {
+          "ItemId": "(T)NIVSaphNet",
+          "ItemCount": 1,
+          "TotalDonated": 0,
+          "creatureRequirements": [
+            "Gastly_Attack_Safari"
+          ]
+        },
+        "GrassPkmnReward1": {
+          "ItemId": "(BC)MushroomLog",
+          "ItemCount": 3,
+          "TotalDonated": 0,
+          "creatureRequirements": [
+            "Oddish_Stump", "Bellsprout_Roam"
+          ]
+        },
+        "DesertPkmnReward1": {
+          "ItemId": "(O)275",
+          "ItemCount": 5,
+          "TotalDonated": 0,
+          "creatureRequirements": [
+            "Spearow_Attack", "Cubone_Roam", "Rhyhorn_Attack"
+          ]
+        },
+        "WaterPkmnReward3": {
+          "ItemId": "(O)908",
+          "ItemCount": 10,
+          "TotalDonated": 0,
+          "creatureRequirements": [
+            "Shellder_Swim", "Goldeen_Swim", "Psyduck_Swim"
+          ]
+        },
+        "SewerPkmnReward1": {
+          "ItemId": "(O)168",
+          "ItemCount": 50,
+          "TotalDonated": 0,
+          "creatureRequirements": [
+            "Koffing_Attack", "Grimer_Roam"
+          ]
+        },
+        "ElectricPkmnReward1": {
+          "ItemId": "(O)787",
+          "ItemCount": 5,
+          "TotalDonated": 0,
+          "creatureRequirements": [
+            "Pikachu_Roam"
+          ]
+        },
+        "ShinyPkmnReward1": {
+          "ItemId": "(O)74",
+          "ItemCount": 1,
+          "TotalDonated": 0,
+          "creatureRequirements": [
+            "Pidgey_Roam_Shiny", "Geodude_Attack_Shiny", "Caterpie_Bush_Shiny", "Weedle_Bush_Shiny", "Rattata_Roam_Shiny", "Magikarp_Swim_Shiny", "Metapod_Tree_Shiny", "Kakuna_Tree_Shiny", "Zubat_Attack_Shiny"
+          ]
+        },
+        "ShinyPkmnReward2": {
+          "ItemId": "(O)74",
+          "ItemCount": 3,
+          "TotalDonated": 0,
+          "creatureRequirements": [
+            "Butterfree_Roam_Shiny", "Beedrill_Attack_Shiny", "Ekans_Attack_Shiny", "Poliwag_Swim_Shiny", "Tentacool_Swim_Shiny", "Growlithe_Roam_Shiny", "Venonat_Stump_Shiny", "Paras_Roam_Shiny", "Diglett_Roam_Shiny", "Sandshrew_Roam_Shiny", "Gastly_Attack_Shiny"
+          ]
+        },
+        "ShinyPkmnReward3": {
+          "ItemId": "(O)74",
+          "ItemCount": 5,
+          "TotalDonated": 0,
+          "creatureRequirements": [
+            "Spearow_Attack_Shiny", "Koffing_Attack_Shiny", "Oddish_Stump_Shiny", "Bellsprout_Roam_Shiny", "Grimer_Roam_Shiny", "Cubone_Roam_Shiny", "Rhyhorn_Attack_Shiny", "Shellder_Swim_Shiny", "Goldeen_Swim_Shiny", "Psyduck_Swim_Shiny", "Pikachu_Roam_Shiny"
+          ]
+        }
+      }
+    },
+  
+    {
+      "Action": "Include",
+      "FromFile": "Data/MapData/MapData.json"
+    },
+
+    {
+      "Action": "Include",
+      "LogName": "Added Location Data for the Safari Zone",
+      "FromFile": "Data/MapData/SafariZone1LocData.json"
+    },
+
+    {
+      "Action": "Include",
+      "LogName": "Added Location Data for the Safari Zone 2",
+      "FromFile": "Data/MapData/SafariZone2LocData.json"
+    },
+
+    {
+      "Action": "Include",
+      "LogName": "Added all the audio files",
+      "FromFile": "Data/Misc/AudioData.json"
+    },
+
+    {
+      "Action": "Include",
+      "LogName": "Added data for shops",
+      "FromFile": "Data/ShopData.json"
+    },
+
+    {
+      "Action": "Include",
+      "LogName": "Included PokeGroup1",
+      "FromFile": "Data/Group1and2/PokeGroup1.json",
+      "When": {
+        "HasFlag": "PokeGroup1_Include", "PokemonXanEnablePacifist": "false"
+      }
+    },
+
+    {
+      "Action": "Include",
+      "LogName": "Included PokeGroup1",
+      "FromFile": "Data/Group1and2/Pacifist_PokeGroup1.json",
+      "When": {
+        "HasFlag": "PokeGroup1_Include", "PokemonXanEnablePacifist": "true"
+      }
+    },
+
+    {
+      "Action": "Include",
+      "LogName": "Included Safari PokeGroup1",
+      "FromFile": "Data/Group1and2/PokeGroup1Safari.json",
+      "When": {
+        "HasFlag": "SafariGroup1_Unlock", "PokemonXanEnablePacifist": "false"
+      }
+    },
+
+    {
+      "Action": "Include",
+      "LogName": "Included Safari PokeGroup1",
+      "FromFile": "Data/Group1and2/Pacifist_PokeGroup1Safari.json",
+      "When": {
+        "HasFlag": "SafariGroup1_Unlock", "PokemonXanEnablePacifist": "true"
+      }
+    },
+
+    {
+      "Action": "Include",
+      "LogName": "Included PokeGroup2",
+      "FromFile": "Data/Group1and2/PokeGroup2.json",
+      "When": {
+        "HasFlag": "PokeGroup2_Include", "PokemonXanEnablePacifist": "false"
+      }
+    },
+
+    {
+      "Action": "Include",
+      "LogName": "Included PokeGroup2",
+      "FromFile": "Data/Group1and2/Pacifist_PokeGroup2.json",
+      "When": {
+        "HasFlag": "PokeGroup2_Include", "PokemonXanEnablePacifist": "true"
+      }
+    },
+
+    {
+      "Action": "Include",
+      "FromFile": "Data/MapData/QuestBoardMapData.json",
+      "When": {
+        "HasFlag": "SafariGroup1_Unlock"
+      }
+    },
+
+    {
+      "Action": "Include",
+      "FromFile": "Data/QuestBoard/Group1Quests.json",
+      "When": {
+        "HasFlag": "SafariGroup1_Unlock"
+      }
+    },
+
+    {
+      "Action": "Include",
+      "LogName": "Included Safari PokeGroup2",
+      "FromFile": "Data/Group1and2/PokeGroup2Safari.json",
+      "When": {
+        "HasFlag": "SafariGroup2_Unlock", "PokemonXanEnablePacifist": "false"
+      }
+    },
+
+    {
+      "Action": "Include",
+      "LogName": "Included Safari PokeGroup2",
+      "FromFile": "Data/Group1and2/Pacifist_PokeGroup2Safari.json",
+      "When": {
+        "HasFlag": "SafariGroup2_Unlock", "PokemonXanEnablePacifist": "true"
+      }
+    },
+
+    {
+      "Action": "Include",
+      "FromFile": "Data/QuestBoard/Group2Quests.json",
+      "When": {
+        "HasFlag": "SafariGroup2_Unlock"
+      }
+    },
+
+    {
+      "Action": "Include",
+      "LogName": "Included PokeGroup3",
+      "FromFile": "Data/Group3/PokeGroup3.json",
+      "When": {
+        "HasFlag": "PokeGroup3_Include", "PokemonXanEnablePacifist": "false"
+      }
+    },
+
+    {
+      "Action": "Include",
+      "LogName": "Included PokeGroup3",
+      "FromFile": "Data/Group3/Pacifist_PokeGroup3.json",
+      "When": {
+        "HasFlag": "PokeGroup3_Include", "PokemonXanEnablePacifist": "true"
+      }
+    },
+
+    {
+      "Action": "Include",
+      "LogName": "Included Safari PokeGroup2",
+      "FromFile": "Data/Group3/PokeGroup3Safari.json",
+      "When": {
+        "HasFlag": "SafariGroup3_Unlock", "PokemonXanEnablePacifist": "false"
+      }
+    },
+
+    {
+      "Action": "Include",
+      "LogName": "Included Safari PokeGroup2",
+      "FromFile": "Data/Group3/Pacifist_PokeGroup3Safari.json",
+      "When": {
+        "HasFlag": "SafariGroup3_Unlock", "PokemonXanEnablePacifist": "true"
+      }
+    },
+
+    {
+      "Action": "Include",
+      "FromFile": "Data/QuestBoard/Group3Quests.json",
+      "When": {
+        "HasFlag": "SafariGroup3_Unlock"
+      }
+    },
+
+    {
+      "Action": "Include",
+      "LogName": "Included Shinies from PokeGroup1and2",
+      "FromFile": "Data/Group1and2/PokeGroup1and2Shiny.json"
+    },
+
+    {
+      "Action": "Include",
+      "LogName": "Included Shinies from PokeGroup3",
+      "FromFile": "Data/Group3/PokeGroup3Shiny.json"
+    },
+
+    {
+      "Action": "Include",
+      "FromFile": "Data/Trinkets/TrinketTinkerData.json",
+      "When": { "HasMod": "mushymato.TrinketTinker" }
+    },
+
+    {
+      "Action": "Include",
+      "FromFile": "Data/Trinkets/GastlyTrinket.json",
+      "When": { "HasMod": "mushymato.TrinketTinker" }
+    },
+
+    {
+      "Action": "Include",
+      "FromFile": "Data/Trinkets/CharmanderTrinketLOL.json",
+      "When": { "HasMod": "mushymato.TrinketTinker" }
+    },
+
+    {
+      "Action": "Include",
+      "FromFile": "Data/Trinkets/ShadyTrader.json",
+      "When": { "HasMod": "mushymato.TrinketTinker" }
+    },
+
+    {
+      "Action": "Include",
+      "FromFile": "Data/Trinkets/TrinketTrader.json",
+      "When": { "HasMod": "mushymato.TrinketTinker" }
+    },
+
+    {
+      "Action": "Include",
+      "FromFile": "Data/Trinkets/BuffTrinkets.json",
+      "When": { "HasMod": "mushymato.TrinketTinker" }
+    },
+
+    {
+      "Action": "Include",
+      "FromFile": "Data/Trinkets/EarlyTrinketSlot.json",
+      "When": { "HasMod": "mushymato.TrinketTinker" }
+    },
+
+    {
+      "Action": "Include",
+      "FromFile": "Data/Trinkets/KoffingTrinket.json",
+      "When": { "HasMod": "mushymato.TrinketTinker" }
+    },
+
+    {
+      "Action": "Include",
+      "FromFile": "Data/Trinkets/CuboneTrinket.json",
+      "When": { "HasMod": "mushymato.TrinketTinker" }
+    },
+
+    {
+      "Action": "Include",
+      "FromFile": "Data/Trinkets/PikachuTrinket.json",
+      "When": { "HasMod": "mushymato.TrinketTinker" }
+    },
+
+    {
+      "Action": "Include",
+      "FromFile": "Data/Misc/CustomBuffs.json"
+    },
+
+    {
+      "Action": "Include",
+      "FromFile": "Data/Misc/CategoryTags.json"
+    },
+
+    {
+      "Action": "Include",
+      "FromFile": "Data/QuestBoard/PokemonSOStrings.json"
+    },
+
+    {
+      "Action": "Include",
+      "FromFile": "Data/NPC/SpiritombNPC.json"
+    },
+
+    {
+      "Action": "Include",
+      "FromFile": "Data/ObjectData.json"
+    },
+
+    {
+      "Action": "Include",
+      "FromFile": "Data/Events/UnlockSafari2.json"
+    },
+
+    {
+      "Action": "Load",
+      "Target": "Mods/Xan.PokemonCreaturePack/PokemonCrops, Mods/Xan.PokemonCreaturePack/PokemonCropItems, Mods/Xan.PokemonCreaturePack/PokemonSmoothies",
+      "FromFile": "Assets/{{TargetWithoutPath}}.png"
+    },
+
+    {
+      "Action": "Load",
+      "Target": "Characters/Dialogue/Spiritomb",
+      "FromFile": "Assets/dialogue.json"
+    },
+
+    {
+      "Action": "Load",
+      "Target": "Portraits/Spiritomb",
+      "FromFile": "Assets/SpiritombPortrait.png"
+    },
+
+    {
+      "Action": "Load",
+      "Target": "Characters/Spiritomb",
+      "FromFile": "Assets/Spiritomb.png"
+    },
+
+    {
+      "Action": "Load",
+      "Target": "Characters/schedules/Spiritomb",
+      "FromFile": "Data/NPC/Spiritomb.json"
+    },
+
+    {
+      "Action": "Load",
+      "Target": "TileSheets/PokeGroupUnlockItems",
+      "FromFile": "Assets/PokeGroupUnlockItems.png"
+    },
+
+    {
+      "Action": "Load",
+      "Target": "LooseSprites/NITV_SpecialOrdersBoard",
+      "FromFile": "Assets/NITV_SpecialOrdersBoard.png"
+    }
+
+
+  ]
+}

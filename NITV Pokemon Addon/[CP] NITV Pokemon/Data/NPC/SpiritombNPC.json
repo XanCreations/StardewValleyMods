@@ -1,0 +1,104 @@
+{
+
+  "Changes": [                    
+
+    {
+      "Action": "EditData",
+      "Target": "Data/Characters",
+      "Entries": {
+        "Spiritomb": {
+          "DisplayName": "{{i18n:Spiritomb.Name}}",
+          "TextureName": "Spiritomb",
+          "Gender": "Undefined",
+          "SocialAnxiety": "Neutral",
+          "Optimism": "Neutral",
+          "CanVisitIsland": false,
+          "CanSocialize": true,
+          "CanReceiveGifts": false,
+          "CanGreetNearbyCharacters": false,
+          "PerfectionScore": false,
+          "SpawnIfMissing": true,
+          "Breather": false,
+          "Size": {
+            "X": 24,
+            "Y": 24
+          },
+          "MugShotSourceRect": {
+            "X": 4,
+            "Y": 0,
+            "Width": 16,
+            "Height": 24
+          },
+          "Shadow": {
+            "Offset": { "X": -2, "Y": -7 }
+          },
+          "Home": [
+            {
+              "ID": "Default",
+              "Location": "NIVOuterInsec",
+              "Tile": { "X": 15, "Y": 16 },
+              "Direction": "down"
+            }
+          ],
+          "Appearance": [
+            {
+              "Id": "Default",
+              "Indoors": true,
+              "Outdoors": true,
+              "Portrait": "Portraits/Spiritomb",
+              "Sprite": "Characters/Spiritomb",
+              "Precedence": 0,
+              "Weight": 1
+            }
+          ]
+        }
+      }
+    },
+
+    {
+      "Action": "EditData",
+      "Target": "Data/animationDescriptions",
+      "Entries": {
+        "spiritomb_idle_down": "24 25 26 27 28 29/24 25 26 27 28 29/24 25 26 27 28 29"
+      }
+    },
+
+    {
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Spiritomb",
+      "Entries":
+        {
+          "Q1_reaction_yes": "{{i18n:Q1_reaction_yes}}",
+          "Q1_reaction_no": "{{i18n:Q1_reaction_no}}",
+          "Q2_reaction_why": "{{i18n:Q2_reaction_why}}",
+          "Q2_reaction_ok": "{{i18n:Q2_reaction_ok}}",
+
+          "Mon": "{{i18n:Spiritomb.Mon}}",
+          "Tue": "{{i18n:Spiritomb.Tue}}",
+          "Wed": "{{i18n:Spiritomb.Wed}}",
+          "Thu": "{{i18n:Spiritomb.Thu}}",
+          "Fri": "{{i18n:Spiritomb.Fri}}",
+          "Sat": "{{i18n:Spiritomb.Sat}}",
+          "Sun": "{{i18n:Spiritomb.Sun}}",
+          "GreenRain": "{{i18n:Spiritomb.GreenRain}}",
+          "GreenRain_2": "{{i18n:Spiritomb.GreenRain_2}}",
+          "Spiritomb_fallback": "{{i18n:Spiritomb_fallback}}",
+
+          "Menu_prompt": "{{i18n:Menu_prompt}}",
+          "Menu_checkprogress": "{{i18n:Menu_checkprogress}}",
+          "Menu_nevermind": "{{i18n:Menu_nevermind}}",
+          "Menu_safari": "{{i18n:Menu_safari}}",
+          "Q3_all": "{{i18n:Q3_all}}",
+          "Q3_some": "{{i18n:Q3_some}}",
+          "Q3_none": "{{i18n:Q3_none}}",
+          "Q4_all": "{{i18n:Q4_all}}",
+          "Q4_some": "{{i18n:Q4_some}}",
+          "Q4_none": "{{i18n:Q4_none}}",
+          "Q5_all": "{{i18n:Q5_all}}",
+          "Q5_some": "{{i18n:Q5_some}}",
+          "Q5_none": "{{i18n:Q5_none}}"
+        }
+    }
+
+  ]
+}

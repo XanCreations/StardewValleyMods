@@ -1,0 +1,250 @@
+{
+  "Changes": [                    
+
+    {
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+        "PokeGroup1Contract": {
+          "Name": "PokeGroup1Contract",
+          "DisplayName": "{{i18n:PokeGroup1Contract.DisplayName}}",
+          "Description": "{{i18n:PokeGroup1Contract.Description}}",
+          "Edibility": -300,
+          "Type": "Basic",
+          "Category": "-102",
+          "Texture": "TileSheets/PokeGroupUnlockItems",
+          "SpriteIndex": "0",
+          "ExcludeFromShippingCollection": true
+        },
+        "PokeGroup2Contract": {
+          "Name": "PokeGroup2Contract",
+          "DisplayName": "{{i18n:PokeGroup2Contract.DisplayName}}",
+          "Description": "{{i18n:PokeGroup2Contract.Description}}",
+          "Edibility": -300,
+          "Type": "Basic",
+          "Category": "-102",
+          "Texture": "TileSheets/PokeGroupUnlockItems",
+          "SpriteIndex": "1",
+          "ExcludeFromShippingCollection": true
+        },
+        "PokeGroup3Contract": {
+          "Name": "PokeGroup3Contract",
+          "DisplayName": "{{i18n:PokeGroup3Contract.DisplayName}}",
+          "Description": "{{i18n:PokeGroup3Contract.Description}}",
+          "Edibility": -300,
+          "Type": "Basic",
+          "Category": "-102",
+          "Texture": "TileSheets/PokeGroupUnlockItems",
+          "SpriteIndex": "2",
+          "ExcludeFromShippingCollection": true
+        },
+
+				"SafariGrassItem": {
+					"Name": "Safari Grass",
+					"DisplayName": "{{i18n:SafariGrassItem.DisplayName}}",
+					"Description": "{{i18n:SafariGrassItem.Description}}",
+          "type": "Vegetable",
+					"Category": -75,
+					"Price": 7,
+					"Texture": "Mods/Xan.PokemonCreaturePack/PokemonCropItems",
+					"SpriteIndex": 1,
+					"Edibility": 1,
+          "ExcludeFromShippingCollection": true
+        },
+        "SafariGrass": {
+          "Name": "Safari Grass Seeds",
+          "DisplayName": "{{i18n:SafariGrass.DisplayName}}",
+          "Description": "{{i18n:SafariGrass.Description}}",
+          "Type": "Seeds",
+          "Category": -74,
+          "Price": 3,
+          "Edibility": -300,
+          "Texture": "Mods/Xan.PokemonCreaturePack/PokemonCropItems",
+          "SpriteIndex": 0,
+          "ExcludeFromShippingCollection": true
+        },
+        "PechaFruitItem": {
+					"Name": "Pecha Fruit",
+					"DisplayName": "{{i18n:PechaFruitItem.DisplayName}}",
+					"Description": "{{i18n:PechaFruitItem.Description}}",
+          "type": "Fruit",
+					"Category": -79,
+					"Price": 26,
+					"Texture": "Mods/Xan.PokemonCreaturePack/PokemonCropItems",
+					"SpriteIndex": 3,
+					"Edibility": 25,
+          "ExcludeFromShippingCollection": true
+        },
+        "PechaFruit": {
+          "Name": "Pecha Fruit Seeds",
+          "DisplayName": "{{i18n:PechaFruit.DisplayName}}",
+          "Description": "{{i18n:PechaFruit.Description}}",
+          "Type": "Seeds",
+          "Category": -74,
+          "Price": 26,
+          "Texture": "Mods/Xan.PokemonCreaturePack/PokemonCropItems",
+          "SpriteIndex": 2,
+          "ExcludeFromShippingCollection": true
+        },
+        "OranFruitItem": {
+					"Name": "Oran Fruit",
+					"DisplayName": "{{i18n:OranFruitItem.DisplayName}}",
+					"Description": "{{i18n:OranFruitItem.Description}}",
+          "type": "Fruit",
+					"Category": -79,
+					"Price": 13,
+					"Texture": "Mods/Xan.PokemonCreaturePack/PokemonCropItems",
+					"SpriteIndex": 5,
+					"Edibility": 15,
+          "ExcludeFromShippingCollection": true
+        },
+        "OranFruit": {
+          "Name": "Oran Fruit Seeds",
+          "DisplayName": "{{i18n:OranFruit.DisplayName}}",
+          "Description": "{{i18n:OranFruit.Description}}",
+          "Type": "Seeds",
+          "Category": -74,
+          "Price": 13,
+          "Texture": "Mods/Xan.PokemonCreaturePack/PokemonCropItems",
+          "SpriteIndex": 4,
+          "ExcludeFromShippingCollection": true
+        },
+        "CheriFruitItem": {
+					"Name": "Cheri Fruit",
+					"DisplayName": "{{i18n:CheriFruitItem.DisplayName}}",
+					"Description": "{{i18n:CheriFruitItem.Description}}",
+          "type": "Fruit",
+					"Category": -79,
+					"Price": 19,
+					"Texture": "Mods/Xan.PokemonCreaturePack/PokemonCropItems",
+					"SpriteIndex": 7,
+					"Edibility": -2,
+          "ExcludeFromShippingCollection": true
+        },
+        "CheriFruit": {
+          "Name": "Cheri Fruit Seeds",
+          "DisplayName": "{{i18n:CheriFruit.DisplayName}}",
+          "Description": "{{i18n:CheriFruit.Description}}",
+          "Type": "Seeds",
+          "Category": -74,
+          "Price": 19,
+          "Texture": "Mods/Xan.PokemonCreaturePack/PokemonCropItems",
+          "SpriteIndex": 6,
+          "ExcludeFromShippingCollection": true
+        },
+
+        "OranSmoothie": {
+          "Name": "Oran Smoothie",
+          "DisplayName": "{{i18n:OranSmoothie.DisplayName}}",
+          "Description": "{{i18n:OranSmoothie.Description}}",
+          "Type": "Cooking",
+          "Category": -7,
+          "Price": 60,
+          "Edibility": 30,
+          "IsDrink": true,
+          "Texture": "Mods/Xan.PokemonCreaturePack/PokemonSmoothies",
+          "SpriteIndex": 0,
+          "ExcludeFromShippingCollection": true
+        },
+        "CheriSmoothie": {
+          "Name": "Cheri Smoothie",
+          "DisplayName": "{{i18n:CheriSmoothie.DisplayName}}",
+          "Description": "{{i18n:CheriSmoothie.Description}}",
+          "Type": "Cooking",
+          "Category": -7,
+          "Price": 90,
+          "Edibility": 20,
+          "IsDrink": true,
+          "Texture": "Mods/Xan.PokemonCreaturePack/PokemonSmoothies",
+          "SpriteIndex": 1,
+          "ExcludeFromShippingCollection": true,
+          "Buffs": [
+            {
+              "Id": "Smoothie",
+              "BuffId": "Xan.Buffs/FoodAttackSpeed1",
+              "Duration": 300
+            }
+          ]
+        },
+        "PechaSmoothie": {
+          "Name": "Pecha Smoothie",
+          "DisplayName": "{{i18n:PechaSmoothie.DisplayName}}",
+          "Description": "{{i18n:PechaSmoothie.Description}}",
+          "Type": "Cooking",
+          "Category": -7,
+          "Price": 125,
+          "Edibility": 50,
+          "IsDrink": true,
+          "Texture": "Mods/Xan.PokemonCreaturePack/PokemonSmoothies",
+          "SpriteIndex": 2,
+          "ExcludeFromShippingCollection": true
+        }
+			}
+		},
+
+    {
+      "Action": "EditData",
+      "Target": "Data/Crops",
+      "Entries": {
+        "SafariGrass": {
+          "Seasons": ["spring","summer","fall","winter"],
+          "NeedsWatering": false,
+          "DaysInPhase": [ 1, 1, 1, 1 ],
+          "HarvestMethod": "Scythe",
+          "HarvestItemId": "SafariGrassItem",
+          "Texture": "Mods/Xan.PokemonCreaturePack/PokemonCrops",
+          "SpriteIndex": 0,
+          "CountForMonoculture": false,
+          "CountForPolyculture": false
+        },
+        "PechaFruit": {
+          "Seasons": ["spring","summer","fall","winter"],
+          "NeedsWatering": false,
+          "DaysInPhase": [ 1, 1, 1, 1, 1 ],
+          "RegrowDays": 1,
+          "IsRaised": true,
+          "HarvestItemId": "PechaFruitItem",
+          "Texture": "Mods/Xan.PokemonCreaturePack/PokemonCrops",
+          "SpriteIndex": 1,
+          "CountForMonoculture": false,
+          "CountForPolyculture": false
+        },
+        "OranFruit": {
+          "Seasons": ["spring","summer","fall","winter"],
+          "NeedsWatering": false,
+          "DaysInPhase": [ 1, 1, 1, 1, 1 ],
+          "RegrowDays": 1,
+          "IsRaised": true,
+          "HarvestItemId": "OranFruitItem",
+          "Texture": "Mods/Xan.PokemonCreaturePack/PokemonCrops",
+          "SpriteIndex": 2,
+          "CountForMonoculture": false,
+          "CountForPolyculture": false
+        },
+        "CheriFruit": {
+          "Seasons": ["spring","summer","fall","winter"],
+          "NeedsWatering": false,
+          "DaysInPhase": [ 1, 1, 1, 1, 1 ],
+          "RegrowDays": 1,
+          "IsRaised": true,
+          "HarvestItemId": "CheriFruitItem",
+          "Texture": "Mods/Xan.PokemonCreaturePack/PokemonCrops",
+          "SpriteIndex": 3,
+          "CountForMonoculture": false,
+          "CountForPolyculture": false
+        }
+      }
+    },
+
+    {
+      "Action": "EditData",
+      "Target": "Data/CookingRecipes",
+      "Entries": {
+        "Oran Smoothie":  "OranFruitItem 5/1 10/OranSmoothie/default/",
+        "Cheri Smoothie": "CheriFruitItem 5 184 1 245 1/1 10/CheriSmoothie/default/",
+        "Pecha Smoothie": "PechaFruitItem 5/1 10/PechaSmoothie/default/"
+      }
+    }
+
+  ]
+}

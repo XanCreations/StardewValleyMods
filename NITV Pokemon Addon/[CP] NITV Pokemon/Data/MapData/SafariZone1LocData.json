@@ -1,0 +1,115 @@
+{
+  "Changes": [
+    {
+      "Action": "EditData",
+      "Target": "Data/Locations",
+      "Entries": {
+        "NITVPokemon_SafariZone": {
+          "DisplayName": "{{i18n:Safari1.DisplayName}}",
+          "CreateOnLoad": { "MapPath": "Maps/NITVPokemon_SafariZone", "AlwaysActive": false },
+          "MusicDefault": "Xan.PokemonCreaturePack.SafariMusic",
+          "DefaultArrivalTile": {"X": 52,"Y": 32},
+          "SeasonOverride": "Spring",
+          "CanPlantHere": true,
+          "CanHaveGreenRainSpawns": false,
+          "MusicIgnoredInRain": false,
+          "MusicIgnoredInFallDebris": false,
+          "CustomFields": {
+            "Nature.NIV.OnlyExplicit": true
+          },
+
+          "FishAreas": {
+            "SafariWater1Deep": { "Position": { "X": 19, "Y": 14, "Width": 2, "Height": 2 } },
+            "SafariWater2Deep": { "Position": { "X": 15, "Y": 20, "Width": 2, "Height": 3 } },
+            "SafariWater3Deep": { "Position": { "X": 19, "Y": 29, "Width": 2, "Height": 2 } },
+            "SafariWater1": { "Position": { "X": 18, "Y": 12, "Width": 4, "Height": 6 }, "CrabPotFishTypes": [ "freshwater", "ocean" ] },
+            "SafariWater2": { "Position": { "X": 14, "Y": 18, "Width": 4, "Height": 6 }, "CrabPotFishTypes": [ "freshwater", "ocean" ] },
+            "SafariWater3": { "Position": { "X": 18, "Y": 27, "Width": 4, "Height": 5 }, "CrabPotFishTypes": [ "freshwater", "ocean" ] }
+          },
+
+          "Fish": [
+
+            // SHALLOW WATER
+
+            // ------------------- SafariWater1 -------------------
+            { "ItemId": "(O)152", "Chance": 0.10, "FishAreaId": "SafariWater1" }, // Seaweed
+            { "ItemId": "(O)153", "Chance": 0.11, "FishAreaId": "SafariWater1" }, // Green Algae
+            { "ItemId": "(O)157", "Chance": 0.06, "FishAreaId": "SafariWater1" }, // White Algae
+            { "ItemId": "(O)131", "Chance": 0.28, "FishAreaId": "SafariWater1" }, // Sardine
+            { "ItemId": "(O)145", "Chance": 0.28, "FishAreaId": "SafariWater1" }, // Sunfish
+            { "ItemId": "(O)129", "Chance": 0.28, "FishAreaId": "SafariWater1" }, // Anchovy
+            { "ItemId": "(O)142", "Chance": 0.33, "FishAreaId": "SafariWater1" }, // Carp
+            { "ItemId": "(O)147", "Chance": 0.33, "FishAreaId": "SafariWater1" }, // Herring
+            { "ItemId": "(O)137", "Chance": 0.33, "FishAreaId": "SafariWater1" }, // Smallmouth Bass
+            { "ItemId": "(O)132", "Chance": 0.33, "FishAreaId": "SafariWater1" }, // Bream
+            { "ItemId": "(O)150", "Chance": 0.33, "FishAreaId": "SafariWater1" }, // Red Snapper
+
+            // ------------------- SafariWater2 -------------------
+            { "ItemId": "(O)152", "Chance": 0.10, "FishAreaId": "SafariWater2" }, // Seaweed
+            { "ItemId": "(O)153", "Chance": 0.11, "FishAreaId": "SafariWater2" }, // Green Algae
+            { "ItemId": "(O)157", "Chance": 0.06, "FishAreaId": "SafariWater2" }, // White Algae
+            { "ItemId": "(O)145", "Chance": 0.28, "FishAreaId": "SafariWater2" }, // Sunfish
+            { "ItemId": "(O)147", "Chance": 0.28, "FishAreaId": "SafariWater2" }, // Herring
+            { "ItemId": "(O)131", "Chance": 0.28, "FishAreaId": "SafariWater2" }, // Sardine
+            { "ItemId": "(O)129", "Chance": 0.33, "FishAreaId": "SafariWater2" }, // Anchovy
+            { "ItemId": "(O)150", "Chance": 0.33, "FishAreaId": "SafariWater2" }, // Red Snapper
+            { "ItemId": "(O)132", "Chance": 0.33, "FishAreaId": "SafariWater2" }, // Bream
+            { "ItemId": "(O)142", "Chance": 0.33, "FishAreaId": "SafariWater2" }, // Carp
+            { "ItemId": "(O)137", "Chance": 0.33, "FishAreaId": "SafariWater2" }, // Smallmouth Bass
+
+            // ------------------- SafariWater3 -------------------
+            { "ItemId": "(O)152", "Chance": 0.10, "FishAreaId": "SafariWater3" }, // Seaweed
+            { "ItemId": "(O)153", "Chance": 0.11, "FishAreaId": "SafariWater3" }, // Green Algae
+            { "ItemId": "(O)157", "Chance": 0.06, "FishAreaId": "SafariWater3" }, // White Algae
+            { "ItemId": "(O)150", "Chance": 0.28, "FishAreaId": "SafariWater3" }, // Red Snapper
+            { "ItemId": "(O)132", "Chance": 0.28, "FishAreaId": "SafariWater3" }, // Bream
+            { "ItemId": "(O)137", "Chance": 0.28, "FishAreaId": "SafariWater3" }, // Smallmouth Bass
+            { "ItemId": "(O)147", "Chance": 0.33, "FishAreaId": "SafariWater3" }, // Herring
+            { "ItemId": "(O)131", "Chance": 0.33, "FishAreaId": "SafariWater3" }, // Sardine
+            { "ItemId": "(O)142", "Chance": 0.33, "FishAreaId": "SafariWater3" }, // Carp
+            { "ItemId": "(O)129", "Chance": 0.33, "FishAreaId": "SafariWater3" }, // Anchovy
+            { "ItemId": "(O)145", "Chance": 0.33, "FishAreaId": "SafariWater3" }, // Sunfish
+
+            // DEEPER WATER
+
+            // ------------------- SafariWater1Deep -------------------
+            { "ItemId": "(O)152", "Chance": 0.10, "FishAreaId": "SafariWater1Deep" }, // Seaweed
+            { "ItemId": "(O)153", "Chance": 0.11, "FishAreaId": "SafariWater1Deep" }, // Green Algae
+            { "ItemId": "(O)157", "Chance": 0.06, "FishAreaId": "SafariWater1Deep" }, // White Algae
+            { "ItemId": "(O)700", "Chance": 0.30, "FishAreaId": "SafariWater1Deep" }, // Bullhead (uncommon)
+            { "ItemId": "(O)706", "Chance": 0.30, "FishAreaId": "SafariWater1Deep" }, // Shad (uncommon)
+            { "ItemId": "(O)138", "Chance": 0.30, "FishAreaId": "SafariWater1Deep" }, // Rainbow Trout (uncommon)
+            { "ItemId": "(O)131", "Chance": 0.28, "FishAreaId": "SafariWater1Deep" }, // Sardine (common)
+            { "ItemId": "(O)145", "Chance": 0.28, "FishAreaId": "SafariWater1Deep" }, // Sunfish (common)
+            { "ItemId": "(O)129", "Chance": 0.28, "FishAreaId": "SafariWater1Deep" }, // Anchovy (common)
+            { "ItemId": "(O)142", "Chance": 0.28, "FishAreaId": "SafariWater1Deep" }, // Carp (common)
+
+            // ------------------- SafariWater2Deep -------------------
+            { "ItemId": "(O)152", "Chance": 0.10, "FishAreaId": "SafariWater2Deep" }, // Seaweed
+            { "ItemId": "(O)153", "Chance": 0.11, "FishAreaId": "SafariWater2Deep" }, // Green Algae
+            { "ItemId": "(O)157", "Chance": 0.06, "FishAreaId": "SafariWater2Deep" }, // White Algae
+            { "ItemId": "(O)146", "Chance": 0.30, "FishAreaId": "SafariWater2Deep" }, // Red Mullet (uncommon)
+            { "ItemId": "(O)702", "Chance": 0.30, "FishAreaId": "SafariWater2Deep" }, // Chub (uncommon)
+            { "ItemId": "(O)734", "Chance": 0.30, "FishAreaId": "SafariWater2Deep" }, // Woodskip (uncommon)
+            { "ItemId": "(O)147", "Chance": 0.28, "FishAreaId": "SafariWater2Deep" }, // Herring (common)
+            { "ItemId": "(O)129", "Chance": 0.28, "FishAreaId": "SafariWater2Deep" }, // Anchovy (common)
+            { "ItemId": "(O)131", "Chance": 0.28, "FishAreaId": "SafariWater2Deep" }, // Sardine (common)
+            { "ItemId": "(O)132", "Chance": 0.28, "FishAreaId": "SafariWater2Deep" }, // Bream (common)
+
+            // ------------------- SafariWater3Deep -------------------
+            { "ItemId": "(O)152", "Chance": 0.10, "FishAreaId": "SafariWater3Deep" }, // Seaweed
+            { "ItemId": "(O)153", "Chance": 0.11, "FishAreaId": "SafariWater3Deep" }, // Green Algae
+            { "ItemId": "(O)157", "Chance": 0.06, "FishAreaId": "SafariWater3Deep" }, // White Algae
+            { "ItemId": "(O)141", "Chance": 0.30, "FishAreaId": "SafariWater3Deep" }, // Perch (uncommon)
+            { "ItemId": "(O)700", "Chance": 0.30, "FishAreaId": "SafariWater3Deep" }, // Bullhead (uncommon)
+            { "ItemId": "(O)164", "Chance": 0.30, "FishAreaId": "SafariWater3Deep" }, // Sandfish (uncommon)
+            { "ItemId": "(O)132", "Chance": 0.28, "FishAreaId": "SafariWater3Deep" }, // Bream (common)
+            { "ItemId": "(O)137", "Chance": 0.28, "FishAreaId": "SafariWater3Deep" }, // Smallmouth Bass (common)
+            { "ItemId": "(O)131", "Chance": 0.28, "FishAreaId": "SafariWater3Deep" }, // Sardine (common)
+            { "ItemId": "(O)147", "Chance": 0.28, "FishAreaId": "SafariWater3Deep" } // Herring (common)
+          ]
+        }
+      }
+    }
+  ]
+}

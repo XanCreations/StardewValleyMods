@@ -1,0 +1,37 @@
+{
+  "Changes": [                    
+
+    {
+      "Action": "EditMap",
+      "PatchMode": "Replace",
+      "Priority": "Early",
+      "Target": "Mods/NatureInTheValley/Maps/NatValleyOutsideInsec",
+      "FromArea": { "X": 0, "Y": 0, "Width": 4, "Height": 4 },
+      "ToArea": { "X": 10, "Y": 13, "Width": 4, "Height": 4 },
+      "FromFile": "Maps/PokemonQuestBoard.tmx"
+    },
+
+    {
+      "Action": "EditMap",
+      "Target": "Mods/NatureInTheValley/Maps/NatValleyOutsideInsec",
+      "Priority": "Late",
+      "MapTiles": [
+        {
+          "Position": { "X": 12, "Y": 16 },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "NITVPokemonQuestBoard"
+          }
+        },
+        {
+          "Position": { "X": 10, "Y": 16 },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "DropBox PokePC"
+          }
+        }
+      ]
+    }
+
+  ]
+}

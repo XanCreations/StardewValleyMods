@@ -1,0 +1,283 @@
+{
+    "Changes": [                    
+
+    {
+      "Action": "EditData",
+      "Target": "Data/AudioChanges",
+      "Entries": {
+          "Xan.PokemonCreaturePack.SafariMusic": {
+              "ID": "Xan.PokemonCreaturePack.SafariMusic",
+              "Category": "Music",
+              "FilePaths": [ "{{AbsoluteFilePath: Sounds/Music/Music_SafariZone.ogg}}" ],
+              "StreamedVorbis": true,
+              "Looped": false
+        },
+        "Xan.PokemonCreaturePack.SafariHouseMusic": {
+              "ID": "Xan.PokemonCreaturePack.SafariHouseMusic",
+              "Category": "Music",
+              "FilePaths": [ "{{AbsoluteFilePath: Sounds/Music/Music_SafariHouse.ogg}}" ],
+              "StreamedVorbis": true,
+              "Looped": false
+        },
+        "Xan.PokemonCreaturePack.InsectariumJukeboxMusic": {
+              "ID": "Xan.PokemonCreaturePack.InsectariumJukeboxMusic",
+              "Category": "Music",
+              "FilePaths": [ "{{AbsoluteFilePath: Sounds/Music/Music_InsectariumJukebox.ogg}}" ],
+              "StreamedVorbis": true,
+              "Looped": true
+        },
+        "Xan.PokemonCreaturePack.TrinketHouseMusic": {
+              "ID": "Xan.PokemonCreaturePack.TrinketHouseMusic",
+              "Category": "Music",
+              "FilePaths": [ "{{AbsoluteFilePath: Sounds/Music/Music_TrinketHouse.ogg}}" ],
+              "StreamedVorbis": true,
+              "Looped": true
+        }
+      }
+    },
+
+    {
+      "Action": "EditData",
+      "Target": "Data/JukeboxTracks",
+      "Entries": {
+        "Xan.PokemonCreaturePack.InsectariumJukeboxMusic": {
+          "Name": "{{i18n:Jukebox.track1}}",
+          "Available": true
+        },
+        "Xan.PokemonCreaturePack.SafariMusic": {
+          "Name": "{{i18n:Jukebox.track2}}"
+        },
+        "Xan.PokemonCreaturePack.SafariHouseMusic": {
+          "Name": "{{i18n:Jukebox.track3}}"
+        },
+        "Xan.PokemonCreaturePack.TrinketHouseMusic": {
+          "Name": "{{i18n:Jukebox.track4}}"
+        }
+      }
+    },
+
+    {
+      "Action": "EditData",
+      "Target": "Data/AudioChanges",
+      "Entries": {
+            "Xan.PokemonCreaturePack.Pidgey": {
+                "ID": "Xan.PokemonCreaturePack.Pidgey",
+                "Category": "Sound",
+                "FilePaths": [ "{{AbsoluteFilePath: Sounds/Group1Sound/PidgeySound.ogg}}" ],
+                "StreamedVorbis": false,
+                "Looped": false
+            },
+            "Xan.PokemonCreaturePack.Geodude": {
+                "ID": "Xan.PokemonCreaturePack.Geodude",
+                "Category": "Sound",
+                "FilePaths": [ "{{AbsoluteFilePath: Sounds/Group1Sound/GeodudeSound.ogg}}" ],
+                "StreamedVorbis": false,
+                "Looped": false
+            },
+            "Xan.PokemonCreaturePack.Zubat": {
+              "ID": "Xan.PokemonCreaturePack.Zubat",
+              "Category": "Sound",
+                "FilePaths": [ "{{AbsoluteFilePath: Sounds/Group1Sound/ZubatSound.ogg}}" ],
+                "StreamedVorbis": false,
+                "Looped": false
+            },
+            "Xan.PokemonCreaturePack.Caterpie": {
+                "ID": "Xan.PokemonCreaturePack.Caterpie",
+                "Category": "Sound",
+                "FilePaths": [ "{{AbsoluteFilePath: Sounds/Group1Sound/CaterpieSound.ogg}}" ],
+                "StreamedVorbis": false,
+                "Looped": false
+            },
+            "Xan.PokemonCreaturePack.Weedle": {
+                "ID": "Xan.PokemonCreaturePack.Weedle",
+                "Category": "Sound",
+                "FilePaths": [ "{{AbsoluteFilePath: Sounds/Group1Sound/WeedleSound.ogg}}" ],
+                "StreamedVorbis": false,
+                "Looped": false
+            },
+            "Xan.PokemonCreaturePack.Rattata": {
+                "ID": "Xan.PokemonCreaturePack.Rattata",
+                "Category": "Sound",
+                "FilePaths": [ "{{AbsoluteFilePath: Sounds/Group1Sound/RattataSound.ogg}}" ],
+                "StreamedVorbis": false,
+                "Looped": false
+            },
+            "Xan.PokemonCreaturePack.Magikarp": {
+                "ID": "Xan.PokemonCreaturePack.Magikarp",
+                "Category": "Sound",
+                "FilePaths": [ "{{AbsoluteFilePath: Sounds/Group1Sound/MagikarpSound.ogg}}" ],
+                "StreamedVorbis": false,
+                "Looped": false
+            },
+            "Xan.PokemonCreaturePack.Metapod": {
+                "ID": "Xan.PokemonCreaturePack.Metapod",
+                "Category": "Sound",
+                "FilePaths": [ "{{AbsoluteFilePath: Sounds/Group1Sound/MetapodSound.ogg}}" ],
+                "StreamedVorbis": false,
+                "Looped": false
+            },
+            "Xan.PokemonCreaturePack.Kakuna": {
+                "ID": "Xan.PokemonCreaturePack.Kakuna",
+                "Category": "Sound",
+                "FilePaths": [ "{{AbsoluteFilePath: Sounds/Group1Sound/KakunaSound.ogg}}" ],
+                "StreamedVorbis": false,
+                "Looped": false
+            },
+            "Xan.PokemonCreaturePack.Butterfree": {
+                "ID": "Xan.PokemonCreaturePack.Butterfree",
+                "Category": "Sound",
+                "FilePaths": [ "{{AbsoluteFilePath: Sounds/Group2Sound/ButterfreeSound.ogg}}" ],
+                "StreamedVorbis": false,
+                "Looped": false
+            },
+            "Xan.PokemonCreaturePack.Beedrill": {
+                "ID": "Xan.PokemonCreaturePack.Beedrill",
+                "Category": "Sound",
+                "FilePaths": [ "{{AbsoluteFilePath: Sounds/Group2Sound/BeedrillSound.ogg}}" ],
+                "StreamedVorbis": false,
+                "Looped": false
+            },
+            "Xan.PokemonCreaturePack.Ekans": {
+                "ID": "Xan.PokemonCreaturePack.Ekans",
+                "Category": "Sound",
+                "FilePaths": [ "{{AbsoluteFilePath: Sounds/Group2Sound/EkansSound.ogg}}" ],
+                "StreamedVorbis": false,
+                "Looped": false
+            },
+            "Xan.PokemonCreaturePack.Poliwag": {
+                "ID": "Xan.PokemonCreaturePack.Poliwag",
+                "Category": "Sound",
+                "FilePaths": [ "{{AbsoluteFilePath: Sounds/Group2Sound/PoliwagSound.ogg}}" ],
+                "StreamedVorbis": false,
+                "Looped": false
+            },
+            "Xan.PokemonCreaturePack.Tentacool": {
+                "ID": "Xan.PokemonCreaturePack.Tentacool",
+                "Category": "Sound",
+                "FilePaths": [ "{{AbsoluteFilePath: Sounds/Group2Sound/TentacoolSound.ogg}}" ],
+                "StreamedVorbis": false,
+                "Looped": false
+            },
+            "Xan.PokemonCreaturePack.Growlithe": {
+                "ID": "Xan.PokemonCreaturePack.Growlithe",
+                "Category": "Sound",
+                "FilePaths": [ "{{AbsoluteFilePath: Sounds/Group2Sound/GrowlitheSound.ogg}}" ],
+                "StreamedVorbis": false,
+                "Looped": false
+            },
+            "Xan.PokemonCreaturePack.Venonat": {
+                "ID": "Xan.PokemonCreaturePack.Venonat",
+                "Category": "Sound",
+                "FilePaths": [ "{{AbsoluteFilePath: Sounds/Group2Sound/VenonatSound.ogg}}" ],
+                "StreamedVorbis": false,
+                "Looped": false
+            },
+            "Xan.PokemonCreaturePack.Paras": {
+                "ID": "Xan.PokemonCreaturePack.Paras",
+                "Category": "Sound",
+                "FilePaths": [ "{{AbsoluteFilePath: Sounds/Group2Sound/ParasSound.ogg}}" ],
+                "StreamedVorbis": false,
+                "Looped": false
+            },
+            "Xan.PokemonCreaturePack.Diglett": {
+                "ID": "Xan.PokemonCreaturePack.Diglett",
+                "Category": "Sound",
+                "FilePaths": [ "{{AbsoluteFilePath: Sounds/Group2Sound/DiglettSound.ogg}}" ],
+                "StreamedVorbis": false,
+                "Looped": false
+            },
+            "Xan.PokemonCreaturePack.Gastly": {
+                "ID": "Xan.PokemonCreaturePack.Gastly",
+                "Category": "Sound",
+                "FilePaths": [ "{{AbsoluteFilePath: Sounds/Group2Sound/GastlySound.ogg}}" ],
+                "StreamedVorbis": false,
+                "Looped": false
+            },
+            "Xan.PokemonCreaturePack.Sandshrew": {
+                "ID": "Xan.PokemonCreaturePack.Sandshrew",
+                "Category": "Sound",
+                "FilePaths": [ "{{AbsoluteFilePath: Sounds/Group2Sound/SandshrewSound.ogg}}" ],
+                "StreamedVorbis": false,
+                "Looped": false
+            },
+            "Xan.PokemonCreaturePack.Spearow": {
+                "ID": "Xan.PokemonCreaturePack.Spearow",
+                "Category": "Sound",
+                "FilePaths": [ "{{AbsoluteFilePath: Sounds/Group3Sound/SpearowSound.ogg}}" ],
+                "StreamedVorbis": false,
+                "Looped": false
+            },
+            "Xan.PokemonCreaturePack.Bellsprout": {
+                "ID": "Xan.PokemonCreaturePack.Bellsprout",
+                "Category": "Sound",
+                "FilePaths": [ "{{AbsoluteFilePath: Sounds/Group3Sound/BellsproutSound.ogg}}" ],
+                "StreamedVorbis": false,
+                "Looped": false
+            },
+            "Xan.PokemonCreaturePack.Cubone": {
+                "ID": "Xan.PokemonCreaturePack.Cubone",
+                "Category": "Sound",
+                "FilePaths": [ "{{AbsoluteFilePath: Sounds/Group3Sound/CuboneSound.ogg}}" ],
+                "StreamedVorbis": false,
+                "Looped": false
+            },
+            "Xan.PokemonCreaturePack.Goldeen": {
+                "ID": "Xan.PokemonCreaturePack.Goldeen",
+                "Category": "Sound",
+                "FilePaths": [ "{{AbsoluteFilePath: Sounds/Group3Sound/GoldeenSound.ogg}}" ],
+                "StreamedVorbis": false,
+                "Looped": false
+            },
+            "Xan.PokemonCreaturePack.Grimer": {
+                "ID": "Xan.PokemonCreaturePack.Grimer",
+                "Category": "Sound",
+                "FilePaths": [ "{{AbsoluteFilePath: Sounds/Group3Sound/GrimerSound.ogg}}" ],
+                "StreamedVorbis": false,
+                "Looped": false
+            },
+            "Xan.PokemonCreaturePack.Koffing": {
+                "ID": "Xan.PokemonCreaturePack.Koffing",
+                "Category": "Sound",
+                "FilePaths": [ "{{AbsoluteFilePath: Sounds/Group3Sound/KoffingSound.ogg}}" ],
+                "StreamedVorbis": false,
+                "Looped": false
+            },
+            "Xan.PokemonCreaturePack.Oddish": {
+                "ID": "Xan.PokemonCreaturePack.Oddish",
+                "Category": "Sound",
+                "FilePaths": [ "{{AbsoluteFilePath: Sounds/Group3Sound/OddishSound.ogg}}" ],
+                "StreamedVorbis": false,
+                "Looped": false
+            },
+            "Xan.PokemonCreaturePack.Pikachu": {
+                "ID": "Xan.PokemonCreaturePack.Pikachu",
+                "Category": "Sound",
+                "FilePaths": [ "{{AbsoluteFilePath: Sounds/Group3Sound/PikachuSound.ogg}}" ],
+                "StreamedVorbis": false,
+                "Looped": false
+            },
+            "Xan.PokemonCreaturePack.Psyduck": {
+                "ID": "Xan.PokemonCreaturePack.Psyduck",
+                "Category": "Sound",
+                "FilePaths": [ "{{AbsoluteFilePath: Sounds/Group3Sound/PsyduckSound.ogg}}" ],
+                "StreamedVorbis": false,
+                "Looped": false
+            },
+            "Xan.PokemonCreaturePack.Rhyhorn": {
+                "ID": "Xan.PokemonCreaturePack.Rhyhorn",
+                "Category": "Sound",
+                "FilePaths": [ "{{AbsoluteFilePath: Sounds/Group3Sound/RhyhornSound.ogg}}" ],
+                "StreamedVorbis": false,
+                "Looped": false
+            },
+            "Xan.PokemonCreaturePack.Shellder": {
+                "ID": "Xan.PokemonCreaturePack.Shellder",
+                "Category": "Sound",
+                "FilePaths": [ "{{AbsoluteFilePath: Sounds/Group3Sound/ShellderSound.ogg}}" ],
+                "StreamedVorbis": false,
+                "Looped": false
+            }
+        }
+    }
+  ]
+}

@@ -1,4 +1,4 @@
-# StardewValleyMods
+# Stardew Valley Mods
 
 ## What I am currently working on:
 

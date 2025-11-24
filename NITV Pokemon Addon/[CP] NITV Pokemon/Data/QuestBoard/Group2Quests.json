@@ -1,0 +1,146 @@
+{
+    "Changes": [
+
+      {
+      "Action": "EditData",
+      "Target": "Data/SpecialOrders",
+      "Entries": {
+        "NITVQuest.Pokemon2ThreeDays": {
+          "Name": "[PkmnDifficulty2]",
+          "Requester": "Spiritomb",
+          "OrderType": "NITVPokemonSO",
+          "Duration": "ThreeDays",
+          "Repeatable": true,
+          "ItemToRemoveOnEnd": null,
+          "MailToRemoveOnEnd": null,
+          "Text": "[PkmnCreatureCollectText]",
+          "RandomizedElements": [
+            {
+              "Name": "PkmnSpecies",
+              "Values": [
+                { "Value": "Text|Butterfree|Tags|id_(o)natinvalley.creature.butterfree_roam" },
+                { "Value": "Text|Beedrill|Tags|id_(o)natinvalley.creature.beedrill_attack" },
+                { "Value": "Text|Ekans|Tags|id_(o)natinvalley.creature.ekans_attack" },
+                { "Value": "Text|Poliwag|Tags|id_(o)natinvalley.creature.poliwag_swim" },
+                { "Value": "Text|Tentacool|Tags|id_(o)natinvalley.creature.tentacool_swim" },
+                { "Value": "Text|Growlithe|Tags|id_(o)natinvalley.creature.growlithe_roam" },
+                { "Value": "Text|Venonat|Tags|id_(o)natinvalley.creature.venonat_stump" },
+                { "Value": "Text|Paras|Tags|id_(o)natinvalley.creature.paras_roam" },
+                { "Value": "Text|Diglett|Tags|id_(o)natinvalley.creature.diglett_roam" },
+                { "Value": "Text|Sandshrew|Tags|id_(o)natinvalley.creature.sandshrew_roam" }
+              ]
+            },
+            {
+              "Name": "Count",
+              "Values": [
+                { "Value": "4" }, { "Value": "5" }, { "Value": "6" }, { "Value": "7" }
+              ]
+            }
+          ],
+          "Objectives": [
+            {
+              "Type": "Collect",
+              "Text": "[PkmnCreatureCollectObj0Text]",
+              "RequiredCount": "{Count}",
+              "Data": {
+                "AcceptedContextTags": "{PkmnSpecies:Tags}"
+              }
+            },
+            {
+              "Type": "Donate",
+              "Text": "[PkmnCreatureCollectObj1Text]",
+              "RequiredCount": "{Count}",
+              "Data": {
+                "DropBox": "PokePC",
+                "DropBoxGameLocation": "NatValleyOutsideInsec",
+                "DropBoxIndicatorLocation": "10 16",
+                "AcceptedContextTags": "{PkmnSpecies:Tags}"
+              }
+            }
+          ],
+          "Rewards": [
+            {
+              "Type": "Money",
+              "Data": { "Amount": "6000" }
+            },
+            {
+              "Type": "Friendship",
+              "Data": {
+                  "Amount": "60",
+                  "TargetName": "Spiritomb"
+              }
+            }
+          ]
+        },
+        "NITVQuest.Pokemon2Weekly": {
+          "Name": "[PkmnDifficulty2]",
+          "Requester": "Spiritomb",
+          "OrderType": "NITVPokemonSO",
+          "Duration": "Week",
+          "Repeatable": true,
+          "ItemToRemoveOnEnd": null,
+          "MailToRemoveOnEnd": null,
+          "Text": "[PkmnCreatureCollectText]",
+          "RandomizedElements": [
+            {
+              "Name": "PkmnSpecies",
+              "Values": [
+                { "Value": "Text|Butterfree|Tags|id_(o)natinvalley.creature.butterfree_roam" },
+                { "Value": "Text|Beedrill|Tags|id_(o)natinvalley.creature.beedrill_attack" },
+                { "Value": "Text|Ekans|Tags|id_(o)natinvalley.creature.ekans_attack" },
+                { "Value": "Text|Poliwag|Tags|id_(o)natinvalley.creature.poliwag_swim" },
+                { "Value": "Text|Tentacool|Tags|id_(o)natinvalley.creature.tentacool_swim" },
+                { "Value": "Text|Growlithe|Tags|id_(o)natinvalley.creature.growlithe_roam" },
+                { "Value": "Text|Venonat|Tags|id_(o)natinvalley.creature.venonat_stump" },
+                { "Value": "Text|Paras|Tags|id_(o)natinvalley.creature.paras_roam" },
+                { "Value": "Text|Diglett|Tags|id_(o)natinvalley.creature.diglett_roam" },
+                { "Value": "Text|Sandshrew|Tags|id_(o)natinvalley.creature.sandshrew_roam" }
+              ]
+            },
+            {
+              "Name": "Count",
+              "Values": [
+                { "Value": "10" }, { "Value": "11" }, { "Value": "12" }
+              ]
+            }
+          ],
+          "Objectives": [
+            {
+              "Type": "Collect",
+              "Text": "[PkmnCreatureCollectObj0Text]",
+              "RequiredCount": "{Count}",
+              "Data": {
+                "AcceptedContextTags": "{PkmnSpecies:Tags}"
+              }
+            },
+            {
+              "Type": "Donate",
+              "Text": "[PkmnCreatureCollectObj1Text]",
+              "RequiredCount": "{Count}",
+              "Data": {
+                "DropBox": "PokePC",
+                "DropBoxGameLocation": "NatValleyOutsideInsec",
+                "DropBoxIndicatorLocation": "10 16",
+                "AcceptedContextTags": "{PkmnSpecies:Tags}"
+              }
+            }
+          ],
+          "Rewards": [
+            {
+              "Type": "Money",
+              "Data": { "Amount": "10000" }
+            },
+            {
+              "Type": "Friendship",
+              "Data": {
+                  "Amount": "90",
+                  "TargetName": "Spiritomb"
+              }
+            }
+          ]
+        }
+      }
+    }
+
+    ]
+}

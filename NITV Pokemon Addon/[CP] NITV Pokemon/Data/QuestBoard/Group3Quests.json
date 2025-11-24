@@ -1,0 +1,148 @@
+{
+    "Changes": [
+
+      {
+      "Action": "EditData",
+      "Target": "Data/SpecialOrders",
+      "Entries": {
+        "NITVQuest.Pokemon2ThreeDays": {
+          "Name": "[PkmnDifficulty2]",
+          "Requester": "Spiritomb",
+          "OrderType": "NITVPokemonSO",
+          "Duration": "ThreeDays",
+          "Repeatable": true,
+          "ItemToRemoveOnEnd": null,
+          "MailToRemoveOnEnd": null,
+          "Text": "[PkmnCreatureCollectText]",
+          "RandomizedElements": [
+            {
+              "Name": "PkmnSpecies",
+              "Values": [
+                { "Value": "Text|Spearow|Tags|id_(o)natinvalley.creature.spearow_attack" },
+                { "Value": "Text|Koffing|Tags|id_(o)natinvalley.creature.koffing_attack" },
+                { "Value": "Text|Oddish|Tags|id_(o)natinvalley.creature.oddish_stump" },
+                { "Value": "Text|Bellsprout|Tags|id_(o)natinvalley.creature.bellsprout_roam" },
+                { "Value": "Text|Grimer|Tags|id_(o)natinvalley.creature.grimer_roam" },
+                { "Value": "Text|Cubone|Tags|id_(o)natinvalley.creature.cubone_roam" },
+                { "Value": "Text|Rhyhorn|Tags|id_(o)natinvalley.creature.rhyhorn_attack" },
+                { "Value": "Text|Pikachu|Tags|id_(o)natinvalley.creature.pikachu_roam" },
+                { "Value": "Text|Shellder|Tags|id_(o)natinvalley.creature.shellder_swim" },
+                { "Value": "Text|Goldeen|Tags|id_(o)natinvalley.creature.goldeen_swim" },
+                { "Value": "Text|Psyduck|Tags|id_(o)natinvalley.creature.psyduck_swim" }
+              ]
+            },
+            {
+              "Name": "Count",
+              "Values": [
+                { "Value": "3" }, { "Value": "4" }, { "Value": "5" }, { "Value": "6" }
+              ]
+            }
+          ],
+          "Objectives": [
+            {
+              "Type": "Collect",
+              "Text": "[PkmnCreatureCollectObj0Text]",
+              "RequiredCount": "{Count}",
+              "Data": {
+                "AcceptedContextTags": "{PkmnSpecies:Tags}"
+              }
+            },
+            {
+              "Type": "Donate",
+              "Text": "[PkmnCreatureCollectObj1Text]",
+              "RequiredCount": "{Count}",
+              "Data": {
+                "DropBox": "PokePC",
+                "DropBoxGameLocation": "NatValleyOutsideInsec",
+                "DropBoxIndicatorLocation": "10 16",
+                "AcceptedContextTags": "{PkmnSpecies:Tags}"
+              }
+            }
+          ],
+          "Rewards": [
+            {
+              "Type": "Money",
+              "Data": { "Amount": "14000" }
+            },
+            {
+              "Type": "Friendship",
+              "Data": {
+                  "Amount": "80",
+                  "TargetName": "Spiritomb"
+              }
+            }
+          ]
+        },
+        "NITVQuest.Pokemon2Weekly": {
+          "Name": "[PkmnDifficulty3]",
+          "Requester": "Spiritomb",
+          "OrderType": "NITVPokemonSO",
+          "Duration": "Week",
+          "Repeatable": true,
+          "ItemToRemoveOnEnd": null,
+          "MailToRemoveOnEnd": null,
+          "Text": "[PkmnCreatureCollectText]",
+          "RandomizedElements": [
+            {
+              "Name": "PkmnSpecies",
+              "Values": [
+                { "Value": "Text|Spearow|Tags|id_(o)natinvalley.creature.spearow_attack" },
+                { "Value": "Text|Koffing|Tags|id_(o)natinvalley.creature.koffing_attack" },
+                { "Value": "Text|Oddish|Tags|id_(o)natinvalley.creature.oddish_stump" },
+                { "Value": "Text|Bellsprout|Tags|id_(o)natinvalley.creature.bellsprout_roam" },
+                { "Value": "Text|Grimer|Tags|id_(o)natinvalley.creature.grimer_roam" },
+                { "Value": "Text|Cubone|Tags|id_(o)natinvalley.creature.cubone_roam" },
+                { "Value": "Text|Rhyhorn|Tags|id_(o)natinvalley.creature.rhyhorn_attack" },
+                { "Value": "Text|Pikachu|Tags|id_(o)natinvalley.creature.pikachu_roam" },
+                { "Value": "Text|Shellder|Tags|id_(o)natinvalley.creature.shellder_swim" },
+                { "Value": "Text|Goldeen|Tags|id_(o)natinvalley.creature.goldeen_swim" },
+                { "Value": "Text|Psyduck|Tags|id_(o)natinvalley.creature.psyduck_swim" }
+              ]
+            },
+            {
+              "Name": "Count",
+              "Values": [
+                { "Value": "10" }, { "Value": "11" }, { "Value": "12" }
+              ]
+            }
+          ],
+          "Objectives": [
+            {
+              "Type": "Collect",
+              "Text": "[PkmnCreatureCollectObj0Text]",
+              "RequiredCount": "{Count}",
+              "Data": {
+                "AcceptedContextTags": "{PkmnSpecies:Tags}"
+              }
+            },
+            {
+              "Type": "Donate",
+              "Text": "[PkmnCreatureCollectObj1Text]",
+              "RequiredCount": "{Count}",
+              "Data": {
+                "DropBox": "PokePC",
+                "DropBoxGameLocation": "NatValleyOutsideInsec",
+                "DropBoxIndicatorLocation": "10 16",
+                "AcceptedContextTags": "{PkmnSpecies:Tags}"
+              }
+            }
+          ],
+          "Rewards": [
+            {
+              "Type": "Money",
+              "Data": { "Amount": "25000" }
+            },
+            {
+              "Type": "Friendship",
+              "Data": {
+                  "Amount": "110",
+                  "TargetName": "Spiritomb"
+              }
+            }
+          ]
+        }
+      }
+    }
+
+    ]
+}

@@ -1,0 +1,221 @@
+{
+  "Changes": [
+    
+    {
+      "Action": "Load",
+      "Target": "Mods/Xan.PokemonCreaturePack/GastlyTrinketItem, Mods/Xan.PokemonCreaturePack/GastlyTrinket, Mods/Xan.PokemonCreaturePack/GastlyTrinketShiny, Mods/Xan.PokemonCreaturePack/GastlyPulse, Mods/Xan.PokemonCreaturePack/GastlySleep, Mods/Xan.PokemonCreaturePack/GastlyAttackAnim, Mods/Xan.PokemonCreaturePack/GastlyAttackAnimShiny,",
+      "FromFile": "TrinketPNGs/Group1and2/Gastly/{{TargetWithoutPath}}.png"
+    },
+
+    {
+      "Action": "EditData",
+      "Target": "Data/AudioChanges",
+      "Entries": {
+          "GastlyAttackSound": {
+              "ID": "GastlyAttackSound",
+              "Category": "Sound",
+              "FilePaths": [ "{{AbsoluteFilePath: TrinketPNGs/Group1and2/Gastly/GastlyAttackSound.ogg}}" ],
+              "StreamedVorbis": false,
+              "Looped": false
+        }
+      }
+    },
+
+    {
+      "Action": "EditData",
+      "Target": "Data/Trinkets",
+      "Entries": {
+        "NITVPokemon_GastlyTrinket": {
+          "Id": "NITVPokemon_GastlyTrinket",
+          "DisplayName": "{{i18n:GastlyTrinket.DisplayName}}",
+          "Description": "{{i18n:GastlyTrinket.Description}}",
+          "Texture": "Mods/Xan.PokemonCreaturePack/GastlyTrinketItem",
+          "SheetIndex": 0,
+          "DropsNaturally": false,
+          "CanBeReforged": true
+        }
+      }
+    },
+
+    {
+      "Action": "EditData",
+      "Target": "mushymato.TrinketTinker/Tinker",
+      "Entries": {
+        "NITVPokemon_GastlyTrinket": {
+          "MinLevel": 1,
+          "Variants": [
+            {
+              "Texture": "Mods/Xan.PokemonCreaturePack/GastlyTrinket",
+              "TextureExtra": "Mods/Xan.PokemonCreaturePack/GastlyAttackAnim",
+              "TrinketSpriteIndex": 0,
+              "Width": 32,
+              "Height": 32,
+              "TextureScale": 2.5,
+              "ShadowScale": 2.0,
+              "TrinketNameArguments": [
+                "{{i18n:GastlyTrinket.DisplayName.Arg.0}}"
+              ]
+            },
+            {
+              "Texture": "Mods/Xan.PokemonCreaturePack/GastlyTrinketShiny",
+              "TextureExtra": "Mods/Xan.PokemonCreaturePack/GastlyAttackAnimShiny",
+              "TrinketSpriteIndex": 1,
+              "Width": 32,
+              "Height": 32,
+              "TextureScale": 2.5,
+              "ShadowScale": 2.0,
+              "TrinketNameArguments": [
+                "{{i18n:GastlyTrinket.DisplayName.Arg.1}}"
+              ]
+            }
+          ],
+
+          "Motion": {
+            "MotionClass": "Hover",
+            "AlwaysMoving": true,
+            "DirectionMode": "DRUL",
+            "FrameLength": 8,
+            "HideDuringEvents": true,
+            "Args": { "Magnitude": 16, "Period": 800, "Min": 1, "MoveSync": true },
+            "AnimClips": {
+              "Attack.1": { "FrameStart": 0,  "FrameLength": 7, "LoopMode": "Standard", "Interval": 250, "PauseMovement": true, "UseExtra": true },
+              "Attack.2": { "FrameStart": 7,  "FrameLength": 7, "LoopMode": "Standard", "Interval": 250, "PauseMovement": true, "UseExtra": true },
+              "Attack.3": { "FrameStart": 14, "FrameLength": 7, "LoopMode": "Standard", "Interval": 250, "PauseMovement": true, "UseExtra": true },
+              "Attack.4": { "FrameStart": 21, "FrameLength": 7, "LoopMode": "Standard", "Interval": 250, "PauseMovement": true, "UseExtra": true }
+            }
+          },
+
+          // Just wanted to add here that this Trinket is considered an early-mid game trinket. More Pokemon combat trinkets are planned for the future.
+          "Abilities": [
+            // level 1 - sleep ability - stuns one enemy for 2 seconds with 6 second cooldown.
+            // requires line of sight but the player does not have to be facing the enemy.
+            [
+              {
+                "Id": "GAS_L1_SLEEP",
+                "AbilityClass": "Hitscan",
+                "Description": "{{i18n:GastlyTrinket.Level1}}",
+                "Proc": "Timer",
+                "InCombat": true,
+                "ProcTimer": 6000,
+                "ProcOneshotAnim": "Attack",
+                "ProcSound": {
+                  "CueName": "GastlyAttackSound"
+                },
+                "Args": {
+                  "Min": 0, "Max": 0,
+                  "Range": 192,
+                  "StunTime": 2000,
+                  "FacingDirectionOnly": false,
+                  "StunTAS": "NITV_GastlySleep_L1"
+                }
+              }
+            ],
+
+            // level 2 - sleep with cd decrease and stun time increase
+            [
+              {
+                "Id": "GAS_L2_SLEEP",
+                "AbilityClass": "Hitscan",
+                "Description": "{{i18n:GastlyTrinket.Level2}}",
+                "Proc": "Timer",
+                "InCombat": true,
+                "ProcTimer": 4000,
+                "ProcOneshotAnim": "Attack",
+                "ProcSound": {
+                  "CueName": "GastlyAttackSound"
+                },
+                "Args": {
+                  "Min": 0, "Max": 0,
+                  "Range": 192,
+                  "StunTime": 3000,
+                  "FacingDirectionOnly": false,
+                  "StunTAS": "NITV_GastlySleep_L23"
+                }
+              }
+            ],
+
+            // level 3 - sleep with increased range. Added extra damage parameter that occurs during (1dmg) and after (big damage) - works a bit like a 3 second countdown
+            // If the player does not have direct line of sight of the enemy and is behind an object the damage won't apply.
+            // This is why the 1 dmg ticks are used for indication prior to the actual damage number.
+            [
+              {
+                "Id": "GAS_L3_SLEEP",
+                "AbilityClass": "Hitscan",
+                "Description": "{{i18n:GastlyTrinket.Level3}}",
+                "Proc": "Timer",
+                "InCombat": true,
+                "ProcTimer": 4000,
+                "ProcSyncDelay": 2500,
+                "ProcOneshotAnim": "Attack",
+                "ProcSound": {
+                  "CueName": "GastlyAttackSound"
+                },
+                "Args": {
+                  "Min": 1, "Max": 3,
+                  "Range": 256,
+                  "StunTime": 3000,
+                  "StunTAS": "NITV_GastlySleep_L23",
+                  "HitTAS": "NITV_GastlyPulse_L3",
+                  "Hits": 3,
+                  "HitsDelay": 1000,
+                  "FacingDirectionOnly": false
+                }
+              },
+              {
+                "Id": "GAS_L3_DMG",
+                "AbilityClass": "Hitscan",
+                "Proc": "Sync",
+                "ProcSyncId": "GAS_L3_SLEEP",
+                "Args": {
+                  "Min": 35, "Max": 48,
+                  "Range": 256,
+                  "FacingDirectionOnly": false
+                }
+              }
+            ]
+          ]
+        }
+      }
+    },
+
+    {
+      "Action": "EditData",
+      "Target": "mushymato.TrinketTinker/TAS",
+      "Entries": {
+        // level 1 - sleep animation
+        "NITV_GastlySleep_L1": {
+          "Texture": "Mods/Xan.PokemonCreaturePack/GastlySleep",
+          "SourceRect": { "X": 0, "Y": 0, "Width": 32, "Height": 32 },
+          "Frames": 4,
+          "Interval": 250,
+          "Scale": 0.6,
+          "DrawAboveAlwaysFront": true,
+          "PositionOffset": "-9,-30"
+        },
+        // level 2/3 - sleep animation (same as above but changed interval since stun time is longer)
+        "NITV_GastlySleep_L23": {
+          "Texture": "Mods/Xan.PokemonCreaturePack/GastlySleep",
+          "SourceRect": { "X": 0, "Y": 0, "Width": 32, "Height": 32 },
+          "Frames": 4,
+          "Interval": 375,
+          "Scale": 0.6,
+          "DrawAboveAlwaysFront": true,
+          "PositionOffset": "-5,-26"
+        },
+        // level 3 - damage attack - wanted it to look a bit like dream eater from the old days
+        // This needed transparency in the image itself and tweaked alpha here as well, since it's impossible to make it appear behind the monster.
+        // Adding depth/draw offsets doesn't help with much with layering over monsters. It seems best used to change layer order of sprites used in the trinket itself.
+        "NITV_GastlyPulse_L3": {
+          "Texture": "Mods/Xan.PokemonCreaturePack/GastlyPulse",
+          "SourceRect": { "X": 0, "Y": 0, "Width": 32, "Height": 32 },
+          "Frames": 4,
+          "Interval": 212,
+          "Loops": 3,
+          "Scale": 1.3,
+          "PositionOffset": "-22,-30",
+          "Alpha": 0.8
+        }
+      }
+    }
+  ]
+}

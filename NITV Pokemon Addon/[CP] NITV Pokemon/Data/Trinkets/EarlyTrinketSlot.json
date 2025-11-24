@@ -1,0 +1,40 @@
+{
+  "Changes": [
+    {
+      "LogName": "Early Trinket Slot ON",
+      "Action": "EditData",
+      "Target": "Data/TriggerActions",
+      "Entries": {
+        "PokemonXan_TrinketSlotOn": {
+          "Id": "PokemonXan_TrinketSlotOn",
+          "SkipPermanentlyCondition": "PLAYER_STAT Current mastery_4 1",
+          "Condition": "!PLAYER_STAT Current mastery_4 1, PLAYER_STAT Current trinketSlots 0 0,",
+          "Trigger": "DayStarted",
+          "Action": "IncrementStat trinketSlots 1",
+          "MarkActionApplied": false
+        }
+      },
+      "When": {
+        "PokemonXanEarlyTrinketSlot": true
+      }
+    },
+    {
+      "LogName": "Early Trinket Slot OFF",
+      "Action": "EditData",
+      "Target": "Data/TriggerActions",
+      "Entries": {
+        "PokemonXan_TrinketSlotOff": {
+          "Id": "PokemonXan_TrinketSlotOff",
+          "SkipPermanentlyCondition": "PLAYER_STAT Current mastery_4 1",
+          "Condition": "!PLAYER_STAT Current mastery_4 1, !PLAYER_STAT Current trinketSlots 0 0",
+          "Trigger": "DayEnding",
+          "Action": "IncrementStat trinketSlots -1",
+          "MarkActionApplied": false
+        }
+      },
+      "When": {
+        "PokemonXanEarlyTrinketSlot": false
+      }
+    }
+  ]
+}

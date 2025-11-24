@@ -1,0 +1,92 @@
+{
+  "Changes": [
+    
+    {
+      "Action": "Load",
+      "Target": "Mods/Xan.PokemonCreaturePack/CharLOLTrinketItem, Mods/Xan.PokemonCreaturePack/CharLOLTrinket",
+      "FromFile": "TrinketPNGs/Group1and2/CharLOL/{{TargetWithoutPath}}.png"
+    },
+
+    {
+      "Action": "EditData",
+      "Target": "Data/Trinkets",
+      "Entries": {
+        "NITVPokemon_CharLOLTrinket": {
+          "Id": "NITVPokemon_CharLOLTrinket",
+          "DisplayName": "{{i18n:CharLOLTrinket.DisplayName}}",
+          "Description": "{{i18n:CharLOLTrinket.Description}}",
+          "Texture": "Mods/Xan.PokemonCreaturePack/CharLOLTrinketItem",
+          "SheetIndex": 0,
+          "DropsNaturally": false,
+          "CanBeReforged": false
+        }
+      }
+    },
+
+    {
+      "Action": "EditData",
+      "Target": "mushymato.TrinketTinker/Tinker",
+      "Entries": {
+        "NITVPokemon_CharLOLTrinket": {
+          "Variants": [
+            {
+              "Texture": "Mods/Xan.PokemonCreaturePack/CharLOLTrinket",
+              "TextureExtra": "Mods/Xan.PokemonCreaturePack/CharLOLTrinket",
+              "Width": 32,
+              "Height": 32,
+              "TextureScale": 1.8,
+              "ShadowScale": 2.0
+            }
+          ],
+          "Motion": {
+            "MotionClass": "Lerp",
+            "DirectionMode": "DRUL",
+            "FrameLength": 4,
+            "HideDuringEvents": false,
+            "Args": {
+              "Min": 1,
+              "MoveSync": true
+            },
+            "AnimClips": {
+              "Idle": {
+                "FrameStart": 16,
+                "FrameLength": 4,
+                "Interval": 200
+              },
+              "Talk": {
+                "FrameStart": 20,
+                "FrameLength": 4,
+                "Interval": 400,
+                "PauseMovement": true,
+                "UseExtra": true }
+            },
+            "SpeechBubbles": {
+              "CharShout": {
+                "Text": "{{i18n:CharLOLTrinket.CharShout.1}}",
+                "RandomWeight": 4,
+                "Timer": 1600,
+                "RandomSpeech": [
+                  { "Text": "{{i18n:CharLOLTrinket.CharShout.2}}", "RandomWeight": 2, "Timer": 1600 },
+                  { "Text": "{{i18n:CharLOLTrinket.CharShout.3}}", "RandomWeight": 2, "Timer": 1600 },
+                  { "Text": "{{i18n:CharLOLTrinket.CharShout.4}}", "RandomWeight": 1, "Timer": 1600 }
+                ]
+              }
+            }
+          },
+          "Abilities": [
+            [
+              {
+                "AbilityClass": "Nop",
+                "Description": "{{i18n:CharLOLTrinket.Level1}}",
+                "Proc": "Timer",
+                "ProcTimer": 10000,
+                "ProcSpeechBubble": "CharShout",
+                "ProcOneshotAnim": "Talk"
+              }
+            ]
+          ]
+        }
+      }
+    }
+  ]
+}

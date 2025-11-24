@@ -1,0 +1,204 @@
+{
+  "Changes": [
+    {
+      "Action": "EditData",
+      "Target": "Data/Locations",
+      "Entries": {
+        "NITVPokemon_SafariZone2": {
+          "DisplayName": "{{i18n:Safari2.DisplayName}}",
+          "CreateOnLoad": { "MapPath": "Maps/NITVPokemon_SafariZone2", "AlwaysActive": false },
+          "MusicDefault": "Xan.PokemonCreaturePack.SafariMusic",
+          "DefaultArrivalTile": {"X": 35,"Y": 7},
+          "SeasonOverride": "Spring",
+          "CanPlantHere": true,
+          "CanHaveGreenRainSpawns": false,
+          "MusicIgnoredInRain": false,
+          "MusicIgnoredInFallDebris": false,
+          "CustomFields": {
+            "Nature.NIV.OnlyExplicit": true
+          },
+
+          "FishAreas": {
+            "SafariWater2Deep1": { "Position": { "X": 19, "Y": 17, "Width": 1, "Height": 2 } },
+            "SafariWater2Deep2": { "Position": { "X": 19, "Y": 21, "Width": 2, "Height": 2 } },
+            "SafariWater2Deep3": { "Position": { "X": 36, "Y": 21, "Width": 3, "Height": 3 } },
+            "SafariWater2_1": { "Position": { "X": 11, "Y": 15, "Width": 12, "Height": 5 }, "CrabPotFishTypes": [ "freshwater", "ocean" ] },
+            "SafariWater2_2": { "Position": { "X": 13, "Y": 20, "Width": 10, "Height": 1 }, "CrabPotFishTypes": [ "freshwater", "ocean" ] },
+            "SafariWater2_3": { "Position": { "X": 16, "Y": 21, "Width": 1, "Height": 1 }, "CrabPotFishTypes": [ "freshwater", "ocean" ] },
+            "SafariWater2_4": { "Position": { "X": 17, "Y": 21, "Width": 9, "Height": 4 }, "CrabPotFishTypes": [ "freshwater", "ocean" ] },
+            "SafariWater2_5": { "Position": { "X": 26, "Y": 21, "Width": 7, "Height": 2 }, "CrabPotFishTypes": [ "freshwater", "ocean" ] },
+            "SafariWater2_6": { "Position": { "X": 33, "Y": 20, "Width": 1, "Height": 4 }, "CrabPotFishTypes": [ "freshwater", "ocean" ] },
+            "SafariWater2_7": { "Position": { "X": 34, "Y": 19, "Width": 7, "Height": 9 }, "CrabPotFishTypes": [ "freshwater", "ocean" ] },
+            "SafariWater2_8": { "Position": { "X": 36, "Y": 18, "Width": 5, "Height": 1 }, "CrabPotFishTypes": [ "freshwater", "ocean" ] }
+          },
+
+          "Fish": [
+
+            // SHALLOW WATER
+
+            // ------------------- SafariWater Zone 2 - 1 -------------------
+            { "ItemId": "(O)152", "Chance": 0.10, "FishAreaId": "SafariWater2_1" }, // Seaweed
+            { "ItemId": "(O)153", "Chance": 0.10, "FishAreaId": "SafariWater2_1" }, // Green Algae
+            { "ItemId": "(O)157", "Chance": 0.06, "FishAreaId": "SafariWater2_1" }, // White Algae
+            { "ItemId": "(O)130", "Chance": 0.27, "FishAreaId": "SafariWater2_1" }, // Tuna
+            { "ItemId": "(O)139", "Chance": 0.27, "FishAreaId": "SafariWater2_1" }, // Salmon
+            { "ItemId": "(O)267", "Chance": 0.27, "FishAreaId": "SafariWater2_1" }, // Flounder
+            { "ItemId": "(O)144", "Chance": 0.33, "FishAreaId": "SafariWater2_1" }, // Pike
+            { "ItemId": "(O)138", "Chance": 0.33, "FishAreaId": "SafariWater2_1" }, // Rainbow Trout
+            { "ItemId": "(O)698", "Chance": 0.33, "FishAreaId": "SafariWater2_1" }, // Sturgeon
+            { "ItemId": "(O)699", "Chance": 0.33, "FishAreaId": "SafariWater2_1" }, // Tiger Trout
+            { "ItemId": "(O)128", "Chance": 0.33, "FishAreaId": "SafariWater2_1" }, // Pufferfish
+            { "ItemId": "(O)143", "Chance": 0.33, "FishAreaId": "SafariWater2_1" }, // Catfish
+            { "ItemId": "(O)148", "Chance": 0.29, "FishAreaId": "SafariWater2_1" }, // Eel
+            { "ItemId": "(O)149", "Chance": 0.27, "FishAreaId": "SafariWater2_1" }, // Octopus
+
+            // ------------------- SafariWater Zone 2 - 2 -------------------
+            { "ItemId": "(O)152", "Chance": 0.10, "FishAreaId": "SafariWater2_2" }, // Seaweed
+            { "ItemId": "(O)153", "Chance": 0.10, "FishAreaId": "SafariWater2_2" }, // Green Algae
+            { "ItemId": "(O)157", "Chance": 0.06, "FishAreaId": "SafariWater2_2" }, // White Algae
+            { "ItemId": "(O)130", "Chance": 0.27, "FishAreaId": "SafariWater2_2" }, // Tuna
+            { "ItemId": "(O)139", "Chance": 0.27, "FishAreaId": "SafariWater2_2" }, // Salmon
+            { "ItemId": "(O)267", "Chance": 0.27, "FishAreaId": "SafariWater2_2" }, // Flounder
+            { "ItemId": "(O)144", "Chance": 0.33, "FishAreaId": "SafariWater2_2" }, // Pike
+            { "ItemId": "(O)138", "Chance": 0.33, "FishAreaId": "SafariWater2_2" }, // Rainbow Trout
+            { "ItemId": "(O)698", "Chance": 0.33, "FishAreaId": "SafariWater2_2" }, // Sturgeon
+            { "ItemId": "(O)699", "Chance": 0.33, "FishAreaId": "SafariWater2_2" }, // Tiger Trout
+            { "ItemId": "(O)128", "Chance": 0.33, "FishAreaId": "SafariWater2_2" }, // Pufferfish
+            { "ItemId": "(O)143", "Chance": 0.33, "FishAreaId": "SafariWater2_2" }, // Catfish
+            { "ItemId": "(O)148", "Chance": 0.29, "FishAreaId": "SafariWater2_2" }, // Eel
+            { "ItemId": "(O)149", "Chance": 0.27, "FishAreaId": "SafariWater2_2" }, // Octopus
+
+            // ------------------- SafariWater Zone 2 - 3 -------------------
+            { "ItemId": "(O)152", "Chance": 0.10, "FishAreaId": "SafariWater2_3" }, // Seaweed
+            { "ItemId": "(O)153", "Chance": 0.10, "FishAreaId": "SafariWater2_3" }, // Green Algae
+            { "ItemId": "(O)157", "Chance": 0.06, "FishAreaId": "SafariWater2_3" }, // White Algae
+            { "ItemId": "(O)130", "Chance": 0.27, "FishAreaId": "SafariWater2_3" }, // Tuna
+            { "ItemId": "(O)139", "Chance": 0.27, "FishAreaId": "SafariWater2_3" }, // Salmon
+            { "ItemId": "(O)267", "Chance": 0.27, "FishAreaId": "SafariWater2_3" }, // Flounder
+            { "ItemId": "(O)144", "Chance": 0.33, "FishAreaId": "SafariWater2_3" }, // Pike
+            { "ItemId": "(O)138", "Chance": 0.33, "FishAreaId": "SafariWater2_3" }, // Rainbow Trout
+            { "ItemId": "(O)698", "Chance": 0.33, "FishAreaId": "SafariWater2_3" }, // Sturgeon
+            { "ItemId": "(O)699", "Chance": 0.33, "FishAreaId": "SafariWater2_3" }, // Tiger Trout
+            { "ItemId": "(O)128", "Chance": 0.33, "FishAreaId": "SafariWater2_3" }, // Pufferfish
+            { "ItemId": "(O)143", "Chance": 0.33, "FishAreaId": "SafariWater2_3" }, // Catfish
+            { "ItemId": "(O)148", "Chance": 0.29, "FishAreaId": "SafariWater2_3" }, // Eel
+            { "ItemId": "(O)149", "Chance": 0.27, "FishAreaId": "SafariWater2_3" }, // Octopus
+
+            { "ItemId": "(O)152", "Chance": 0.10, "FishAreaId": "SafariWater2_4" }, // Seaweed
+            { "ItemId": "(O)153", "Chance": 0.10, "FishAreaId": "SafariWater2_4" }, // Green Algae
+            { "ItemId": "(O)157", "Chance": 0.06, "FishAreaId": "SafariWater2_4" }, // White Algae
+            { "ItemId": "(O)130", "Chance": 0.27, "FishAreaId": "SafariWater2_4" }, // Tuna
+            { "ItemId": "(O)139", "Chance": 0.27, "FishAreaId": "SafariWater2_4" }, // Salmon
+            { "ItemId": "(O)267", "Chance": 0.27, "FishAreaId": "SafariWater2_4" }, // Flounder
+            { "ItemId": "(O)144", "Chance": 0.33, "FishAreaId": "SafariWater2_4" }, // Pike
+            { "ItemId": "(O)138", "Chance": 0.33, "FishAreaId": "SafariWater2_4" }, // Rainbow Trout
+            { "ItemId": "(O)698", "Chance": 0.33, "FishAreaId": "SafariWater2_4" }, // Sturgeon
+            { "ItemId": "(O)699", "Chance": 0.33, "FishAreaId": "SafariWater2_4" }, // Tiger Trout
+            { "ItemId": "(O)128", "Chance": 0.33, "FishAreaId": "SafariWater2_4" }, // Pufferfish
+            { "ItemId": "(O)143", "Chance": 0.33, "FishAreaId": "SafariWater2_4" }, // Catfish
+            { "ItemId": "(O)148", "Chance": 0.29, "FishAreaId": "SafariWater2_4" }, // Eel
+            { "ItemId": "(O)149", "Chance": 0.27, "FishAreaId": "SafariWater2_4" }, // Octopus
+
+            { "ItemId": "(O)152", "Chance": 0.10, "FishAreaId": "SafariWater2_5" }, // Seaweed
+            { "ItemId": "(O)153", "Chance": 0.10, "FishAreaId": "SafariWater2_5" }, // Green Algae
+            { "ItemId": "(O)157", "Chance": 0.06, "FishAreaId": "SafariWater2_5" }, // White Algae
+            { "ItemId": "(O)130", "Chance": 0.27, "FishAreaId": "SafariWater2_5" }, // Tuna
+            { "ItemId": "(O)139", "Chance": 0.27, "FishAreaId": "SafariWater2_5" }, // Salmon
+            { "ItemId": "(O)267", "Chance": 0.27, "FishAreaId": "SafariWater2_5" }, // Flounder
+            { "ItemId": "(O)144", "Chance": 0.33, "FishAreaId": "SafariWater2_5" }, // Pike
+            { "ItemId": "(O)138", "Chance": 0.33, "FishAreaId": "SafariWater2_5" }, // Rainbow Trout
+            { "ItemId": "(O)698", "Chance": 0.33, "FishAreaId": "SafariWater2_5" }, // Sturgeon
+            { "ItemId": "(O)699", "Chance": 0.33, "FishAreaId": "SafariWater2_5" }, // Tiger Trout
+            { "ItemId": "(O)128", "Chance": 0.33, "FishAreaId": "SafariWater2_5" }, // Pufferfish
+            { "ItemId": "(O)143", "Chance": 0.33, "FishAreaId": "SafariWater2_5" }, // Catfish
+            { "ItemId": "(O)148", "Chance": 0.29, "FishAreaId": "SafariWater2_5" }, // Eel
+            { "ItemId": "(O)149", "Chance": 0.27, "FishAreaId": "SafariWater2_5" }, // Octopus
+
+            { "ItemId": "(O)152", "Chance": 0.10, "FishAreaId": "SafariWater2_6" }, // Seaweed
+            { "ItemId": "(O)153", "Chance": 0.10, "FishAreaId": "SafariWater2_6" }, // Green Algae
+            { "ItemId": "(O)157", "Chance": 0.06, "FishAreaId": "SafariWater2_6" }, // White Algae
+            { "ItemId": "(O)130", "Chance": 0.27, "FishAreaId": "SafariWater2_6" }, // Tuna
+            { "ItemId": "(O)139", "Chance": 0.27, "FishAreaId": "SafariWater2_6" }, // Salmon
+            { "ItemId": "(O)267", "Chance": 0.27, "FishAreaId": "SafariWater2_6" }, // Flounder
+            { "ItemId": "(O)144", "Chance": 0.33, "FishAreaId": "SafariWater2_6" }, // Pike
+            { "ItemId": "(O)138", "Chance": 0.33, "FishAreaId": "SafariWater2_6" }, // Rainbow Trout
+            { "ItemId": "(O)698", "Chance": 0.33, "FishAreaId": "SafariWater2_6" }, // Sturgeon
+            { "ItemId": "(O)699", "Chance": 0.33, "FishAreaId": "SafariWater2_6" }, // Tiger Trout
+            { "ItemId": "(O)128", "Chance": 0.33, "FishAreaId": "SafariWater2_6" }, // Pufferfish
+            { "ItemId": "(O)143", "Chance": 0.33, "FishAreaId": "SafariWater2_6" }, // Catfish
+            { "ItemId": "(O)148", "Chance": 0.29, "FishAreaId": "SafariWater2_6" }, // Eel
+            { "ItemId": "(O)149", "Chance": 0.27, "FishAreaId": "SafariWater2_6" }, // Octopus
+
+            { "ItemId": "(O)152", "Chance": 0.10, "FishAreaId": "SafariWater2_7" }, // Seaweed
+            { "ItemId": "(O)153", "Chance": 0.10, "FishAreaId": "SafariWater2_7" }, // Green Algae
+            { "ItemId": "(O)157", "Chance": 0.06, "FishAreaId": "SafariWater2_7" }, // White Algae
+            { "ItemId": "(O)130", "Chance": 0.27, "FishAreaId": "SafariWater2_7" }, // Tuna
+            { "ItemId": "(O)139", "Chance": 0.27, "FishAreaId": "SafariWater2_7" }, // Salmon
+            { "ItemId": "(O)267", "Chance": 0.27, "FishAreaId": "SafariWater2_7" }, // Flounder
+            { "ItemId": "(O)144", "Chance": 0.33, "FishAreaId": "SafariWater2_7" }, // Pike
+            { "ItemId": "(O)138", "Chance": 0.33, "FishAreaId": "SafariWater2_7" }, // Rainbow Trout
+            { "ItemId": "(O)698", "Chance": 0.33, "FishAreaId": "SafariWater2_7" }, // Sturgeon
+            { "ItemId": "(O)699", "Chance": 0.33, "FishAreaId": "SafariWater2_7" }, // Tiger Trout
+            { "ItemId": "(O)128", "Chance": 0.33, "FishAreaId": "SafariWater2_7" }, // Pufferfish
+            { "ItemId": "(O)143", "Chance": 0.33, "FishAreaId": "SafariWater2_7" }, // Catfish
+            { "ItemId": "(O)148", "Chance": 0.29, "FishAreaId": "SafariWater2_7" }, // Eel
+            { "ItemId": "(O)149", "Chance": 0.27, "FishAreaId": "SafariWater2_7" }, // Octopus
+
+            { "ItemId": "(O)152", "Chance": 0.10, "FishAreaId": "SafariWater2_8" }, // Seaweed
+            { "ItemId": "(O)153", "Chance": 0.10, "FishAreaId": "SafariWater2_8" }, // Green Algae
+            { "ItemId": "(O)157", "Chance": 0.06, "FishAreaId": "SafariWater2_8" }, // White Algae
+            { "ItemId": "(O)130", "Chance": 0.27, "FishAreaId": "SafariWater2_8" }, // Tuna
+            { "ItemId": "(O)139", "Chance": 0.27, "FishAreaId": "SafariWater2_8" }, // Salmon
+            { "ItemId": "(O)267", "Chance": 0.27, "FishAreaId": "SafariWater2_8" }, // Flounder
+            { "ItemId": "(O)144", "Chance": 0.33, "FishAreaId": "SafariWater2_8" }, // Pike
+            { "ItemId": "(O)138", "Chance": 0.33, "FishAreaId": "SafariWater2_8" }, // Rainbow Trout
+            { "ItemId": "(O)698", "Chance": 0.33, "FishAreaId": "SafariWater2_8" }, // Sturgeon
+            { "ItemId": "(O)699", "Chance": 0.33, "FishAreaId": "SafariWater2_8" }, // Tiger Trout
+            { "ItemId": "(O)128", "Chance": 0.33, "FishAreaId": "SafariWater2_8" }, // Pufferfish
+            { "ItemId": "(O)143", "Chance": 0.33, "FishAreaId": "SafariWater2_8" }, // Catfish
+            { "ItemId": "(O)148", "Chance": 0.29, "FishAreaId": "SafariWater2_8" }, // Eel
+            { "ItemId": "(O)149", "Chance": 0.27, "FishAreaId": "SafariWater2_8" }, // Octopus
+
+            // DEEPER WATER
+
+            // ------------------- SafariWater2Deep - 1 -------------------
+            { "ItemId": "(O)152", "Chance": 0.10, "FishAreaId": "SafariWater2Deep1" }, // Seaweed
+            { "ItemId": "(O)153", "Chance": 0.10, "FishAreaId": "SafariWater2Deep1" }, // Green Algae
+            { "ItemId": "(O)157", "Chance": 0.06, "FishAreaId": "SafariWater2Deep1" }, // White Algae
+            { "ItemId": "(O)139", "Chance": 0.27, "FishAreaId": "SafariWater2Deep1" }, // Salmon
+            { "ItemId": "(O)698", "Chance": 0.33, "FishAreaId": "SafariWater2Deep1" }, // Sturgeon
+            { "ItemId": "(O)128", "Chance": 0.33, "FishAreaId": "SafariWater2Deep1" }, // Pufferfish
+            { "ItemId": "(O)143", "Chance": 0.33, "FishAreaId": "SafariWater2Deep1" }, // Catfish
+            { "ItemId": "(O)148", "Chance": 0.29, "FishAreaId": "SafariWater2Deep1" }, // Eel
+            { "ItemId": "(O)149", "Chance": 0.27, "FishAreaId": "SafariWater2Deep1" }, // Octopus
+
+            // ------------------- SafariWater2Deep - 2 -------------------
+            { "ItemId": "(O)152", "Chance": 0.10, "FishAreaId": "SafariWater2Deep2" }, // Seaweed
+            { "ItemId": "(O)153", "Chance": 0.10, "FishAreaId": "SafariWater2Deep2" }, // Green Algae
+            { "ItemId": "(O)157", "Chance": 0.06, "FishAreaId": "SafariWater2Deep2" }, // White Algae
+            { "ItemId": "(O)130", "Chance": 0.27, "FishAreaId": "SafariWater2Deep2" }, // Tuna
+            { "ItemId": "(O)139", "Chance": 0.27, "FishAreaId": "SafariWater2Deep2" }, // Salmon
+            { "ItemId": "(O)698", "Chance": 0.33, "FishAreaId": "SafariWater2Deep2" }, // Sturgeon
+            { "ItemId": "(O)699", "Chance": 0.33, "FishAreaId": "SafariWater2Deep2" }, // Tiger Trout
+            { "ItemId": "(O)128", "Chance": 0.33, "FishAreaId": "SafariWater2Deep2" }, // Pufferfish
+            { "ItemId": "(O)143", "Chance": 0.33, "FishAreaId": "SafariWater2Deep2" }, // Catfish
+            { "ItemId": "(O)148", "Chance": 0.29, "FishAreaId": "SafariWater2Deep2" }, // Eel
+            { "ItemId": "(O)149", "Chance": 0.27, "FishAreaId": "SafariWater2Deep2" }, // Octopus
+
+            // ------------------- SafariWater2Deep - 3 -------------------
+            { "ItemId": "(O)152", "Chance": 0.10, "FishAreaId": "SafariWater2Deep3" }, // Seaweed
+            { "ItemId": "(O)153", "Chance": 0.10, "FishAreaId": "SafariWater2Deep3" }, // Green Algae
+            { "ItemId": "(O)157", "Chance": 0.06, "FishAreaId": "SafariWater2Deep3" }, // White Algae
+            { "ItemId": "(O)267", "Chance": 0.27, "FishAreaId": "SafariWater2Deep3" }, // Flounder
+            { "ItemId": "(O)698", "Chance": 0.33, "FishAreaId": "SafariWater2Deep3" }, // Sturgeon
+            { "ItemId": "(O)699", "Chance": 0.33, "FishAreaId": "SafariWater2Deep3" }, // Tiger Trout
+            { "ItemId": "(O)128", "Chance": 0.33, "FishAreaId": "SafariWater2Deep3" }, // Pufferfish
+            { "ItemId": "(O)143", "Chance": 0.33, "FishAreaId": "SafariWater2Deep3" }, // Catfish
+            { "ItemId": "(O)148", "Chance": 0.29, "FishAreaId": "SafariWater2Deep3" }, // Eel
+            { "ItemId": "(O)149", "Chance": 0.27, "FishAreaId": "SafariWater2Deep3" } // Octopus
+          ]
+        }
+      }
+    }
+  ]
+}

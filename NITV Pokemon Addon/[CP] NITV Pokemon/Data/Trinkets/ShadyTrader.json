@@ -1,0 +1,133 @@
+{
+  "Changes": [
+
+    {
+      "Action": "Load",
+      "Target": "Characters/Dialogue/ShadyTrader",
+      "FromFile": "Assets/dialogue.json"
+    },
+
+    {
+      "Action": "Load",
+      "Target": "Portraits/ShadyTrader",
+      "FromFile": "Assets/ShadyTraderPortrait.png"
+    },
+
+    {
+      "Action": "Load",
+      "Target": "Maps/NITVPokemon_ShadyTrader",
+      "FromFile": "Maps/ShadyTrader.tmx"
+    },
+
+    {
+      "Action": "EditData",
+      "Target": "Data/Characters",
+      "Entries": {
+        "ShadyTrader": {
+          "DisplayName": "{{i18n:ShadyTrader.Name}}",
+          "Gender": "Male",
+          "SocialAnxiety": "Neutral",
+          "Optimism": "Neutral",
+          "CanVisitIsland": false,
+          "CanSocialize": false,
+          "CanReceiveGifts": false,
+          "CanGreetNearbyCharacters": false,
+          "SocialTab": "HiddenAlways",
+          "PerfectionScore": false,
+          "SpawnIfMissing": true,
+          "Shadow": {
+            "Offset": { "X": 0, "Y": 10 }
+          },
+          "Home": [
+            {
+              "Id": "Default",
+              "Location": "NITVPokemon_ShadyTrader",
+              "Tile": { "X": 3, "Y": 3 },
+              "Direction": "down"
+            }
+          ],
+          "Appearance": [
+            {
+              "Id": "Default",
+              "Portrait": "Portraits/ShadyTrader",
+              "Sprite": "Characters/ShadyTrader"
+            }
+          ]
+        }
+      }
+    },
+
+    {
+      "Action": "EditData",
+      "Target": "Data/Locations",
+      "Entries": {
+        "NITVPokemon_ShadyTrader": {
+          "DisplayName": "{{i18n:TrinketHouse.DisplayName}}",
+          "CreateOnLoad": { "MapPath": "Maps/NITVPokemon_ShadyTrader", "AlwaysActive": false },
+          "DefaultArrivalTile": {"X": 3,"Y": 5},
+          "MusicDefault": "Xan.PokemonCreaturePack.TrinketHouseMusic",
+          "MusicContext": "SubLocation",
+          "MusicIgnoredInRain": false,
+          "MusicIgnoredInFallDebris": false,
+          "CustomFields": {
+            "Nature.NIV.OnlyExplicit": true
+          }
+        }
+      }
+    },
+
+    {
+      "Action": "EditMap",
+      "Target": "Maps/NITVPokemon_SafariZone",
+      "Update": "OnTimeChange, OnLocationChange",
+      "When": {
+        "HasFlag": "SafariGroup2_Unlock",
+        "DayOfWeek": "Friday"
+      },
+      "MapTiles": [
+        {
+          "Position": { "X": 5, "Y": 8 },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "Warp 3 5 NITVPokemon_ShadyTrader"
+          }
+        }
+      ]
+    },
+
+    {
+      "Action": "EditMap",
+      "Target": "Maps/NITVPokemon_ShadyTrader",
+      "MapTiles": [
+        {
+          "Position": { "X": 3, "Y": 6 },
+          "Layer": "Back",
+          "SetProperties": {
+            "TouchAction": "Warp NITVPokemon_SafariZone 5 9"
+          }
+        },
+        {
+          "Position": { "X": 1, "Y": 5 },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "Jukebox"
+          }
+        }
+      ]
+    },
+
+    {
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/ShadyTrader",
+      "Entries":
+        {
+          "Fri": "{{i18n:ShadyTrader.Fri}}",
+          "Ans1_reaction_yes": "{{i18n:Ans1_reaction_yes}}",
+          "Ans1_reaction_no": "{{i18n:Ans1_reaction_no}}",
+          "Menu_yes": "{{i18n:Menu_yes}}",
+          "Menu_nevermind": "{{i18n:Menu_nevermind}}",
+          "ShadyTrader_fallback": "{{i18n:ShadyTrader_fallback}}"
+        }
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "Changes": [                    
+
+    {
+    "Action": "EditData",
+    "Target": "Data/TriggerActions",
+      "Entries": {
+        "NITVPokemon_SafariTreeCut1": {
+          "Id": "NITVPokemon_UnlockSafari2",
+          "Trigger": "DayEnding",
+          "HostOnly": true,
+          "Condition": "PLAYER_HAS_MAIL Current SafariGroup3_Unlock, !PLAYER_HAS_MAIL Current SafariMap2Cutscene",
+          "Actions": [
+            "AddMail All SafariMap2Cutscene received"
+          ]
+        }
+      }
+    },
+
+    {
+      "Action": "Load",
+      "Target": "Animals/SafariTree",
+      "FromFile": "PNGs/Events/SafariTree.png"
+    },
+
+    {
+      "Action": "Load",
+      "Target": "Characters/BellsproutEvent1",
+      "FromFile": "PNGs/Events/BellsproutEvent1.png"
+    },
+
+    {
+      "Action": "EditData",
+      "Target": "Data/Events/FarmHouse",
+      "Entries": {
+        "Xan.PokemonCreaturePack.Safarizone2EventDay/LocalMail SafariMap2Cutscene/": "jungle_ambience/17 33/farmer -100 -100 0/changeLocation NITVPokemon_SafariZone/viewport 17 33 clamp/fade unfade/addTemporaryActor SafariTree 16 16 11 35 0 false Animal SafariTreeA/addTemporaryActor SafariTree 16 16 12 35 0 false Animal SafariTreeB/addTemporaryActor SafariTree 16 16 21 35 0 false Animal SafariTreeC/addTemporaryActor SafariTree 16 16 22 35 0 false Animal SafariTreeD/addTemporaryActor BellsproutEvent1 32 32 11 36 0 false Character BellsproutA/addTemporaryActor BellsproutEvent1 32 32 21 39 0 false Character BellsproutB/speed BellsproutB 2/move BellsproutB 0 -3 0 true/playSound grassyStep/pause 600/playSound grassyStep/pause 600/playSound grassyStep/faceDirection BellsproutA 3 true/pause 500/faceDirection BellsproutA 1 true/pause 500/faceDirection BellsproutA 2 true/pause 500/faceDirection BellsproutA 0 true/pause 500/animate BellsproutA false true 200 16 17 18 19/playSound swordswipe/pause 200/playSound swordswipe/pause 200/playSound cut/pause 200/proceedPosition BellsproutB/faceDirection BellsproutB 3 true/playSound swordswipe/pause 200/playSound swordswipe/pause 200/playSound cut/pause 200/faceDirection BellsproutB 0 true/playSound swordswipe/pause 200/playSound swordswipe/pause 200/playSound cut/pause 200/animate BellsproutB false true 200 16 17 18 19/playSound swordswipe/pause 200/playSound swordswipe/pause 200/playSound cut/pause 200/playSound swordswipe/pause 200/playSound swordswipe/pause 200/playSound cut/pause 200/playSound swordswipe/pause 200/playSound swordswipe/pause 200/playSound cut/pause 200/playSound swordswipe/pause 200/playSound swordswipe/pause 200/playSound cut/globalFade 0.007 true/viewport -999 -999/pause 600/playSound treethud/pause 800/stopMusic/Action AddMail All UnlockedSafariMap2 received/end"
+
+      }
+    }
+
+
+
+  ]
+}

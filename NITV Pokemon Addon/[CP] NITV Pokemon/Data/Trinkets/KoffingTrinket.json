@@ -1,0 +1,296 @@
+{
+  "Changes": [
+    {
+      "Action": "Load",
+      "Target": "Mods/Xan.PokemonCreaturePack/KoffingTrinketItem, Mods/Xan.PokemonCreaturePack/KoffingTrinket, Mods/Xan.PokemonCreaturePack/KoffingTrinketShiny, Mods/Xan.PokemonCreaturePack/KoffingSmog, Mods/Xan.PokemonCreaturePack/KoffingSmokescreen, Mods/Xan.PokemonCreaturePack/KoffingAttackAnim, Mods/Xan.PokemonCreaturePack/KoffingAttackAnimShiny",
+      "FromFile": "TrinketPNGs/Group3/Koffing/{{TargetWithoutPath}}.png"
+    },
+
+    {
+      "Action": "EditData",
+      "Target": "Data/AudioChanges",
+      "Entries": {
+          "KoffingSmogSound": {
+              "ID": "KoffingSmogSound",
+              "Category": "Sound",
+              "FilePaths": [ "{{AbsoluteFilePath: TrinketPNGs/Group3/Koffing/KoffingSmogSound.ogg}}" ],
+              "StreamedVorbis": false,
+              "Looped": false
+        },
+        "KoffingSmokeSound": {
+              "ID": "KoffingSmokeSound",
+              "Category": "Sound",
+              "FilePaths": [ "{{AbsoluteFilePath: TrinketPNGs/Group3/Koffing/KoffingSmokeSound.ogg}}" ],
+              "StreamedVorbis": false,
+              "Looped": false
+        }
+      }
+    },
+
+    {
+      "Action": "EditData",
+      "Target": "Data/Trinkets",
+      "Entries": {
+        "NITVPokemon_KoffingTrinket": {
+          "Id": "NITVPokemon_KoffingTrinket",
+          "DisplayName": "{{i18n:KoffingTrinket.DisplayName}}",
+          "Description": "{{i18n:KoffingTrinket.Description}}",
+          "Texture": "Mods/Xan.PokemonCreaturePack/KoffingTrinketItem",
+          "SheetIndex": 0,
+          "DropsNaturally": false,
+          "CanBeReforged": true
+        }
+      }
+    },
+
+    {
+      "Action": "EditData",
+      "Target": "mushymato.TrinketTinker/Tinker",
+      "Entries": {
+        "NITVPokemon_KoffingTrinket": {
+          "MinLevel": 1,
+          "Variants": [
+            {
+              "Texture": "Mods/Xan.PokemonCreaturePack/KoffingTrinket",
+              "TextureExtra": "Mods/Xan.PokemonCreaturePack/KoffingAttackAnim",
+              "TrinketSpriteIndex": 0,
+              "Width": 32,
+              "Height": 32,
+              "TextureScale": 3.0,
+              "ShadowScale": 2.0,
+              "TrinketNameArguments": [ "{{i18n:KoffingTrinket.DisplayName.Arg.0}}" ]
+            },
+            {
+              "Texture": "Mods/Xan.PokemonCreaturePack/KoffingTrinketShiny",
+              "TextureExtra": "Mods/Xan.PokemonCreaturePack/KoffingAttackAnimShiny",
+              "TrinketSpriteIndex": 1,
+              "Width": 32,
+              "Height": 32,
+              "TextureScale": 3.0,
+              "ShadowScale": 2.0,
+              "TrinketNameArguments": [ "{{i18n:KoffingTrinket.DisplayName.Arg.1}}" ]
+            }
+          ],
+
+          "Motion": {
+            "MotionClass": "Hover",
+            "AlwaysMoving": true,
+            "DirectionMode": "DRUL",
+            "FrameLength": 8,
+            "Interval": 250,
+            "HideDuringEvents": true,
+            "Args": { "Magnitude": 16, "Period": 800, "Min": 1, "MoveSync": true },
+            "AnimClips": {
+              "KOFAttack.1": { "FrameStart": 0,  "FrameLength": 7, "LoopMode": "Standard", "Interval": 250, "PauseMovement": true, "UseExtra": true },
+              "KOFAttack.2": { "FrameStart": 7,  "FrameLength": 7, "LoopMode": "Standard", "Interval": 250, "PauseMovement": true, "UseExtra": true },
+              "KOFAttack.3": { "FrameStart": 14, "FrameLength": 7, "LoopMode": "Standard", "Interval": 250, "PauseMovement": true, "UseExtra": true },
+              "KOFAttack.4": { "FrameStart": 21, "FrameLength": 7, "LoopMode": "Standard", "Interval": 250, "PauseMovement": true, "UseExtra": true }
+            }
+          },
+
+          "Abilities": [
+            // LEVEL 1 — Smog projectile homes in on target, pierce through enemies/objects/terrain, small stun, mostly a damage attack
+            [
+              {
+                "Id": "KOF_L1_SMOG",
+                "AbilityClass": "Hitscan",
+                "Description": "{{i18n:KoffingTrinket.Level1}}",
+                "Proc": "Timer",
+                "ProcTimer": 5000,
+                "ProcSyncDelay": 450,
+                "ProcOneshotAnim": "KOFAttack",
+                "ProcSound": { "CueName": "KoffingSmogSound" },
+                "Args": {
+                  "Min": 0, "Max": 0,
+                  "Range": 192
+                }
+              },
+              {
+                "Id": "KOF_L1_SMOG_DMG",
+                "AbilityClass": "Projectile",
+                "Proc": "Sync",
+                "ProcSyncId": "KOF_L1_SMOG",
+                "Args": {
+                  "Min": 5, "Max": 10,
+                  "Range": 192,
+                  "Hits": 3, "HitsDelay": 400,
+                  "Precision": 10,
+                  "StunTime": 1200,
+                  "HitTAS": "NITV_KoffingSmog_Hit",
+                  "Texture": "Mods/Xan.PokemonCreaturePack/KoffingSmog",
+                  "SpriteIndex": 2, "SpriteWidth": 32, "SpriteHeight": 32,
+                  "MinVelocity": 2, "MaxVelocity": 4, "Acceleration": 0.2,
+                  "Homing": true,
+                  "IgnoreObjectCollisions": true
+                }
+              }
+            ],
+
+            // LEVEL 2 — Same Smog attack but with added Smokescreen -> This is like the Yoba ring except it activates when the player takes 14 damage or more with 25 sec cooldown
+            // For Smokescreen, conditions and multiple buffs need to be used to gate the over-use of the yoba buff. This is because ReceiveDamage proc overrides any instances of ProcTimer. (ProcTimer cannot be used when it is checking for damage thresholds instead)
+            [
+              {
+                "Id": "KOF_L2_SMOG",
+                "AbilityClass": "Hitscan",
+                "Description": "{{i18n:KoffingTrinket.Level2}}",
+                "Proc": "Timer",
+                "ProcTimer": 4500,
+                "ProcSyncDelay": 450,
+                "ProcOneshotAnim": "KOFAttack",
+                "ProcSound": { "CueName": "KoffingSmogSound" },
+                "Args": {
+                  "Min": 0, "Max": 0,
+                  "Range": 256
+                }
+              },
+              {
+                "Id": "KOF_L2_SMOG_DMG",
+                "AbilityClass": "Projectile",
+                "Proc": "Sync",
+                "ProcSyncId": "KOF_L2_SMOG",
+                "Args": {
+                  "Min": 15, "Max": 20,
+                  "Range": 256,
+                  "Hits": 3, "HitsDelay": 400,
+                  "Precision": 10,
+                  "StunTime": 1200,
+                  "HitTAS": "NITV_KoffingSmog_Hit",
+                  "Texture": "Mods/Xan.PokemonCreaturePack/KoffingSmog",
+                  "SpriteIndex": 2, "SpriteWidth": 32, "SpriteHeight": 32,
+                  "MinVelocity": 2, "MaxVelocity": 4, "Acceleration": 0.2,
+                  "Homing": true,
+                  "IgnoreObjectCollisions": true
+                }
+              },
+              {
+                "Id": "KOF_L2_SMOKESCREEN_STEP1", //allow the use of the ability for 20 secs
+                "AbilityClass": "Buff",
+                "Proc": "ReceiveDamage",
+                "DamageThreshold": 12,
+                "Condition": "!PLAYER_HAS_BUFF Current Xan.Buffs/KOF_SMOKE_CD_15, !PLAYER_HAS_BUFF Current Xan.Buffs/ALLOW_KOFFING_SMOKEABILITY_20, !PLAYER_HAS_BUFF Current 21",
+                "Args": { "BuffId": "Xan.Buffs/ALLOW_KOFFING_SMOKEABILITY_20" }
+              },
+              {
+                "Id": "KOF_L2_SMOKESCREEN_STEP2", //don't allow step 1 for 15 secs
+                "AbilityClass": "Buff",
+                "Proc": "Sync",
+                "ProcSyncId": "KOF_L2_SMOKESCREEN_STEP1",
+                "Args": { "BuffId": "Xan.Buffs/KOF_SMOKE_CD_15" }
+              },
+              {
+                "Id": "KOF_L2_SMOKESCREEN_EFFECT", //the actual effect for 5 secs
+                "AbilityClass": "Buff",
+                "Proc": "ReceiveDamage",
+                "DamageThreshold": 12,
+                "Condition": "PLAYER_HAS_BUFF Current Xan.Buffs/ALLOW_KOFFING_SMOKEABILITY_20, !PLAYER_HAS_BUFF Current Xan.Buffs/KOF_SMOKE_USED_20, !PLAYER_HAS_BUFF Current 21",
+                "ProcOneshotAnim": "KOFAttack",
+                "ProcTAS": ["NITV_KoffingSmokescreen"],
+                "ProcSound": { "CueName": "KoffingSmokeSound" },
+                "Args": { "BuffId": "21" }
+              },
+              {
+                "Id": "KOF_L2_SMOKESCREEN_EFFECT_USED", //stop it from being used for 20 secs
+                "AbilityClass": "Buff",
+                "Proc": "Sync",
+                "ProcSyncId": "KOF_L2_SMOKESCREEN_EFFECT",
+                "Args": { "BuffId": "Xan.Buffs/KOF_SMOKE_USED_20" }
+              }
+            ],
+
+            // LEVEL 3 — Stronger Smog. Smokescreen has a reduced cooldown and slightly less damage threshold to activate
+            [
+              {
+                "Id": "KOF_L3_SMOG",
+                "AbilityClass": "Hitscan",
+                "Description": "{{i18n:KoffingTrinket.Level3}}",
+                "Proc": "Timer",
+                "ProcTimer": 4000,
+                "ProcSyncDelay": 450,
+                "ProcOneshotAnim": "KOFAttack",
+                "ProcSound": { "CueName": "KoffingSmogSound" },
+                "Args": {
+                  "Min": 0, "Max": 0,
+                  "Range": 320
+                }
+              },
+              {
+                "Id": "KOF_L3_SMOG_DMG",
+                "AbilityClass": "Projectile",
+                "Proc": "Sync",
+                "ProcSyncId": "KOF_L3_SMOG",
+                "Args": {
+                  "Min": 20, "Max": 25,
+                  "Range": 320,
+                  "Hits": 4, "HitsDelay": 350,
+                  "Precision": 10,
+                  "StunTime": 1400,
+                  "HitTAS": "NITV_KoffingSmog_Hit",
+                  "Texture": "Mods/Xan.PokemonCreaturePack/KoffingSmog",
+                  "SpriteIndex": 2, "SpriteWidth": 32, "SpriteHeight": 32,
+                  "MinVelocity": 2, "MaxVelocity": 4, "Acceleration": 0.2,
+                  "Homing": true,
+                  "IgnoreObjectCollisions": true
+                }
+              },
+              {
+                "Id": "KOF_L3_SMOKESCREEN_STEP1", //allow the use of the ability for 15 secs
+                "AbilityClass": "Buff",
+                "Proc": "ReceiveDamage",
+                "DamageThreshold": 10,
+                "Condition": "!PLAYER_HAS_BUFF Current Xan.Buffs/KOF_SMOKE_CD_10, !PLAYER_HAS_BUFF Current Xan.Buffs/ALLOW_KOFFING_SMOKEABILITY_15, !PLAYER_HAS_BUFF Current 21",
+                "Args": { "BuffId": "Xan.Buffs/ALLOW_KOFFING_SMOKEABILITY_15" }
+              },
+              {
+                "Id": "KOF_L3_SMOKESCREEN_STEP2", //don't allow step 1 for 10 secs
+                "AbilityClass": "Buff",
+                "Proc": "Sync",
+                "ProcSyncId": "KOF_L3_SMOKESCREEN_STEP1",
+                "Args": { "BuffId": "Xan.Buffs/KOF_SMOKE_CD_10" }
+              },
+              {
+                "Id": "KOF_L3_SMOKESCREEN_EFFECT", //the actual effect for 5 secs
+                "AbilityClass": "Buff",
+                "Proc": "ReceiveDamage",
+                "DamageThreshold": 10,
+                "Condition": "PLAYER_HAS_BUFF Current Xan.Buffs/ALLOW_KOFFING_SMOKEABILITY_15, !PLAYER_HAS_BUFF Current Xan.Buffs/KOF_SMOKE_USED_15, !PLAYER_HAS_BUFF Current 21",
+                "ProcOneshotAnim": "KOFAttack",
+                "ProcTAS": ["NITV_KoffingSmokescreen"],
+                "ProcSound": { "CueName": "KoffingSmokeSound" },
+                "Args": { "BuffId": "21" }
+              },
+              {
+                "Id": "KOF_L3_SMOKESCREEN_EFFECT_USED", //stop it from being used for 15 secs
+                "AbilityClass": "Buff",
+                "Proc": "Sync",
+                "ProcSyncId": "KOF_L3_SMOKESCREEN_EFFECT",
+                "Args": { "BuffId": "Xan.Buffs/KOF_SMOKE_USED_15" }
+              }
+            ]
+          ]
+
+        }
+      }
+    },
+
+    {
+      "Action": "EditData",
+      "Target": "mushymato.TrinketTinker/TAS",
+      "Entries": {
+        "NITV_KoffingSmog_Hit": {
+          "Id": "NITV_KoffingSmog_Hit",
+          "Texture": "Mods/Xan.PokemonCreaturePack/KoffingSmog",
+          "SourceRect": { "X":0, "Y":0, "Width":32, "Height":32 },
+          "Frames": 9, "Interval": 250,
+          "PositionOffset": "-16,-16"
+        },
+        "NITV_KoffingSmokescreen": {
+          "Id": "NITV_KoffingSmokescreen",
+          "Texture": "Mods/Xan.PokemonCreaturePack/KoffingSmokescreen",
+          "SourceRect": { "X":0, "Y":0, "Width":64, "Height":64 },
+          "Frames": 6, "Interval": 250,
+          "PositionOffset": "-16,-16"
+        }
+      }
+    }
+  ]
+}

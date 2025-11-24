@@ -1,0 +1,273 @@
+{
+  "Changes": [
+    {
+      "Action": "Load",
+      "Target": "Mods/Xan.PokemonCreaturePack/PikachuTrinketItem, Mods/Xan.PokemonCreaturePack/PikachuTrinket, Mods/Xan.PokemonCreaturePack/PikachuTrinketShiny, Mods/Xan.PokemonCreaturePack/LightningBoltAnim, Mods/Xan.PokemonCreaturePack/ElecStunAnim, Mods/Xan.PokemonCreaturePack/PikachuAttackAnim, Mods/Xan.PokemonCreaturePack/PikachuAttackAnimShiny",
+      "FromFile": "TrinketPNGs/Group3/Pikachu/{{TargetWithoutPath}}.png"
+    },
+
+    {
+      "Action": "EditData",
+      "Target": "Data/AudioChanges",
+      "Entries": {
+        "PikachuThunderSound": {
+          "ID": "PikachuThunderSound",
+          "Category": "Sound",
+          "FilePaths": [ "{{AbsoluteFilePath: TrinketPNGs/Group3/Pikachu/PikachuThunderSound.ogg}}" ],
+          "StreamedVorbis": false,
+          "Looped": false
+        },
+        "PikachuStunSound": {
+          "ID": "PikachuStunSound",
+          "Category": "Sound",
+          "FilePaths": [ "{{AbsoluteFilePath: TrinketPNGs/Group3/Pikachu/PikachuStunSound.ogg}}" ],
+          "StreamedVorbis": false,
+          "Looped": false
+        }
+      }
+    },
+
+    {
+      "Action": "EditData",
+      "Target": "Data/Trinkets",
+      "Entries": {
+        "NITVPokemon_PikachuTrinket": {
+          "Id": "NITVPokemon_PikachuTrinket",
+          "DisplayName": "{{i18n:PikachuTrinket.DisplayName}}",
+          "Description": "{{i18n:PikachuTrinket.Description}}",
+          "Texture": "Mods/Xan.PokemonCreaturePack/PikachuTrinketItem",
+          "SheetIndex": 0,
+          "DropsNaturally": false,
+          "CanBeReforged": true
+        }
+      }
+    },
+
+    {
+      "Action": "EditData",
+      "Target": "mushymato.TrinketTinker/Tinker",
+      "Entries": {
+        "NITVPokemon_PikachuTrinket": {
+          "MinLevel": 1,
+
+          "Variants": [
+            {
+              "Texture": "Mods/Xan.PokemonCreaturePack/PikachuTrinket",
+              "TextureExtra": "Mods/Xan.PokemonCreaturePack/PikachuAttackAnim",
+              "TrinketSpriteIndex": 0,
+              "Width": 32,
+              "Height": 160,
+              "TextureScale": 2.3,
+              "ShadowScale": 1.9,
+              "TrinketNameArguments": [ "{{i18n:PikachuTrinket.DisplayName.Arg.0}}" ]
+            },
+            {
+              "Texture": "Mods/Xan.PokemonCreaturePack/PikachuTrinketShiny",
+              "TextureExtra": "Mods/Xan.PokemonCreaturePack/PikachuAttackAnimShiny",
+              "TrinketSpriteIndex": 1,
+              "Width": 32,
+              "Height": 160,
+              "TextureScale": 2.3,
+              "ShadowScale": 1.9,
+              "TrinketNameArguments": [ "{{i18n:PikachuTrinket.DisplayName.Arg.1}}" ]
+            }
+          ],
+
+          "Motion": {
+            "MotionClass": "Lerp",
+            "DirectionMode": "DRUL",
+            "FrameLength": 8,
+            "HideDuringEvents": true,
+            "Offset": "0,10",
+            "Args": { "Min": 1, "MoveSync": true },
+            "AnimClips": {
+              "Idle": { "FrameStart": 32, "FrameLength": 8, "Interval": 250 },
+              "PIKAttack": { "FrameStart": 0, "FrameLength": 10, "LoopMode": "Standard", "Interval": 100, "PauseMovement": true, "UseExtra": true }
+            },
+            "Anchors": [
+              { "Mode": "Forage", "Range": 576 }
+            ]
+          },
+
+          "Abilities": [
+
+            // LEVEL 1 — Single-target thunder attack. Since hitscan is blocked by objects/terrain/walls (line of sight), projectile is used for damage
+            [
+              {
+                "Id": "PIK_L1_THUNDER",
+                "AbilityClass": "Hitscan",
+                "Description": "{{i18n:PikachuTrinket.Level1}}",
+                "Proc": "Timer",
+                "ProcTimer": 6000,
+                "ProcSyncDelay": 950,
+                "ProcOneshotAnim": "PIKAttack",
+                "ProcSound": { "CueName": "PikachuThunderSound" },
+                "Args": {
+                  "Min": 0, "Max": 0,
+                  "Range": 256
+                }
+              },
+              {
+                "Id": "PIK_L1_DMG",
+                "AbilityClass": "Projectile",
+                "Proc": "Sync",
+                "ProcSyncId": "PIK_L1_THUNDER",
+                "Args": {
+                  "Min": 24, "Max": 38,
+                  "CritChance": 0.1,
+                  "CritDamage": 1.5,
+                  "Range": 256,
+                  "StunTime": 1000,
+                  "HitTAS": "NITV_LightningBoltAnim",
+                  "Texture": "Mods/Xan.PokemonCreaturePack/LightningBoltAnim",
+                  "SpriteIndex": 2, "SpriteWidth": 32, "SpriteHeight": 32,
+                  "MinVelocity": 15, "MaxVelocity": 20, "Acceleration": 1,
+                  "Homing": true,
+                  "IgnoreObjectCollisions": true,
+                  "IgnoreLocationCollisions": true
+                }
+              }
+            ],
+
+            // LEVEL 2 — more range and dmg, shorter cooldown + forage ability
+            [
+              {
+                "Id": "PIK_L2_THUNDER",
+                "AbilityClass": "Hitscan",
+                "Description": "{{i18n:PikachuTrinket.Level2}}",
+                "Proc": "Timer",
+                "ProcTimer": 4600,
+                "ProcSyncDelay": 950,
+                "ProcOneshotAnim": "PIKAttack",
+                "ProcSound": { "CueName": "PikachuThunderSound" },
+                "Args": {
+                  "Min": 0, "Max": 0,
+                  "Range": 384
+                }
+              },
+              {
+                "Id": "PIK_L2_DMG",
+                "AbilityClass": "Projectile",
+                "Proc": "Sync",
+                "ProcSyncId": "PIK_L2_THUNDER",
+                "Args": {
+                  "Min": 35, "Max": 48,
+                  "CritChance": 0.1,
+                  "CritDamage": 1.5,
+                  "Range": 384,
+                  "StunTime": 1000,
+                  "HitTAS": "NITV_LightningBoltAnim",
+                  "Texture": "Mods/Xan.PokemonCreaturePack/LightningBoltAnim",
+                  "SpriteIndex": 2, "SpriteWidth": 32, "SpriteHeight": 32,
+                  "MinVelocity": 15, "MaxVelocity": 20, "Acceleration": 1,
+                  "Homing": true,
+                  "IgnoreObjectCollisions": true,
+                  "IgnoreLocationCollisions": true
+                }
+              },
+              {
+                "Id": "PIK_L2_HARVEST_FORAGE",
+                "AbilityClass": "HarvestForage",
+                "Proc": "Timer",
+                "ProcTimer": 1000,
+                "Args": {
+                  "Range": 0,
+                  "HarvestTo": "Player",
+                  "ShowHarvestedItem": true
+                }
+              }
+            ],
+
+            // LEVEL 3 — more dmg and range, forage harvest + added visual stun to enemies that last for long periods
+            [
+              {
+                "Id": "PIK_L3_THUNDER",
+                "AbilityClass": "Hitscan",
+                "Description": "{{i18n:PikachuTrinket.Level3}}",
+                "Proc": "Timer",
+                "ProcTimer": 3800,
+                "ProcSyncDelay": 950,
+                "ProcOneshotAnim": "PIKAttack",
+                "ProcSound": { "CueName": "PikachuThunderSound" },
+                "Args": {
+                  "Min": 0, "Max": 0,
+                  "Range": 512
+                }
+              },
+              {
+                "Id": "PIK_L3_DMG",
+                "AbilityClass": "Projectile",
+                "Proc": "Sync",
+                "ProcSyncId": "PIK_L3_THUNDER",
+                "Args": {
+                  "Min": 50, "Max": 72,
+                  "CritChance": 0.1,
+                  "CritDamage": 1.5,
+                  "Range": 512,
+                  "StunTime": 1000,
+                  "HitTAS": "NITV_LightningBoltAnim",
+                  "Texture": "Mods/Xan.PokemonCreaturePack/LightningBoltAnim",
+                  "SpriteIndex": 2, "SpriteWidth": 32, "SpriteHeight": 32,
+                  "MinVelocity": 15, "MaxVelocity": 20, "Acceleration": 1,
+                  "Homing": true,
+                  "IgnoreObjectCollisions": true,
+                  "IgnoreLocationCollisions": true
+                }
+              },
+              {
+                "Id": "PIK_L3_THUNDER_STUN",
+                "AbilityClass": "Hitscan",
+                "Proc": "Timer",
+                "ProcTimer": 12000,
+                "ProcSound": { "CueName": "PikachuStunSound" },
+                "Args": {
+                  "Min": 0, "Max": 0,
+                  "Range": 384,
+                  "FacingDirectionOnly": false,
+                  "StunTime": 3600,
+                  "StunTAS": "NITV_ElecStunAnim"
+                }
+              },
+              {
+                "Id": "PIK_L3_HARVEST_FORAGE",
+                "AbilityClass": "HarvestForage",
+                "Proc": "Timer",
+                "ProcTimer": 1000,
+                "Args": {
+                  "Range": 0,
+                  "HarvestTo": "Player",
+                  "ShowHarvestedItem": true
+                }
+              }
+            ]
+          ]
+        }
+      }
+    },
+
+    {
+      "Action": "EditData",
+      "Target": "mushymato.TrinketTinker/TAS",
+      "Entries": {
+        "NITV_LightningBoltAnim": {
+          "Texture": "Mods/Xan.PokemonCreaturePack/LightningBoltAnim",
+          "SourceRect": { "X": 0, "Y": 0, "Width": 32, "Height": 256 },
+          "Frames": 8,
+          "Interval": 40,
+          "Scale": 0.4,
+          "PositionOffset": "-6,-100",
+          "DrawAboveAlwaysFront": true
+        },
+        "NITV_ElecStunAnim": {
+          "Texture": "Mods/Xan.PokemonCreaturePack/ElecStunAnim",
+          "SourceRect": { "X": 0, "Y": 0, "Width": 32, "Height": 32 },
+          "Frames": 12,
+          "Interval": 300,
+          "Scale": 0.4,
+          "PositionOffset": "-6,-16",
+          "DrawAboveAlwaysFront": true
+        }
+      }
+    }
+  ]
+}

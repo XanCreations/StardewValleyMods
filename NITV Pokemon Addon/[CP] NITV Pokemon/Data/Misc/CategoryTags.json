@@ -1,0 +1,623 @@
+{
+    "Changes": [
+
+    {
+      "Action": "EditData",
+      "Target": "spacechase0.SpaceCore/ObjectExtensionData",
+      "Entries": {
+        "NatInValley.Creature.Pidgey_Roam": {
+          "CategoryTextOverride": "{{i18n:Pokemon.CategoryTag}}",
+          "CategoryColorOverride": {
+            "R": 140,
+            "G": 93,
+            "B": 229,
+            "A": 255
+          }
+        },
+        "NatInValley.Creature.Geodude_Attack": {
+          "CategoryTextOverride": "{{i18n:Pokemon.CategoryTag}}",
+          "CategoryColorOverride": {
+            "R": 140,
+            "G": 93,
+            "B": 229,
+            "A": 255
+          }
+        },
+        "NatInValley.Creature.Zubat_Attack": {
+          "CategoryTextOverride": "{{i18n:Pokemon.CategoryTag}}",
+          "CategoryColorOverride": {
+            "R": 140,
+            "G": 93,
+            "B": 229,
+            "A": 255
+          }
+        },
+        "NatInValley.Creature.Caterpie_Bush": {
+          "CategoryTextOverride": "{{i18n:Pokemon.CategoryTag}}",
+          "CategoryColorOverride": {
+            "R": 140,
+            "G": 93,
+            "B": 229,
+            "A": 255
+          }
+        },
+        "NatInValley.Creature.Weedle_Bush": {
+          "CategoryTextOverride": "{{i18n:Pokemon.CategoryTag}}",
+          "CategoryColorOverride": {
+            "R": 140,
+            "G": 93,
+            "B": 229,
+            "A": 255
+          }
+        },
+        "NatInValley.Creature.Rattata_Roam": {
+          "CategoryTextOverride": "{{i18n:Pokemon.CategoryTag}}",
+          "CategoryColorOverride": {
+            "R": 140,
+            "G": 93,
+            "B": 229,
+            "A": 255
+          }
+        },
+        "NatInValley.Creature.Magikarp_Swim": {
+          "CategoryTextOverride": "{{i18n:Pokemon.CategoryTag}}",
+          "CategoryColorOverride": {
+            "R": 140,
+            "G": 93,
+            "B": 229,
+            "A": 255
+          }
+        },
+        "NatInValley.Creature.Metapod_Tree": {
+          "CategoryTextOverride": "{{i18n:Pokemon.CategoryTag}}",
+          "CategoryColorOverride": {
+            "R": 140,
+            "G": 93,
+            "B": 229,
+            "A": 255
+          }
+        },
+        "NatInValley.Creature.Kakuna_Tree": {
+          "CategoryTextOverride": "{{i18n:Pokemon.CategoryTag}}",
+          "CategoryColorOverride": {
+            "R": 140,
+            "G": 93,
+            "B": 229,
+            "A": 255
+          }
+        },
+        "NatInValley.Creature.Butterfree_Roam": {
+          "CategoryTextOverride": "{{i18n:Pokemon.CategoryTag}}",
+          "CategoryColorOverride": {
+            "R": 140,
+            "G": 93,
+            "B": 229,
+            "A": 255
+          }
+        },
+        "NatInValley.Creature.Beedrill_Attack": {
+          "CategoryTextOverride": "{{i18n:Pokemon.CategoryTag}}",
+          "CategoryColorOverride": {
+            "R": 140,
+            "G": 93,
+            "B": 229,
+            "A": 255
+          }
+        },
+        "NatInValley.Creature.Ekans_Attack": {
+          "CategoryTextOverride": "{{i18n:Pokemon.CategoryTag}}",
+          "CategoryColorOverride": {
+            "R": 140,
+            "G": 93,
+            "B": 229,
+            "A": 255
+          }
+        },
+        "NatInValley.Creature.Poliwag_Swim": {
+          "CategoryTextOverride": "{{i18n:Pokemon.CategoryTag}}",
+          "CategoryColorOverride": {
+            "R": 140,
+            "G": 93,
+            "B": 229,
+            "A": 255
+          }
+        },
+        "NatInValley.Creature.Tentacool_Swim": {
+          "CategoryTextOverride": "{{i18n:Pokemon.CategoryTag}}",
+          "CategoryColorOverride": {
+            "R": 140,
+            "G": 93,
+            "B": 229,
+            "A": 255
+          }
+        },
+        "NatInValley.Creature.Growlithe_Roam": {
+          "CategoryTextOverride": "{{i18n:Pokemon.CategoryTag}}",
+          "CategoryColorOverride": {
+            "R": 140,
+            "G": 93,
+            "B": 229,
+            "A": 255
+          }
+        },
+        "NatInValley.Creature.Venonat_Stump": {
+          "CategoryTextOverride": "{{i18n:Pokemon.CategoryTag}}",
+          "CategoryColorOverride": {
+            "R": 140,
+            "G": 93,
+            "B": 229,
+            "A": 255
+          }
+        },
+        "NatInValley.Creature.Paras_Roam": {
+          "CategoryTextOverride": "{{i18n:Pokemon.CategoryTag}}",
+          "CategoryColorOverride": {
+            "R": 140,
+            "G": 93,
+            "B": 229,
+            "A": 255
+          }
+        },
+        "NatInValley.Creature.Diglett_Roam": {
+          "CategoryTextOverride": "{{i18n:Pokemon.CategoryTag}}",
+          "CategoryColorOverride": {
+            "R": 140,
+            "G": 93,
+            "B": 229,
+            "A": 255
+          }
+        },
+        "NatInValley.Creature.Sandshrew_Roam": {
+          "CategoryTextOverride": "{{i18n:Pokemon.CategoryTag}}",
+          "CategoryColorOverride": {
+            "R": 140,
+            "G": 93,
+            "B": 229,
+            "A": 255
+          }
+        },
+        "NatInValley.Creature.Pidgey_Roam_Shiny": {
+          "CategoryTextOverride": "{{i18n:Pokemon.CategoryTag}}",
+          "CategoryColorOverride": {
+            "R": 140,
+            "G": 93,
+            "B": 229,
+            "A": 255
+          }
+        },
+        "NatInValley.Creature.Geodude_Attack_Shiny": {
+          "CategoryTextOverride": "{{i18n:Pokemon.CategoryTag}}",
+          "CategoryColorOverride": {
+            "R": 140,
+            "G": 93,
+            "B": 229,
+            "A": 255
+          }
+        },
+        "NatInValley.Creature.Zubat_Attack_Shiny": {
+          "CategoryTextOverride": "{{i18n:Pokemon.CategoryTag}}",
+          "CategoryColorOverride": {
+            "R": 140,
+            "G": 93,
+            "B": 229,
+            "A": 255
+          }
+        },
+        "NatInValley.Creature.Caterpie_Bush_Shiny": {
+          "CategoryTextOverride": "{{i18n:Pokemon.CategoryTag}}",
+          "CategoryColorOverride": {
+            "R": 140,
+            "G": 93,
+            "B": 229,
+            "A": 255
+          }
+        },
+        "NatInValley.Creature.Weedle_Bush_Shiny": {
+          "CategoryTextOverride": "{{i18n:Pokemon.CategoryTag}}",
+          "CategoryColorOverride": {
+            "R": 140,
+            "G": 93,
+            "B": 229,
+            "A": 255
+          }
+        },
+        "NatInValley.Creature.Rattata_Roam_Shiny": {
+          "CategoryTextOverride": "{{i18n:Pokemon.CategoryTag}}",
+          "CategoryColorOverride": {
+            "R": 140,
+            "G": 93,
+            "B": 229,
+            "A": 255
+          }
+        },
+        "NatInValley.Creature.Magikarp_Swim_Shiny": {
+          "CategoryTextOverride": "{{i18n:Pokemon.CategoryTag}}",
+          "CategoryColorOverride": {
+            "R": 140,
+            "G": 93,
+            "B": 229,
+            "A": 255
+          }
+        },
+        "NatInValley.Creature.Metapod_Tree_Shiny": {
+          "CategoryTextOverride": "{{i18n:Pokemon.CategoryTag}}",
+          "CategoryColorOverride": {
+            "R": 140,
+            "G": 93,
+            "B": 229,
+            "A": 255
+          }
+        },
+        "NatInValley.Creature.Kakuna_Tree_Shiny": {
+          "CategoryTextOverride": "{{i18n:Pokemon.CategoryTag}}",
+          "CategoryColorOverride": {
+            "R": 140,
+            "G": 93,
+            "B": 229,
+            "A": 255
+          }
+        },
+        "NatInValley.Creature.Butterfree_Roam_Shiny": {
+          "CategoryTextOverride": "{{i18n:Pokemon.CategoryTag}}",
+          "CategoryColorOverride": {
+            "R": 140,
+            "G": 93,
+            "B": 229,
+            "A": 255
+          }
+        },
+        "NatInValley.Creature.Beedrill_Attack_Shiny": {
+          "CategoryTextOverride": "{{i18n:Pokemon.CategoryTag}}",
+          "CategoryColorOverride": {
+            "R": 140,
+            "G": 93,
+            "B": 229,
+            "A": 255
+          }
+        },
+        "NatInValley.Creature.Ekans_Attack_Shiny": {
+          "CategoryTextOverride": "{{i18n:Pokemon.CategoryTag}}",
+          "CategoryColorOverride": {
+            "R": 140,
+            "G": 93,
+            "B": 229,
+            "A": 255
+          }
+        },
+        "NatInValley.Creature.Poliwag_Swim_Shiny": {
+          "CategoryTextOverride": "{{i18n:Pokemon.CategoryTag}}",
+          "CategoryColorOverride": {
+            "R": 140,
+            "G": 93,
+            "B": 229,
+            "A": 255
+          }
+        },
+        "NatInValley.Creature.Tentacool_Swim_Shiny": {
+          "CategoryTextOverride": "{{i18n:Pokemon.CategoryTag}}",
+          "CategoryColorOverride": {
+            "R": 140,
+            "G": 93,
+            "B": 229,
+            "A": 255
+          }
+        },
+        "NatInValley.Creature.Growlithe_Roam_Shiny": {
+          "CategoryTextOverride": "{{i18n:Pokemon.CategoryTag}}",
+          "CategoryColorOverride": {
+            "R": 140,
+            "G": 93,
+            "B": 229,
+            "A": 255
+          }
+        },
+        "NatInValley.Creature.Venonat_Stump_Shiny": {
+          "CategoryTextOverride": "{{i18n:Pokemon.CategoryTag}}",
+          "CategoryColorOverride": {
+            "R": 140,
+            "G": 93,
+            "B": 229,
+            "A": 255
+          }
+        },
+        "NatInValley.Creature.Paras_Roam_Shiny": {
+          "CategoryTextOverride": "{{i18n:Pokemon.CategoryTag}}",
+          "CategoryColorOverride": {
+            "R": 140,
+            "G": 93,
+            "B": 229,
+            "A": 255
+          }
+        },
+        "NatInValley.Creature.Diglett_Roam_Shiny": {
+          "CategoryTextOverride": "{{i18n:Pokemon.CategoryTag}}",
+          "CategoryColorOverride": {
+            "R": 140,
+            "G": 93,
+            "B": 229,
+            "A": 255
+          }
+        },
+        "NatInValley.Creature.Gastly_Attack_Safari": {
+          "CategoryTextOverride": "{{i18n:Pokemon.CategoryTag}}",
+          "CategoryColorOverride": {
+            "R": 140,
+            "G": 93,
+            "B": 229,
+            "A": 255
+          }
+        },
+        "NatInValley.Creature.Gastly_Attack_Shiny": {
+          "CategoryTextOverride": "{{i18n:Pokemon.CategoryTag}}",
+          "CategoryColorOverride": {
+            "R": 140,
+            "G": 93,
+            "B": 229,
+            "A": 255
+          }
+        },
+        "NatInValley.Creature.Sandshrew_Roam_Shiny": {
+          "CategoryTextOverride": "{{i18n:Pokemon.CategoryTag}}",
+          "CategoryColorOverride": {
+            "R": 140,
+            "G": 93,
+            "B": 229,
+            "A": 255
+          }
+        },
+        "NatInValley.Creature.Magikarp_Terrarium": {
+          "CategoryTextOverride": "{{i18n:Terrarium.CategoryTag}}",
+          "CategoryColorOverride": {
+            "R": 145,
+            "G": 45,
+            "B": 10,
+            "A": 255
+          }
+        },
+        "NatInValley.Creature.Magikarp_Terrarium_Shiny": {
+          "CategoryTextOverride": "{{i18n:Terrarium.CategoryTag}}",
+          "CategoryColorOverride": {
+            "R": 145,
+            "G": 45,
+            "B": 10,
+            "A": 255
+          }
+        },
+        "NatInValley.Creature.Diglett_Terrarium": {
+          "CategoryTextOverride": "{{i18n:Terrarium.CategoryTag}}",
+          "CategoryColorOverride": {
+            "R": 145,
+            "G": 45,
+            "B": 10,
+            "A": 255
+          }
+        },
+        "NatInValley.Creature.Diglett_Terrarium_Shiny": {
+          "CategoryTextOverride": "{{i18n:Terrarium.CategoryTag}}",
+          "CategoryColorOverride": {
+            "R": 145,
+            "G": 45,
+            "B": 10,
+            "A": 255
+          }
+        },
+        "NatInValley.Creature.Spearow_Attack": {
+          "CategoryTextOverride": "{{i18n:Pokemon.CategoryTag}}",
+          "CategoryColorOverride": {
+            "R": 140,
+            "G": 93,
+            "B": 229,
+            "A": 255
+          }
+        },
+        "NatInValley.Creature.Spearow_Attack_Shiny": {
+          "CategoryTextOverride": "{{i18n:Pokemon.CategoryTag}}",
+          "CategoryColorOverride": {
+            "R": 140,
+            "G": 93,
+            "B": 229,
+            "A": 255
+          }
+        },
+        "NatInValley.Creature.Koffing_Attack": {
+          "CategoryTextOverride": "{{i18n:Pokemon.CategoryTag}}",
+          "CategoryColorOverride": {
+            "R": 140,
+            "G": 93,
+            "B": 229,
+            "A": 255
+          }
+        },
+        "NatInValley.Creature.Koffing_Attack_Shiny": {
+          "CategoryTextOverride": "{{i18n:Pokemon.CategoryTag}}",
+          "CategoryColorOverride": {
+            "R": 140,
+            "G": 93,
+            "B": 229,
+            "A": 255
+          }
+        },
+        "NatInValley.Creature.Oddish_Stump": {
+          "CategoryTextOverride": "{{i18n:Pokemon.CategoryTag}}",
+          "CategoryColorOverride": {
+            "R": 140,
+            "G": 93,
+            "B": 229,
+            "A": 255
+          }
+        },
+        "NatInValley.Creature.Oddish_Stump_Shiny": {
+          "CategoryTextOverride": "{{i18n:Pokemon.CategoryTag}}",
+          "CategoryColorOverride": {
+            "R": 140,
+            "G": 93,
+            "B": 229,
+            "A": 255
+          }
+        },
+        "NatInValley.Creature.Bellsprout_Roam": {
+          "CategoryTextOverride": "{{i18n:Pokemon.CategoryTag}}",
+          "CategoryColorOverride": {
+            "R": 140,
+            "G": 93,
+            "B": 229,
+            "A": 255
+          }
+        },
+        "NatInValley.Creature.Bellsprout_Roam_Shiny": {
+          "CategoryTextOverride": "{{i18n:Pokemon.CategoryTag}}",
+          "CategoryColorOverride": {
+            "R": 140,
+            "G": 93,
+            "B": 229,
+            "A": 255
+          }
+        },
+        "NatInValley.Creature.Grimer_Roam": {
+          "CategoryTextOverride": "{{i18n:Pokemon.CategoryTag}}",
+          "CategoryColorOverride": {
+            "R": 140,
+            "G": 93,
+            "B": 229,
+            "A": 255
+          }
+        },
+        "NatInValley.Creature.Grimer_Roam_Shiny": {
+          "CategoryTextOverride": "{{i18n:Pokemon.CategoryTag}}",
+          "CategoryColorOverride": {
+            "R": 140,
+            "G": 93,
+            "B": 229,
+            "A": 255
+          }
+        },
+        "NatInValley.Creature.Cubone_Roam": {
+          "CategoryTextOverride": "{{i18n:Pokemon.CategoryTag}}",
+          "CategoryColorOverride": {
+            "R": 140,
+            "G": 93,
+            "B": 229,
+            "A": 255
+          }
+        },
+        "NatInValley.Creature.Cubone_Roam_Shiny": {
+          "CategoryTextOverride": "{{i18n:Pokemon.CategoryTag}}",
+          "CategoryColorOverride": {
+            "R": 140,
+            "G": 93,
+            "B": 229,
+            "A": 255
+          }
+        },
+        "NatInValley.Creature.Rhyhorn_Attack": {
+          "CategoryTextOverride": "{{i18n:Pokemon.CategoryTag}}",
+          "CategoryColorOverride": {
+            "R": 140,
+            "G": 93,
+            "B": 229,
+            "A": 255
+          }
+        },
+        "NatInValley.Creature.Rhyhorn_Attack_Shiny": {
+          "CategoryTextOverride": "{{i18n:Pokemon.CategoryTag}}",
+          "CategoryColorOverride": {
+            "R": 140,
+            "G": 93,
+            "B": 229,
+            "A": 255
+          }
+        },
+        "NatInValley.Creature.Pikachu_Roam": {
+          "CategoryTextOverride": "{{i18n:Pokemon.CategoryTag}}",
+          "CategoryColorOverride": {
+            "R": 140,
+            "G": 93,
+            "B": 229,
+            "A": 255
+          }
+        },
+        "NatInValley.Creature.Pikachu_Roam_Shiny": {
+          "CategoryTextOverride": "{{i18n:Pokemon.CategoryTag}}",
+          "CategoryColorOverride": {
+            "R": 140,
+            "G": 93,
+            "B": 229,
+            "A": 255
+          }
+        },
+        "NatInValley.Creature.Shellder_Swim": {
+          "CategoryTextOverride": "{{i18n:Pokemon.CategoryTag}}",
+          "CategoryColorOverride": {
+            "R": 140,
+            "G": 93,
+            "B": 229,
+            "A": 255
+          }
+        },
+        "NatInValley.Creature.Shellder_Swim_Shiny": {
+          "CategoryTextOverride": "{{i18n:Pokemon.CategoryTag}}",
+          "CategoryColorOverride": {
+            "R": 140,
+            "G": 93,
+            "B": 229,
+            "A": 255
+          }
+        },
+        "NatInValley.Creature.Shellder_Terrarium": {
+          "CategoryTextOverride": "{{i18n:Terrarium.CategoryTag}}",
+          "CategoryColorOverride": {
+            "R": 145,
+            "G": 45,
+            "B": 10,
+            "A": 255
+          }
+        },
+        "NatInValley.Creature.Shellder_Terrarium_Shiny": {
+          "CategoryTextOverride": "{{i18n:Terrarium.CategoryTag}}",
+          "CategoryColorOverride": {
+            "R": 145,
+            "G": 45,
+            "B": 10,
+            "A": 255
+          }
+        },
+        "NatInValley.Creature.Goldeen_Swim": {
+          "CategoryTextOverride": "{{i18n:Pokemon.CategoryTag}}",
+          "CategoryColorOverride": {
+            "R": 140,
+            "G": 93,
+            "B": 229,
+            "A": 255
+          }
+        },
+        "NatInValley.Creature.Goldeen_Swim_Shiny": {
+          "CategoryTextOverride": "{{i18n:Pokemon.CategoryTag}}",
+          "CategoryColorOverride": {
+            "R": 140,
+            "G": 93,
+            "B": 229,
+            "A": 255
+          }
+        },
+        "NatInValley.Creature.Psyduck_Swim": {
+          "CategoryTextOverride": "{{i18n:Pokemon.CategoryTag}}",
+          "CategoryColorOverride": {
+            "R": 140,
+            "G": 93,
+            "B": 229,
+            "A": 255
+          }
+        },
+        "NatInValley.Creature.Psyduck_Swim_Shiny": {
+          "CategoryTextOverride": "{{i18n:Pokemon.CategoryTag}}",
+          "CategoryColorOverride": {
+            "R": 140,
+            "G": 93,
+            "B": 229,
+            "A": 255
+          }
+        }
+      }
+    }
+  ]
+}

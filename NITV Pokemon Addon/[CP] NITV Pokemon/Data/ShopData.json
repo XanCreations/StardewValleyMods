@@ -216,7 +216,7 @@
           "Price": 200000
         },
         "Pikachu_Shiny_Buy": {
-          "ItemId": "(O)NatInValley.Creature.Pikachu_Shiny",
+          "ItemId": "(O)NatInValley.Creature.Pikachu_Roam_Shiny",
           "Condition": "NAT_NIV_DonatedSpecific Pikachu_Roam_Shiny",
           "Price": 200000
         },
@@ -250,4 +250,5 @@
       }
     }
   ]
+
 }

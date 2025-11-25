@@ -1,0 +1,9 @@
+{
+  "Name": "Trinket Config",
+  "Author": "Xan",
+  "Version": "1.0.0",
+  "Description": "Allows the player to configure trinket drop chance and audio",
+  "UniqueID": "Xan.TrinketChanceConfig",
+  "EntryDll": "TrinketChanceConfig.dll",
+  "MinimumApiVersion": "4.0.0"
+}

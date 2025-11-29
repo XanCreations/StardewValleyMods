@@ -5,6 +5,7 @@
 - Catchable Pokemon for Nature In The Valley (https://www.nexusmods.com/stardewvalley/mods/37156)
 - Netball for catching creatures that spawn on water tiles in Nature In The Valley (https://www.nexusmods.com/stardewvalley/mods/37172)
 - Multiplayer Support for Nature In The Valley (https://www.nexusmods.com/stardewvalley/mods/39568)
+- Trinket Drop Chance Config (https://www.nexusmods.com/stardewvalley/mods/39663)
 
 
 I also just wanted to reiterate from the license that this repository is **not open-source**.

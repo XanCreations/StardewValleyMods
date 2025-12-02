@@ -5,16 +5,22 @@ namespace TrinketChanceConfig
 {
     public interface IGenericModConfigMenuApi
     {
-        /// <param name="mod"></param>
-        /// <param name="reset"></param>
-        /// <param name="save"></param>
-        /// <param name="titleScreenOnly">
-        /// </param>
+        // Register a mod config that can be edited
         void Register(
             IManifest mod,
             Action reset,
             Action save,
             bool titleScreenOnly = false
+        );
+
+        // Add a simple checkbox option
+        void AddBoolOption(
+            IManifest mod,
+            Func<bool> getValue,
+            Action<bool> setValue,
+            Func<string> name = null,
+            Func<string> tooltip = null,
+            string fieldId = null
         );
 
         // Add a numeric option (slider)
